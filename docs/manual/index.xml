@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manual on CONSELF Docs</title>
-    <link>https://apalazzin.github.io/conself-docs/manual/</link>
+    <link>https://conself.github.io/conself-docs/manual/</link>
     <description>Recent content in Manual on CONSELF Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://apalazzin.github.io/conself-docs/manual/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://conself.github.io/conself-docs/manual/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Credits management and statistics</title>
-      <link>https://apalazzin.github.io/conself-docs/manual/credits-management-and-statistics/</link>
+      <link>https://conself.github.io/conself-docs/manual/credits-management-and-statistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://apalazzin.github.io/conself-docs/manual/credits-management-and-statistics/</guid>
+      <guid>https://conself.github.io/conself-docs/manual/credits-management-and-statistics/</guid>
       <description>CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans. When entering the application you can access two main pages: the dashboard and the simulations. Before proceeding to the part concerning the CFD, let&amp;rsquo;s have a look at what is reported in the dashboard. In here you keep under control the whole application and you have at a glance all the information about your simulations and credits availability.</description>
     </item>
     
     <item>
       <title>CONSELF simulation process</title>
-      <link>https://apalazzin.github.io/conself-docs/manual/conself-simulation-process/</link>
+      <link>https://conself.github.io/conself-docs/manual/conself-simulation-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://apalazzin.github.io/conself-docs/manual/conself-simulation-process/</guid>
+      <guid>https://conself.github.io/conself-docs/manual/conself-simulation-process/</guid>
       <description>Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:
 Simulation: a mathematical procedure that allows to reproduce in a virtual environment - software - a physical behavior. Compared to laboratory tests, it is a quicker and cheaper process. Ultimately, simulations help engineers validate the hypothesis behind every design phase.</description>
     </item>
     
     <item>
       <title>GEOMETRY</title>
-      <link>https://apalazzin.github.io/conself-docs/manual/geometry/</link>
+      <link>https://conself.github.io/conself-docs/manual/geometry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://apalazzin.github.io/conself-docs/manual/geometry/</guid>
+      <guid>https://conself.github.io/conself-docs/manual/geometry/</guid>
       <description>The geometry step represents the phase in which the user defines the main geometrical characteristics of the case. The user is required to draw a complete geometry using a CAD software - see External Link to find free CAD softwares available on the internet that can be used with CONSELF CFD on Cloud. In order to get more information about the generation of CAD files, see this page.
 CONSELF can handle multiple unit systems and, furthermore, the user interface has the capability to generate a wind-tunnel geometry around the geometry, in order to speed up the setup process.</description>
     </item>
     
     <item>
       <title>MESH</title>
-      <link>https://apalazzin.github.io/conself-docs/manual/mesh/</link>
+      <link>https://conself.github.io/conself-docs/manual/mesh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://apalazzin.github.io/conself-docs/manual/mesh/</guid>
+      <guid>https://conself.github.io/conself-docs/manual/mesh/</guid>
       <description>Mesh is the STEP required in order to define the mesh.
 Volume mesh In this section the user is asked to define the mesh algorithm and the basic mesh feature.
  Meshing algorithm: drop down list from which the user has to select the meshing algorithm (see pictures below).
@@ -53,10 +53,10 @@ Volume mesh In this section the user is asked to define the mesh algorithm and t
     
     <item>
       <title>CFD</title>
-      <link>https://apalazzin.github.io/conself-docs/manual/cfd/</link>
+      <link>https://conself.github.io/conself-docs/manual/cfd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://apalazzin.github.io/conself-docs/manual/cfd/</guid>
+      <guid>https://conself.github.io/conself-docs/manual/cfd/</guid>
       <description>The CFD step represents the widest part of the whole simulation settings. The parameters present in the current step may vary according to the application chosen.
 Fluid Models The first section is about defining the fluid models, turbulence and density in particular.
  Flow type: drop down list from which the user has to select the flow type
@@ -65,10 +65,10 @@ Fluid Models The first section is about defining the fluid models, turbulence an
     
     <item>
       <title>RESULTS</title>
-      <link>https://apalazzin.github.io/conself-docs/manual/results/</link>
+      <link>https://conself.github.io/conself-docs/manual/results/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://apalazzin.github.io/conself-docs/manual/results/</guid>
+      <guid>https://conself.github.io/conself-docs/manual/results/</guid>
       <description>CONSELF offers a web based application to postprocess results. Have a look at the following video to check out the most important features of this web application.
    Beside this tool, there are two more functionalities, highlighted in the picture: residual plot and results download. The first one displays the residuals of pressure and velocity fields obtained during the calculation, the latter instead allows to download the results in your local machine.</description>
     </item>
