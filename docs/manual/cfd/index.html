@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.20.2" />
+    <meta name="description" content="CONSELF Docs">
+<meta name="author" content="Alberto Palazzin">
+
+    <link rel="shortcut icon" href="/conself-docs/images/favicon.png" type="image/x-icon" />
+    
+    <title>CFD</title>
+    <link href="https://apalazzin.github.io/conself-docs/css/nucleus.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/hybrid.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/featherlight.min.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/horsey.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/theme.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/hugo-theme.css" rel="stylesheet">
+    <script src="https://apalazzin.github.io/conself-docs/js/jquery-2.x.min.js"></script>
+    <style type="text/css">:root #header + #content > #left > #rlblock_left
+    {display:none !important;}</style>
+    <link href="/conself-docs/css/conself.css" rel="stylesheet">
+  </head>
+  <body class="" data-url="/conself-docs/manual/cfd/">
+    
+    <nav id="sidebar">
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://conself.com">
+	<img src="/conself-docs/images/LOGOConself.png" alt="CONSELF Logo">
+</a>
+
+    </div>
+    
+</div>
+
+
+  <div class="highlightable">
+    <ul class="topics">
+      
+        
+        
+          
+          
+            
+          
+        
+          
+          
+            
+          
+        
+          
+          
+            
+          
+        
+          
+          
+            
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  parent" data-nav-id="/conself-docs/manual/">
+        <a href="/conself-docs/manual/">
+          <span>
+            
+              <b>1. </b>
+            
+             Manual
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/credits-management-and-statistics/">
+              <a href="/conself-docs/manual/credits-management-and-statistics/">
+                <span>Credits management and statistics     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/conself-simulation-process/">
+              <a href="/conself-docs/manual/conself-simulation-process/">
+                <span>CONSELF simulation process     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/geometry/">
+              <a href="/conself-docs/manual/geometry/">
+                <span>GEOMETRY     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/mesh/">
+              <a href="/conself-docs/manual/mesh/">
+                <span>MESH     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item active" data-nav-id="/conself-docs/manual/cfd/">
+              <a href="/conself-docs/manual/cfd/">
+                <span>CFD     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/results/">
+              <a href="/conself-docs/manual/results/">
+                <span>RESULTS     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/conself-docs/validation/">
+        <a href="/conself-docs/validation/">
+          <span>
+            
+              <b>2. </b>
+            
+             Validation
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/validation/3d-fuser/">
+              <a href="/conself-docs/validation/3d-fuser/">
+                <span>3D Fuser     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/validation/lid-driven-cavity/">
+              <a href="/conself-docs/validation/lid-driven-cavity/">
+                <span>Lid Driven Cavity     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/validation/wind-turbine/">
+              <a href="/conself-docs/validation/wind-turbine/">
+                <span>Wind Turbine     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/conself-docs/hints/">
+        <a href="/conself-docs/hints/">
+          <span>
+            
+              <b>3. </b>
+            
+             Hints
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/hints/cad-files/">
+              <a href="/conself-docs/hints/cad-files/">
+                <span>CAD Files     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/hints/boundaries/">
+              <a href="/conself-docs/hints/boundaries/">
+                <span>Boundary Conditions     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/hints/errors/">
+              <a href="/conself-docs/hints/errors/">
+                <span>General Errors     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/conself-docs/contributing/">
+        <a href="/conself-docs/contributing/">
+          <span>
+            
+              <b>4. </b>
+            
+             Contributing
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/contributing/external-link/">
+              <a href="/conself-docs/contributing/external-link/">
+                <span>External Link     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+    </ul>
+    <hr>
+     
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+        <section id="body">
+        <div id="overlay"></div>
+
+        <div class="padding highlightable">
+
+            <div id="top-bar">
+              
+                
+                
+                
+              <div id="top-github-link">
+                  <a class="github-link" href="https://github.com/apalazzin/conself-docs/tree/master/content/manual/cfd.md" target="blank">
+                    <i class="fa fa-code-fork"></i>
+                    Edit this page
+                  </a>
+              </div>
+                
+              
+              <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                  <span id="sidebar-toggle-span">
+                      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                  </span>
+                
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
+                
+                  
+                  
+                  
+                    
+                    
+                <a href="/conself-docs/manual/" itemprop="url"><span itemprop="title">Manual</span></a> <i class="fa fa-angle-right"></i>
+                    
+                  
+                
+                <span itemprop="title"> CFD</span>
+              </div>
+              
+                  <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#fluid-models">Fluid Models</a></li>
+<li><a href="#special-sections">Special sections</a></li>
+<li><a href="#boundary-conditions">Boundary Conditions</a></li>
+<li><a href="#simulation-settings">Simulation Settings</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+              
+
+            </div>
+            
+              <div id="body-inner">
+                
+                <h1>CFD</h1>
+                
+
+
+
+<p>The CFD step represents the widest part of the whole simulation settings. The parameters present in the current step may vary according to the application chosen.</p>
+
+<h3 id="fluid-models">Fluid Models</h3>
+
+<p>The first section is about defining the fluid models, turbulence and density in particular.</p>
+
+<ul>
+<li><p><em>Flow type</em>: drop down list from which the user has to select the flow type</p>
+
+<ul>
+<li><em>Incompressible</em>: to simulate incompressible fluids like water, oil or air at low velocity.</li>
+<li><em>Compressible</em>: to simulate compressible ideal-fluids like air or gas in general</li>
+</ul></li>
+
+<li><p><em>Turbulence</em>: drop down list from which the user has to select the turbulence model</p>
+
+<ul>
+<li><em>Laminar</em>: to simulate viscous flows in laminar regime</li>
+<li><em>k-epsilon</em>: to model turbulence via the two equations <em>k-epsilon</em> model (<a href="http://turbmodels.larc.nasa.gov/ke-chien.html">reference</a>)</li>
+<li><em>k-omega SST</em>: to model turbulence via the two equations <em>k-omega SST</em> model (<a href="http://turbmodels.larc.nasa.gov/sst.html">reference</a>)</li>
+<li><em>SA</em>: to model turbulence via the one equation <em>Spalart-Allmaras</em> model (<a href="http://turbmodels.larc.nasa.gov/spalart.html">reference</a>)</li>
+</ul></li>
+
+<li><p><em>Fluid properties</em>: specification of the fluid properties parameters</p></li>
+
+<li><p><em>Fluid initialization</em>: definition of the initial condition for the fluid variables</p></li>
+</ul>
+
+<div class="notices info" ><p>Properties and parameters to insert vary with the Flow Type</p>
+</div>
+
+
+<ul>
+<li><em>Turbulence initialization</em>: definition of the initial condition for the turbulent variables</li>
+</ul>
+
+<p>We report here the most common initialization for the turbulent variables</p>
+
+<ul>
+<li><p>Turbulent kinetic energy: $k = \cfrac{3}{2} \left( \overline{u} \cdot I \right)^{2}$</p></li>
+
+<li><p>Turbulent dissipation rate: $\epsilon = \cfrac{0.09 k^{1.5}}{l}$</p></li>
+
+<li><p>Specific dissipation rate: $\omega = \cfrac{\sqrt{k}}{l}$</p></li>
+
+<li><p>Turbulent kinematic eddy viscosity: $\nu_{t} = \sqrt{\cfrac{3}{2}} \overline{u} \cdot I l$</p></li>
+</ul>
+
+<p>where $I$ is the turbulence intensity (suggested between 1% and 10%) and l is the turbulence length scale, approximated with the hydraulic diameter $D_h$.</p>
+
+<div class="notices info" ><p>Properties and parameters to insert vary with the Turbulence</p>
+</div>
+
+
+<h3 id="special-sections">Special sections</h3>
+
+<p><em>[To be completed &hellip;]</em></p>
+
+<h3 id="boundary-conditions">Boundary Conditions</h3>
+
+<p>The boundary conditions are the fundamental stage of the CFD simulations. CONSELF gives you a multiple choice of boundaries, each of which is target for the peculiar application you are currently using. Here you are a brief summary of what you are required to insert.</p>
+
+
+<figure >
+    
+        <img src="/conself-docs/images/BC_selection.png" alt="Velocity inlet boundary condition application to selected boundary &#34;asmo&#34;" />
+    
+    
+    <figcaption>
+        <h4>Velocity inlet boundary condition application to selected boundary &#34;asmo&#34;</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>In this section it is possible to specify the boundary condition to apply to the flow. For instance, it is possible to define an inlet, an outlet or a wall. In order to do that the user has to specify for each flow variable its value (or gradient) at a specific boundary.</p>
+
+<ul>
+<li><p><em>Boundary condition</em>: drop down list from which the user has to select every surface of which the geometry (and the bounding box) is composed in order to assign boundary conditions to it.</p></li>
+
+<li><p><em>BC TYPE list</em>: a list of available boundary conditions to be assigned to every surface. Every choice of this list gives access to a certain number of parameters to be defined in order to process it correctly.</p></li>
+</ul>
+
+<p><strong>In order to get hints and details about boundary conditions you may encounter check <a href=":Boundaries" title="wikilink">this page</a>.</strong></p>
+
+<div class="notices info" ><p>By default every surface is assigned an adiabatic no-slip wall boundary condition.</p>
+</div>
+
+
+<h3 id="simulation-settings">Simulation Settings</h3>
+
+<ul>
+<li><em>Time scheme</em>: drop down list from which the user has to select which type of simulation they want to perform in terms of behavior in time
+
+<ul>
+<li><em>Transient</em>: to setup a simulation where the focus is on how the flow changes in time, i.e. the quantities of interest are variable fluctuations over time</li>
+<li><em>Steady</em>: to setup a simulation where the focus is on the final flow configuration, i.e. the converged steady solution that does not change anymore</li>
+</ul></li>
+</ul>
+
+<p>In case <em>Transient</em> scheme is chosen</p>
+
+<ul>
+<li><em>Timestep</em>: time accuracy defining the requested temporal resolution.</li>
+<li><em>Final time</em>: defines the final simulation time.</li>
+<li><em>Output frequency</em>: rules how often simulation results are saved.</li>
+</ul>
+
+<p>In case <em>Steady</em> scheme is chosen</p>
+
+<ul>
+<li><em>Number of iterations</em>: number of iterations performed by the CFD solver. The higher the number, the more accurate the solution.</li>
+<li><em>Output frequency</em>: specifies how often simulation results are saved for the visualization.</li>
+</ul>
+
+<p>After completion of all fields, the user can finalize the step clicking on <em>Submit</em> button. This will start the <strong>CFD</strong> step application that will appear in the <em>Case in progress</em> section of the main <em>Simulation</em> page.</p>
+
+<div class="notices info" ><p>The CFD step usually requires a high number of iterations (few thousands) in order to produce accurate results.</p>
+</div>
+
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>

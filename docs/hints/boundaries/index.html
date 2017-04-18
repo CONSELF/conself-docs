@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.20.2" />
+    <meta name="description" content="CONSELF Docs">
+<meta name="author" content="Alberto Palazzin">
+
+    <link rel="shortcut icon" href="/conself-docs/images/favicon.png" type="image/x-icon" />
+    
+    <title>Boundary Conditions</title>
+    <link href="https://apalazzin.github.io/conself-docs/css/nucleus.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/hybrid.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/featherlight.min.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/horsey.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/theme.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/hugo-theme.css" rel="stylesheet">
+    <script src="https://apalazzin.github.io/conself-docs/js/jquery-2.x.min.js"></script>
+    <style type="text/css">:root #header + #content > #left > #rlblock_left
+    {display:none !important;}</style>
+    <link href="/conself-docs/css/conself.css" rel="stylesheet">
+  </head>
+  <body class="" data-url="/conself-docs/hints/boundaries/">
+    
+    <nav id="sidebar">
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://conself.com">
+	<img src="/conself-docs/images/LOGOConself.png" alt="CONSELF Logo">
+</a>
+
+    </div>
+    
+</div>
+
+
+  <div class="highlightable">
+    <ul class="topics">
+      
+        
+        
+          
+          
+            
+          
+        
+          
+          
+            
+          
+        
+          
+          
+            
+          
+        
+          
+          
+            
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/conself-docs/manual/">
+        <a href="/conself-docs/manual/">
+          <span>
+            
+              <b>1. </b>
+            
+             Manual
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/credits-management-and-statistics/">
+              <a href="/conself-docs/manual/credits-management-and-statistics/">
+                <span>Credits management and statistics     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/conself-simulation-process/">
+              <a href="/conself-docs/manual/conself-simulation-process/">
+                <span>CONSELF simulation process     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/geometry/">
+              <a href="/conself-docs/manual/geometry/">
+                <span>GEOMETRY     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/mesh/">
+              <a href="/conself-docs/manual/mesh/">
+                <span>MESH     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/cfd/">
+              <a href="/conself-docs/manual/cfd/">
+                <span>CFD     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/results/">
+              <a href="/conself-docs/manual/results/">
+                <span>RESULTS     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/conself-docs/validation/">
+        <a href="/conself-docs/validation/">
+          <span>
+            
+              <b>2. </b>
+            
+             Validation
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/validation/3d-fuser/">
+              <a href="/conself-docs/validation/3d-fuser/">
+                <span>3D Fuser     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/validation/lid-driven-cavity/">
+              <a href="/conself-docs/validation/lid-driven-cavity/">
+                <span>Lid Driven Cavity     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/validation/wind-turbine/">
+              <a href="/conself-docs/validation/wind-turbine/">
+                <span>Wind Turbine     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  parent" data-nav-id="/conself-docs/hints/">
+        <a href="/conself-docs/hints/">
+          <span>
+            
+              <b>3. </b>
+            
+             Hints
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/hints/cad-files/">
+              <a href="/conself-docs/hints/cad-files/">
+                <span>CAD Files     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item active" data-nav-id="/conself-docs/hints/boundaries/">
+              <a href="/conself-docs/hints/boundaries/">
+                <span>Boundary Conditions     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/hints/errors/">
+              <a href="/conself-docs/hints/errors/">
+                <span>General Errors     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/conself-docs/contributing/">
+        <a href="/conself-docs/contributing/">
+          <span>
+            
+              <b>4. </b>
+            
+             Contributing
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/contributing/external-link/">
+              <a href="/conself-docs/contributing/external-link/">
+                <span>External Link     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+    </ul>
+    <hr>
+     
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+        <section id="body">
+        <div id="overlay"></div>
+
+        <div class="padding highlightable">
+
+            <div id="top-bar">
+              
+                
+                
+                
+              <div id="top-github-link">
+                  <a class="github-link" href="https://github.com/apalazzin/conself-docs/tree/master/content/hints/boundaries.md" target="blank">
+                    <i class="fa fa-code-fork"></i>
+                    Edit this page
+                  </a>
+              </div>
+                
+              
+              <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                  <span id="sidebar-toggle-span">
+                      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                  </span>
+                
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
+                
+                  
+                  
+                  
+                    
+                    
+                <a href="/conself-docs/hints/" itemprop="url"><span itemprop="title">Hints</span></a> <i class="fa fa-angle-right"></i>
+                    
+                  
+                
+                <span itemprop="title"> Boundary Conditions</span>
+              </div>
+              
+                  <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+              
+
+            </div>
+            
+              <div id="body-inner">
+                
+                <h1>Boundary Conditions</h1>
+                
+
+<p>The table below report an overview of available boundary conditions and specifications. The description specifies the application and the restriction of the boundary conditions.</p>
+
+<div class="notices info" ><p>Boundary availability depends on the application you are currently using.</p>
+</div>
+
+
+<table>
+    <tbody>
+        <tr>
+            <th>Boundary</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>
+                INLET - Absolute velocity
+            </td>
+            <td>
+                Inlet velocity - Velocity vector is specified in an absolute reference frame
+                <hr>
+                <ul>
+                    <li>Uabsx [m/s] - Absolute velocity X</li>
+                    <li>Uabsy [m/s] - Absolute velocity Y</li>
+                    <li>Uabsz [m/s] - Absolute velocity Z</li>
+                    <li>Dₕ [m] - Hydraulic diameter</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                INLET - Cylindrical velocity
+            </td>
+            <td>
+                Inlet velocity in a cylindrical reference frame
+                <hr>
+                <ul>
+                    <li>Centre X [m] - Centre X</li>
+                    <li>Centre Y [m] - Centre Y</li>
+                    <li>Centre Z [m] - Centre Z</li>
+                    <li>Axis X - Normalized axis X</li>
+                    <li>Axis Y - Normalized axis Y</li>
+                    <li>Axis Z - Normalized axis Z</li>
+                    <li>U axial [m/s] - Axial velocity</li>
+                    <li>U radial [m/s] - Radial velocity</li>
+                    <li>ω [rpm] - Rotational velocity</li>
+                    <li>Dₕ [m] - Hydraulic diameter</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                INLET - Relative velocity
+            </td>
+            <td>
+                Inlet velocity - Velocity vector is specified in a relative reference frame
+                <hr>
+                <ul>
+                    <li>Urelx [m/s] - Relative velocity X</li>
+                    <li>Urely [m/s] - Relative velocity Y</li>
+                    <li>Urelz [m/s] - Relative velocity Z</li>
+                    <li>Dₕ [m] - Hydraulic diameter</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                INLET - Total pressure
+            </td>
+            <td>
+                Total pressure inlet condition - valid also for outlet condition
+                <hr>
+                <ul>
+                    <li>p₀ [Pa] - Total Pressure</li>
+                    <li>Dₕ [m] - Hydraulic diameter</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                INLET - Velocity
+            </td>
+            <td>
+                Inlet velocity - Velocity vector normal to the surface (use negative value for outflow)
+                <hr>
+                <ul>
+                    <li>U [m/s] - Velocity</li>
+                    <li>Dₕ [m] - Hydraulic diameter</li>
+                    <li>Φ [%] - Fluid-A concentration</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                INLET - Velocity and particles
+            </td>
+            <td>
+                Inlet velocity with specified inlet particles
+                <hr>
+                <ul>
+                    <li>U [m/s] - Fluid velocity</li>
+                    <li>Uxp [m/s] - Particles velocity X</li>
+                    <li>Uyp [m/s] - Particles velocity Y</li>
+                    <li>Uzp [m/s] - Particles velocity Z</li>
+                    <li>Mp [kg/s] - Particles mass flow</li>
+                    <li>Dp [m] - Particles dimension</li>
+                    <li>Dₕ [m] - Hydraulic diameter</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                INLET - Velocity fixed temperature
+            </td>
+            <td>
+                Inlet velocity with specified temperature - Velocity vector normal to the surface
+                <hr>
+                <ul>
+                    <li>U [m/s] - Velocity</li>
+                    <li>T [K] - Temperature</li>
+                    <li>Dₕ [m] - Hydraulic diameter</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                INLET - Velocity vector
+            </td>
+            <td>
+                Inlet velocity where the user specifies the velocity vector
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                    <li>Dₕ [m] - Hydraulic diameter</li>
+                    <li>Φ [%] - Fluid-A concentration</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                INLET - Velocity vector fixed temperature
+            </td>
+            <td>
+                Inlet velocity where the user specifies the velocity vector and the temperature
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                    <li>T [K] - Temperature</li>
+                    <li>Dₕ [m] - Hydraulic diameter</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                INLET - Volume flow
+            </td>
+            <td>
+                Inlet condition with prescribed volume flow (use negative value for outflow)
+                <hr>
+                <ul>
+                    <li>Q [m³/s] - Volume flow</li>
+                    <li>Dₕ [m] - Hydraulic diameter</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                OUTLET - Pressure
+            </td>
+            <td>
+                Outlet condition for pressure - Backscatter flow is denied
+                <hr>
+                <ul>
+                    <li>p [Pa] - Pressure</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - Adiabatic no slip
+            </td>
+            <td>
+                No slip adiabatic wall
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - Fire fixed temperature
+            </td>
+            <td>
+                No slip wall with prescribed temperature
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                    <li>CO [kg/(s·m²)] - CO production</li>
+                    <li>T [K] - Temperature</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - Fire heat flux
+            </td>
+            <td>
+                No slip wall with imposed temperature gradient
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                    <li>CO [kg/(s·m²)] - CO production</li>
+                    <li>T [K/m] - Temperature gradient</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - Fire location
+            </td>
+            <td>
+                No slip wall with imposed temperature gradient
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                    <li>CO [kg/(s·m²)] - CO production</li>
+                    <li>q [W/m²] - Heat flux</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - No slip
+            </td>
+            <td>
+                No slip adiabatic wall
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - No slip fixed temperature
+            </td>
+            <td>
+                No slip wall with imposed temperature
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                    <li>T [K] - Temperature</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - No slip rough wall
+            </td>
+            <td>
+                No slip rough wall
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                    <li>Ks [m] - Sand-grain roughness height</li>
+                    <li>Cs - Roughness constant</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - No slip with CO production
+            </td>
+            <td>
+                No slip wall with imposed CO production
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                    <li>CO [kg/(s·m²)] - CO production</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - No slip with heat flux
+            </td>
+            <td>
+                No slip wall with imposed heat flux per surface unit
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                    <li>q [W/m²] - Heat flux</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - No slip with heat power
+            </td>
+            <td>
+                No slip wall with imposed global heat flux
+                <hr>
+                <ul>
+                    <li>Ux [m/s] - Velocity X</li>
+                    <li>Uy [m/s] - Velocity Y</li>
+                    <li>Uz [m/s] - Velocity Z</li>
+                    <li>Q [W] - Heat power</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - Rotating
+            </td>
+            <td>
+                Rotating adiabatic wall
+                <hr>
+                <ul>
+                    <li>Centre X [m] - Centre X</li>
+                    <li>Centre Y [m] - Centre Y</li>
+                    <li>Centre Z [m] - Centre Z</li>
+                    <li>Axis X - Normalized axis X</li>
+                    <li>Axis Y - Normalized axis Y</li>
+                    <li>Axis Z - Normalized axis Z</li>
+                    <li>ω [rpm] - Rotational velocity</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - Rotating no slip
+            </td>
+            <td>
+                Rotating adiabatic wall
+                <hr>
+                <ul>
+                    <li>ω [rpm] - Relative rotational speed</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WALL - Rotating no slip rough wall
+            </td>
+            <td>
+                No slip rotating rough wall
+                <hr>
+                <ul>
+                    <li>ω [rpm] - Relative rotational speed</li>
+                    <li>Ks [m] - Sand-grain roughness height</li>
+                    <li>Cs - Roughness constant</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>

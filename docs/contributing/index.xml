@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contributing on CONSELF Docs</title>
+    <link>https://apalazzin.github.io/conself-docs/contributing/</link>
+    <description>Recent content in Contributing on CONSELF Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://apalazzin.github.io/conself-docs/contributing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>External Link</title>
+      <link>https://apalazzin.github.io/conself-docs/contributing/external-link/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://apalazzin.github.io/conself-docs/contributing/external-link/</guid>
+      <description>Software CAD and 3D modelling Onshape - Fully cloud solution for 3D modelling
+Blender - 3D modelling software popular in FabLabs and 3D printing
+DraftSight - Free 2D CAD software by Dassauld Systemes
+FreeCAD - 3D modelling in an opensource environment
+SketchUp - Another free 3D modelling software
+File formats  STEP files (reference here) Initial Graphics Exchange Specification - IGES files (reference here) STereoLithography - STL standard files, both ASCII and BINARY (reference here)  CFD info and communities CFD Online - An online center for Computational Fluid Dynamics with services like discussion forums, jobs, links and a wiki</description>
+    </item>
+    
+  </channel>
+</rss>

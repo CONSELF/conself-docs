@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.20.2" />
+    <meta name="description" content="CONSELF Docs">
+<meta name="author" content="Alberto Palazzin">
+
+    <link rel="shortcut icon" href="/conself-docs/images/favicon.png" type="image/x-icon" />
+    
+    <title>CONSELF simulation process</title>
+    <link href="https://apalazzin.github.io/conself-docs/css/nucleus.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/hybrid.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/featherlight.min.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/horsey.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/theme.css" rel="stylesheet">
+    <link href="https://apalazzin.github.io/conself-docs/css/hugo-theme.css" rel="stylesheet">
+    <script src="https://apalazzin.github.io/conself-docs/js/jquery-2.x.min.js"></script>
+    <style type="text/css">:root #header + #content > #left > #rlblock_left
+    {display:none !important;}</style>
+    <link href="/conself-docs/css/conself.css" rel="stylesheet">
+  </head>
+  <body class="" data-url="/conself-docs/manual/conself-simulation-process/">
+    
+    <nav id="sidebar">
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://conself.com">
+	<img src="/conself-docs/images/LOGOConself.png" alt="CONSELF Logo">
+</a>
+
+    </div>
+    
+</div>
+
+
+  <div class="highlightable">
+    <ul class="topics">
+      
+        
+        
+          
+          
+            
+          
+        
+          
+          
+            
+          
+        
+          
+          
+            
+          
+        
+          
+          
+            
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  parent" data-nav-id="/conself-docs/manual/">
+        <a href="/conself-docs/manual/">
+          <span>
+            
+              <b>1. </b>
+            
+             Manual
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/credits-management-and-statistics/">
+              <a href="/conself-docs/manual/credits-management-and-statistics/">
+                <span>Credits management and statistics     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item active" data-nav-id="/conself-docs/manual/conself-simulation-process/">
+              <a href="/conself-docs/manual/conself-simulation-process/">
+                <span>CONSELF simulation process     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/geometry/">
+              <a href="/conself-docs/manual/geometry/">
+                <span>GEOMETRY     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/mesh/">
+              <a href="/conself-docs/manual/mesh/">
+                <span>MESH     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/cfd/">
+              <a href="/conself-docs/manual/cfd/">
+                <span>CFD     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/manual/results/">
+              <a href="/conself-docs/manual/results/">
+                <span>RESULTS     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/conself-docs/validation/">
+        <a href="/conself-docs/validation/">
+          <span>
+            
+              <b>2. </b>
+            
+             Validation
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/validation/3d-fuser/">
+              <a href="/conself-docs/validation/3d-fuser/">
+                <span>3D Fuser     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/validation/lid-driven-cavity/">
+              <a href="/conself-docs/validation/lid-driven-cavity/">
+                <span>Lid Driven Cavity     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/validation/wind-turbine/">
+              <a href="/conself-docs/validation/wind-turbine/">
+                <span>Wind Turbine     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/conself-docs/hints/">
+        <a href="/conself-docs/hints/">
+          <span>
+            
+              <b>3. </b>
+            
+             Hints
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/hints/cad-files/">
+              <a href="/conself-docs/hints/cad-files/">
+                <span>CAD Files     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/hints/boundaries/">
+              <a href="/conself-docs/hints/boundaries/">
+                <span>Boundary Conditions     </i></span>
+              </a>
+            </li>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/hints/errors/">
+              <a href="/conself-docs/hints/errors/">
+                <span>General Errors     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+      
+      
+        
+          
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/conself-docs/contributing/">
+        <a href="/conself-docs/contributing/">
+          <span>
+            
+              <b>4. </b>
+            
+             Contributing
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+            <li class="dd-item " data-nav-id="/conself-docs/contributing/external-link/">
+              <a href="/conself-docs/contributing/external-link/">
+                <span>External Link     </i></span>
+              </a>
+            </li>
+          
+        </ul>
+        
+      </li>
+      
+      
+    </ul>
+    <hr>
+     
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+        <section id="body">
+        <div id="overlay"></div>
+
+        <div class="padding highlightable">
+
+            <div id="top-bar">
+              
+                
+                
+                
+              <div id="top-github-link">
+                  <a class="github-link" href="https://github.com/apalazzin/conself-docs/tree/master/content/manual/conself-simulation-process.md" target="blank">
+                    <i class="fa fa-code-fork"></i>
+                    Edit this page
+                  </a>
+              </div>
+                
+              
+              <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                  <span id="sidebar-toggle-span">
+                      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                  </span>
+                
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
+                
+                  
+                  
+                  
+                    
+                    
+                <a href="/conself-docs/manual/" itemprop="url"><span itemprop="title">Manual</span></a> <i class="fa fa-angle-right"></i>
+                    
+                  
+                
+                <span itemprop="title"> CONSELF simulation process</span>
+              </div>
+              
+                  <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#case-management">Case Management</a></li>
+<li><a href="#disk-management">Disk Management</a></li>
+<li><a href="#conself-step-by-step">CONSELF step by step</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+              
+
+            </div>
+            
+              <div id="body-inner">
+                
+                <h1>CONSELF simulation process</h1>
+                
+
+
+
+<p>Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:</p>
+
+<p><strong>Simulation</strong>: a mathematical procedure that allows to reproduce in a virtual environment - software - a physical behavior. Compared to laboratory tests, it is a quicker and cheaper process. Ultimately, simulations help engineers validate the hypothesis behind every design phase.</p>
+
+<p><strong>Case</strong>: any single test performed by using a simulation system.</p>
+
+<p><strong>Step</strong>: any single phase the user has to accomplish in order to run a complete case simulation.</p>
+
+<p>Although each CASE simulation depends on the users&rsquo; needs, CONSELF defines an identical path for every simulation. This path is divided into the following STEPS:</p>
+
+<ol>
+<li>Geometry</li>
+<li>Mesh</li>
+<li>CFD</li>
+<li>Results</li>
+</ol>
+
+<p>Obviously, in order to perform a certain STEP all previous ones must be completed. Furthermore, it is possible to run multiple STEP from the same precursor (i.e. run multiple CFD by using the same mesh). For this reason, when starting a new STEP it is always required to link it to a precursor, as shown in the picture.</p>
+
+
+<figure >
+    
+        <img src="/conself-docs/images/Step_selection.png" alt="Selection of a precursor MESH 2D step when starting a MESH 3D one" />
+    
+    
+    <figcaption>
+        <h4>Selection of a precursor MESH 2D step when starting a MESH 3D one</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>In the present manual, each of these steps are accurately described and displayed, with examples taken form CONSELF-run tutorials.</p>
+
+<h3 id="case-management">Case Management</h3>
+
+<p>After having logged in, the CONSELF dashboard appears on screen. On the menu on the left side, the last entry is the <strong>Simulations</strong> tab. Click on it to be redirected to the simulations front page, shown in the following figure. There are three main sections: two in the upper part and one in the bottom part of the figure.</p>
+
+<ul>
+<li><em>Creation of new case</em>: the case name has to be inserted in the edit box and must be no longer than 255 characters.</li>
+<li><em>Application selection</em> drop-down menu. This menu defines the application to be used in the current case among the available ones.</li>
+<li><em>Create</em> button redirects the user to <a href="https://apalazzin.github.io/conself-docs/manual/geometry/#file-data">Section A</a> of the GEOMETRY step of the newly created case.</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Application name</th>
+<th>Main features</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>CFD</td>
+<td>GENERAL</td>
+<td>Compressible and incompressible with steady and transient features.</td>
+</tr>
+
+<tr>
+<td>CFD</td>
+<td>TURBO - SRF PUMPS</td>
+<td>Single reference frame (rotating) incompressible flow. Steady simulation for pumps.</td>
+</tr>
+
+<tr>
+<td>CFD</td>
+<td>OIL&amp;GAS - FLOW WITH PARTICLES</td>
+<td>Incompressible flow with with solid particles transported.</td>
+</tr>
+
+<tr>
+<td>CFD</td>
+<td>OIL&amp;GAS - MULTIPHASE FLOW</td>
+<td>Incompressible flow of two inmiscible species.</td>
+</tr>
+
+<tr>
+<td>CFD</td>
+<td>HVAC - JET FANS</td>
+<td>CO and FIRE scenarios for indoor car park simulations.</td>
+</tr>
+
+<tr>
+<td>MECH</td>
+<td>STATIC</td>
+<td>Mechanical simulation using an isotropic linear elastic material.</td>
+</tr>
+</tbody>
+</table>
+
+<div class="notices info" ><p>Type the first part of the application name to filter the available choices.</p>
+</div>
+
+
+
+<figure >
+    
+        <img src="/conself-docs/images/CarSimulationCaseCreation.png" alt="Definitions of the zones in which the user interface is divided" />
+    
+    
+    <figcaption>
+        <h4>Definitions of the zones in which the user interface is divided</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<ul>
+<li><p><em>Selection of case</em>: the user can open a previously created case from the drop-down list.</p>
+
+<ul>
+<li><em>Open</em> button redirects the user to the section/step where they left the last time that particular case was edited.</li>
+</ul></li>
+
+<li><p><em>Cases in progress</em>: all running simulations are shown in a table with the following details</p>
+
+<ul>
+<li><em>Case name</em>: as inserted by the user during the creation</li>
+<li><em>Step</em>: the step that is running in that moment</li>
+<li><em>Progress</em>: both progress and percentage bars show the completion status for a given step</li>
+<li><em>ETA</em>: estimated time remaining to the end of the current step</li>
+</ul></li>
+</ul>
+
+<h3 id="disk-management">Disk Management</h3>
+
+
+<figure >
+    
+        <img src="/conself-docs/images/Storage_page.png" alt="Disk management interface with reference to the area of the screen and the information displayed" />
+    
+    
+    <figcaption>
+        <h4>Disk management interface with reference to the area of the screen and the information displayed</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>CONSELF provides also cloud storage to save your remote cases. The storage availability may be different according to the plan you activate in our store. It is possible to check the space available on the disk and manage old cases.</p>
+
+<h3 id="conself-step-by-step">CONSELF step by step</h3>
+
+<p>CONSELF guides you through the simulation literally step by step; in fact, in order to complete a simulation, the user has to go through several steps, each of which fulfills a precise task. Given the high flexibility of this method, users, less experienced as well, may take advantage of this philosophy of work: they have the ability to control the process, start over or modify what had previously been done. When a CASE is opened, a STEP interface is accessed, as shown in the picture below.</p>
+
+
+<figure >
+    
+        <img src="/conself-docs/images/General_STEP_page.png" alt="General STEP page" />
+    
+    
+</figure>
+
+
+<p>The application is generally divided into two sides:</p>
+
+<ul>
+<li><p><em>Left side</em>: current step options to be defined by the user</p></li>
+
+<li><p><em>Right side</em>: view of the simulation results up to the current step</p></li>
+</ul>
+
+<p>It is fundamental to note the button (GREEN or RED) on the top right of the page named <em>Steps completed</em>. By clicking it is possible to access a summary of performed steps with error messages, settings used and other information useful to keep improving your simulation. We recommend to <strong>check the <a href=":Errors" title="wikilink">error</a></strong> to have a quick overview of the most common error and their solution.</p>
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
