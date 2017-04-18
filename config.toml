@@ -1,0 +1,12 @@
+baseurl = "https://apalazzin.github.io/conself-docs"
+languageCode = "en-us"
+title = "CONSELF Docs"
+theme = "hugo-theme-learn"
+MetaDataFormat = "yaml"
+publishDir = "docs"
+
+[params]
+  editURL = "https://github.com/apalazzin/conself-docs/tree/master/content/"
+  description = "CONSELF Docs"
+  author = "Alberto Palazzin"
+  autoNav = true
