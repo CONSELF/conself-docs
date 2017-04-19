@@ -1,7 +1,7 @@
 ---
-title: CONSELF simulation process
+title: Simulation Process
 toc: true
-weight: 2
+weight: 1
 ---
 
 Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:

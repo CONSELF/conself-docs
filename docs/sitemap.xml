@@ -2,19 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://docs.conself.com/validation/3d-fuser/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.conself.com/hints/cad-files/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.conself.com/manual/credits-management-and-statistics/</loc>
-  </url>
-  
-  <url>
     <loc>http://docs.conself.com/contributing/external-link/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.conself.com/hints/input-cad-files/</loc>
   </url>
   
   <url>
@@ -22,27 +14,15 @@
   </url>
   
   <url>
-    <loc>http://docs.conself.com/hints/boundaries/</loc>
+    <loc>http://docs.conself.com/manual/simulation-process/</loc>
   </url>
   
   <url>
-    <loc>http://docs.conself.com/manual/conself-simulation-process/</loc>
+    <loc>http://docs.conself.com/hints/boundary-conditions/</loc>
   </url>
   
   <url>
-    <loc>http://docs.conself.com/validation/lid-driven-cavity/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.conself.com/validation/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.conself.com/manual/geometry/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.conself.com/hints/errors/</loc>
+    <loc>http://docs.conself.com/manual/case-management-and-credits/</loc>
   </url>
   
   <url>
@@ -50,7 +30,19 @@
   </url>
   
   <url>
-    <loc>http://docs.conself.com/validation/wind-turbine/</loc>
+    <loc>http://docs.conself.com/validation/lid-driven-cavity/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.conself.com/hints/common-errors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.conself.com/manual/geometry/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.conself.com/validation/</loc>
   </url>
   
   <url>
@@ -63,6 +55,10 @@
   
   <url>
     <loc>http://docs.conself.com/manual/cfd/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.conself.com/manual/mech/</loc>
   </url>
   
   <url>

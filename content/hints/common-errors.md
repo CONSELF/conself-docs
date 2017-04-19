@@ -1,5 +1,5 @@
 ---
-title: General Errors
+title: Common Errors
 toc: true
 weight: 3
 ---

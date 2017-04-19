@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>3D Fuser</title>
-      <link>http://docs.conself.com/validation/3d-fuser/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://docs.conself.com/validation/3d-fuser/</guid>
-      <description>[To be completed …]</description>
-    </item>
-    
-    <item>
       <title>Lid Driven Cavity</title>
       <link>http://docs.conself.com/validation/lid-driven-cavity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -28,16 +19,6 @@
       <description>GEOMETRY Input file from File:LidDriven.stp
 File data  In File units select Millimeters In Grouping Criteria STEP select By Curve Entity  Domain  In Flow Type select Internal  MESH2D Surface mesh Complete this section by filling the input data according to the following table
    Boundary name Uniformity level [%] Max element size [m]     BC-Parte1FACE1 70 0.04   BC-Parte1FACE2 70 0.</description>
-    </item>
-    
-    <item>
-      <title>Wind Turbine</title>
-      <link>http://docs.conself.com/validation/wind-turbine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://docs.conself.com/validation/wind-turbine/</guid>
-      <description>Check this validation of OpenFOAM® against Fluent.
-   Courtesy of grantjfan.</description>
     </item>
     
   </channel>

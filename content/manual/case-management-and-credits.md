@@ -1,7 +1,7 @@
 ---
-title: Credits management and statistics
+title: Case Management and Credits
 toc: true
-weight: 1
+weight: 2
 ---
 
 CONSELF it is a **pay-per-use CFD** application available via browser. In order to enjoy this service, you must **activate** one of the [available plans](https://conself.com/product/subscriptions/). When entering the application you can access two main pages: the *dashboard* and the *simulations*. Before proceeding to the part concerning the CFD, let's have a look at what is reported in the dashboard. In here you keep under control the whole application and you have at a glance all the information about your simulations and credits availability.

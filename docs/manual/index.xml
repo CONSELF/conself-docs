@@ -11,22 +11,22 @@
     
     
     <item>
-      <title>Credits management and statistics</title>
-      <link>http://docs.conself.com/manual/credits-management-and-statistics/</link>
+      <title>Simulation Process</title>
+      <link>http://docs.conself.com/manual/simulation-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/credits-management-and-statistics/</guid>
-      <description>CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans. When entering the application you can access two main pages: the dashboard and the simulations. Before proceeding to the part concerning the CFD, let&amp;rsquo;s have a look at what is reported in the dashboard. In here you keep under control the whole application and you have at a glance all the information about your simulations and credits availability.</description>
+      <guid>http://docs.conself.com/manual/simulation-process/</guid>
+      <description>Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:
+Simulation: a mathematical procedure that allows to reproduce in a virtual environment - software - a physical behavior. Compared to laboratory tests, it is a quicker and cheaper process. Ultimately, simulations help engineers validate the hypothesis behind every design phase.</description>
     </item>
     
     <item>
-      <title>CONSELF simulation process</title>
-      <link>http://docs.conself.com/manual/conself-simulation-process/</link>
+      <title>Case Management and Credits</title>
+      <link>http://docs.conself.com/manual/case-management-and-credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/conself-simulation-process/</guid>
-      <description>Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:
-Simulation: a mathematical procedure that allows to reproduce in a virtual environment - software - a physical behavior. Compared to laboratory tests, it is a quicker and cheaper process. Ultimately, simulations help engineers validate the hypothesis behind every design phase.</description>
+      <guid>http://docs.conself.com/manual/case-management-and-credits/</guid>
+      <description>CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans. When entering the application you can access two main pages: the dashboard and the simulations. Before proceeding to the part concerning the CFD, let&amp;rsquo;s have a look at what is reported in the dashboard. In here you keep under control the whole application and you have at a glance all the information about your simulations and credits availability.</description>
     </item>
     
     <item>
@@ -61,6 +61,15 @@ Volume mesh In this section the user is asked to define the mesh algorithm and t
 Fluid Models The first section is about defining the fluid models, turbulence and density in particular.
  Flow type: drop down list from which the user has to select the flow type
  Incompressible: to simulate incompressible fluids like water, oil or air at low velocity.</description>
+    </item>
+    
+    <item>
+      <title>MECH</title>
+      <link>http://docs.conself.com/manual/mech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.conself.com/manual/mech/</guid>
+      <description>[To be completed …]</description>
     </item>
     
     <item>

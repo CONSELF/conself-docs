@@ -1,5 +1,5 @@
 ---
-title: CAD Files
+title: Input CAD Files
 toc: true
 weight: 1
 ---
