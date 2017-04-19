@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hints on CONSELF Docs</title>
-    <link>https://docs.conself.com/hints/</link>
+    <link>http://docs.conself.com/hints/</link>
     <description>Recent content in Hints on CONSELF Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://docs.conself.com/hints/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://docs.conself.com/hints/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CAD Files</title>
-      <link>https://docs.conself.com/hints/cad-files/</link>
+      <link>http://docs.conself.com/hints/cad-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.conself.com/hints/cad-files/</guid>
+      <guid>http://docs.conself.com/hints/cad-files/</guid>
       <description>The generation of a CAD file is one of the most important parts of any CFD simulation. CONSELF can handle multiple geometry types in order to help the user during his task. At the same time, it is recommendable to follow some basics tricks in order to be confident about the final result of the simulation and avoid geometry errors and mesh inconsistencies.
 Create fluid volumes In order to run a CFD simulation you have to generate the volume of fluid.</description>
     </item>
     
     <item>
       <title>Boundary Conditions</title>
-      <link>https://docs.conself.com/hints/boundaries/</link>
+      <link>http://docs.conself.com/hints/boundaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.conself.com/hints/boundaries/</guid>
+      <guid>http://docs.conself.com/hints/boundaries/</guid>
       <description>The table below report an overview of available boundary conditions and specifications. The description specifies the application and the restriction of the boundary conditions.
 Boundary availability depends on the application you are currently using.
     Boundary Description    INLET - Absolute velocity   Inlet velocity - Velocity vector is specified in an absolute reference frame   Uabsx [m/s] - Absolute velocity X Uabsy [m/s] - Absolute velocity Y Uabsz [m/s] - Absolute velocity Z Dₕ [m] - Hydraulic diameter      INLET - Cylindrical velocity   Inlet velocity in a cylindrical reference frame   Centre X [m] - Centre X Centre Y [m] - Centre Y Centre Z [m] - Centre Z Axis X - Normalized axis X Axis Y - Normalized axis Y Axis Z - Normalized axis Z U axial [m/s] - Axial velocity U radial [m/s] - Radial velocity ω [rpm] - Rotational velocity Dₕ [m] - Hydraulic diameter      INLET - Relative velocity   Inlet velocity - Velocity vector is specified in a relative reference frame   Urelx [m/s] - Relative velocity X Urely [m/s] - Relative velocity Y Urelz [m/s] - Relative velocity Z Dₕ [m] - Hydraulic diameter      INLET - Total pressure   Total pressure inlet condition - valid also for outlet condition   p₀ [Pa] - Total Pressure Dₕ [m] - Hydraulic diameter      INLET - Velocity   Inlet velocity - Velocity vector normal to the surface (use negative value for outflow)   U [m/s] - Velocity Dₕ [m] - Hydraulic diameter Φ [%] - Fluid-A concentration      INLET - Velocity and particles   Inlet velocity with specified inlet particles   U [m/s] - Fluid velocity Uxp [m/s] - Particles velocity X Uyp [m/s] - Particles velocity Y Uzp [m/s] - Particles velocity Z Mp [kg/s] - Particles mass flow Dp [m] - Particles dimension Dₕ [m] - Hydraulic diameter      INLET - Velocity fixed temperature   Inlet velocity with specified temperature - Velocity vector normal to the surface   U [m/s] - Velocity T [K] - Temperature Dₕ [m] - Hydraulic diameter      INLET - Velocity vector   Inlet velocity where the user specifies the velocity vector   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z Dₕ [m] - Hydraulic diameter Φ [%] - Fluid-A concentration      INLET - Velocity vector fixed temperature   Inlet velocity where the user specifies the velocity vector and the temperature   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z T [K] - Temperature Dₕ [m] - Hydraulic diameter      INLET - Volume flow   Inlet condition with prescribed volume flow (use negative value for outflow)   Q [m³/s] - Volume flow Dₕ [m] - Hydraulic diameter      OUTLET - Pressure   Outlet condition for pressure - Backscatter flow is denied   p [Pa] - Pressure      WALL - Adiabatic no slip   No slip adiabatic wall   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z      WALL - Fire fixed temperature   No slip wall with prescribed temperature   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z CO [kg/(s·m²)] - CO production T [K] - Temperature      WALL - Fire heat flux   No slip wall with imposed temperature gradient   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z CO [kg/(s·m²)] - CO production T [K/m] - Temperature gradient      WALL - Fire location   No slip wall with imposed temperature gradient   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z CO [kg/(s·m²)] - CO production q [W/m²] - Heat flux      WALL - No slip   No slip adiabatic wall   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z      WALL - No slip fixed temperature   No slip wall with imposed temperature   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z T [K] - Temperature      WALL - No slip rough wall   No slip rough wall   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z Ks [m] - Sand-grain roughness height Cs - Roughness constant      WALL - No slip with CO production   No slip wall with imposed CO production   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z CO [kg/(s·m²)] - CO production      WALL - No slip with heat flux   No slip wall with imposed heat flux per surface unit   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z q [W/m²] - Heat flux      WALL - No slip with heat power   No slip wall with imposed global heat flux   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z Q [W] - Heat power      WALL - Rotating   Rotating adiabatic wall   Centre X [m] - Centre X Centre Y [m] - Centre Y Centre Z [m] - Centre Z Axis X - Normalized axis X Axis Y - Normalized axis Y Axis Z - Normalized axis Z ω [rpm] - Rotational velocity      WALL - Rotating no slip   Rotating adiabatic wall   ω [rpm] - Relative rotational speed      WALL - Rotating no slip rough wall   No slip rotating rough wall   ω [rpm] - Relative rotational speed Ks [m] - Sand-grain roughness height Cs - Roughness constant      </description>
@@ -33,10 +33,10 @@ Boundary availability depends on the application you are currently using.
     
     <item>
       <title>General Errors</title>
-      <link>https://docs.conself.com/hints/errors/</link>
+      <link>http://docs.conself.com/hints/errors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.conself.com/hints/errors/</guid>
+      <guid>http://docs.conself.com/hints/errors/</guid>
       <description>After each STEPS has been performed, it is possible to check its results by clicking on the steps summary button. This will report a summary table where RED items are problematic steps. For each problem an error message, with a brief description and suggested action is reported. For the sake of clarity, we report a more detailed description of the problem and the suggested solution to make even easier to our customers the web-application.</description>
     </item>
     

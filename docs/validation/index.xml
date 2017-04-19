@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Validation on CONSELF Docs</title>
-    <link>https://docs.conself.com/validation/</link>
+    <link>http://docs.conself.com/validation/</link>
     <description>Recent content in Validation on CONSELF Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://docs.conself.com/validation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://docs.conself.com/validation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>3D Fuser</title>
-      <link>https://docs.conself.com/validation/3d-fuser/</link>
+      <link>http://docs.conself.com/validation/3d-fuser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.conself.com/validation/3d-fuser/</guid>
+      <guid>http://docs.conself.com/validation/3d-fuser/</guid>
       <description>[To be completed …]</description>
     </item>
     
     <item>
       <title>Lid Driven Cavity</title>
-      <link>https://docs.conself.com/validation/lid-driven-cavity/</link>
+      <link>http://docs.conself.com/validation/lid-driven-cavity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.conself.com/validation/lid-driven-cavity/</guid>
+      <guid>http://docs.conself.com/validation/lid-driven-cavity/</guid>
       <description>GEOMETRY Input file from File:LidDriven.stp
 File data  In File units select Millimeters In Grouping Criteria STEP select By Curve Entity  Domain  In Flow Type select Internal  MESH2D Surface mesh Complete this section by filling the input data according to the following table
    Boundary name Uniformity level [%] Max element size [m]     BC-Parte1FACE1 70 0.04   BC-Parte1FACE2 70 0.</description>
@@ -32,10 +32,10 @@ File data  In File units select Millimeters In Grouping Criteria STEP select By 
     
     <item>
       <title>Wind Turbine</title>
-      <link>https://docs.conself.com/validation/wind-turbine/</link>
+      <link>http://docs.conself.com/validation/wind-turbine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.conself.com/validation/wind-turbine/</guid>
+      <guid>http://docs.conself.com/validation/wind-turbine/</guid>
       <description>Check this validation of OpenFOAM® against Fluent.
    Courtesy of grantjfan.</description>
     </item>
