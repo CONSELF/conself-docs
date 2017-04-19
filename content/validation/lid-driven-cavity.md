@@ -92,6 +92,6 @@ Complete this section by filling the input data according to the following table
 
 ## RESULTS
 
-{{< figure src="/conself-docs/images/800px-VELOCITY-STREAMLINES_LID_CAVITY.png" alt="Velocity-Magnitude Lid Cavity" title="Velocity-Magnitude Lid Cavity" >}}
+{{< figure src="/images/800px-VELOCITY-STREAMLINES_LID_CAVITY.png" alt="Velocity-Magnitude Lid Cavity" title="Velocity-Magnitude Lid Cavity" >}}
 
-{{< figure src="/conself-docs/images/500px-Comparison_LID_DRIVEN.png" alt="Comparison Lid Driven" title="Comparison Lid Driven" >}}
+{{< figure src="/images/500px-Comparison_LID_DRIVEN.png" alt="Comparison Lid Driven" title="Comparison Lid Driven" >}}

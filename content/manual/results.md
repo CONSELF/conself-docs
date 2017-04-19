@@ -15,4 +15,4 @@ Beside this tool, there are two more functionalities, highlighted in the picture
 The file is downloaded in ZIP format, so uncompress it and open the ".case" file with the abovementioned Paraview.
 {{% /notice %}}
 
-{{< figure src="/conself-docs/images/Result_page.png" alt="Postprocessing options available" title="Postprocessing options available" >}}
+{{< figure src="/images/Result_page.png" alt="Postprocessing options available" title="Postprocessing options available" >}}

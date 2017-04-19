@@ -5,6 +5,9 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 # Clear build folder
 rm -rf docs
 
+# Create CNAME file
+printf "docs.conself.com" > docs/CNAME
+
 # Build the project
 hugo
 

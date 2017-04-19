@@ -21,7 +21,7 @@ Although each CASE simulation depends on the users' needs, CONSELF defines an id
 
 Obviously, in order to perform a certain STEP all previous ones must be completed. Furthermore, it is possible to run multiple STEP from the same precursor (i.e. run multiple CFD by using the same mesh). For this reason, when starting a new STEP it is always required to link it to a precursor, as shown in the picture.
 
-{{< figure src="/conself-docs/images/Step_selection.png" alt="Selection of a precursor MESH 2D step when starting a MESH 3D one" title="Selection of a precursor MESH 2D step when starting a MESH 3D one" >}}
+{{< figure src="/images/Step_selection.png" alt="Selection of a precursor MESH 2D step when starting a MESH 3D one" title="Selection of a precursor MESH 2D step when starting a MESH 3D one" >}}
 
 In the present manual, each of these steps are accurately described and displayed, with examples taken form CONSELF-run tutorials.
 
@@ -46,7 +46,7 @@ After having logged in, the CONSELF dashboard appears on screen. On the menu on 
 Type the first part of the application name to filter the available choices.
 {{% /notice %}}
 
-{{< figure src="/conself-docs/images/CarSimulationCaseCreation.png" alt="Definitions of the zones in which the user interface is divided" title="Definitions of the zones in which the user interface is divided" >}}
+{{< figure src="/images/CarSimulationCaseCreation.png" alt="Definitions of the zones in which the user interface is divided" title="Definitions of the zones in which the user interface is divided" >}}
 
 - *Selection of case*: the user can open a previously created case from the drop-down list.
 	- *Open* button redirects the user to the section/step where they left the last time that particular case was edited.
@@ -59,7 +59,7 @@ Type the first part of the application name to filter the available choices.
 
 ### Disk Management
 
-{{< figure src="/conself-docs/images/Storage_page.png" alt="Disk management interface with reference to the area of the screen and the information displayed" title="Disk management interface with reference to the area of the screen and the information displayed" >}}
+{{< figure src="/images/Storage_page.png" alt="Disk management interface with reference to the area of the screen and the information displayed" title="Disk management interface with reference to the area of the screen and the information displayed" >}}
 
 CONSELF provides also cloud storage to save your remote cases. The storage availability may be different according to the plan you activate in our store. It is possible to check the space available on the disk and manage old cases.
 
@@ -67,7 +67,7 @@ CONSELF provides also cloud storage to save your remote cases. The storage avail
 
 CONSELF guides you through the simulation literally step by step; in fact, in order to complete a simulation, the user has to go through several steps, each of which fulfills a precise task. Given the high flexibility of this method, users, less experienced as well, may take advantage of this philosophy of work: they have the ability to control the process, start over or modify what had previously been done. When a CASE is opened, a STEP interface is accessed, as shown in the picture below.
 
-{{< figure src="/conself-docs/images/General_STEP_page.png" alt="General STEP page" >}}
+{{< figure src="/images/General_STEP_page.png" alt="General STEP page" >}}
 
 The application is generally divided into two sides:
 
