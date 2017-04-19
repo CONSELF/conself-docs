@@ -11,17 +11,21 @@
     
     
     <item>
-      <title>External Link</title>
-      <link>http://docs.conself.com/contributing/external-link/</link>
+      <title>Downloads</title>
+      <link>http://docs.conself.com/contributing/downloads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/contributing/external-link/</guid>
-      <description>Software CAD and 3D modelling Onshape - Fully cloud solution for 3D modelling
-Blender - 3D modelling software popular in FabLabs and 3D printing
-DraftSight - Free 2D CAD software by Dassauld Systemes
-FreeCAD - 3D modelling in an opensource environment
-SketchUp - Another free 3D modelling software
-File formats  STEP files (reference here) Initial Graphics Exchange Specification - IGES files (reference here) STereoLithography - STL standard files, both ASCII and BINARY (reference here)  CFD info and communities CFD Online - An online center for Computational Fluid Dynamics with services like discussion forums, jobs, links and a wiki</description>
+      <guid>http://docs.conself.com/contributing/downloads/</guid>
+      <description>CAD Files Ahmed_bb.stl (31 KB)
+Airfoil.stp (74 KB)
+Airplane.stl (6.3 MB)
+ButterflyValve.stp (84 KB)
+CarParkExample.stp (199 KB)
+CPU.stp (135 KB)
+LCA_geometrysimplified.zip (6.3 MB)
+LidDriven.stp (14 KB)
+Sphere.stl (48 KB)
+UrbanMicroclimateSTLFile.stl (34 KB)</description>
     </item>
     
     <item>
@@ -62,6 +66,20 @@ Boundary availability depends on the application you are currently using.
       
       <guid>http://docs.conself.com/manual/case-management-and-credits/</guid>
       <description>CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans. When entering the application you can access two main pages: the dashboard and the simulations. Before proceeding to the part concerning the CFD, let&amp;rsquo;s have a look at what is reported in the dashboard. In here you keep under control the whole application and you have at a glance all the information about your simulations and credits availability.</description>
+    </item>
+    
+    <item>
+      <title>External Link</title>
+      <link>http://docs.conself.com/contributing/external-link/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.conself.com/contributing/external-link/</guid>
+      <description>Software CAD and 3D modelling Onshape - Fully cloud solution for 3D modelling
+Blender - 3D modelling software popular in FabLabs and 3D printing
+DraftSight - Free 2D CAD software by Dassauld Systemes
+FreeCAD - 3D modelling in an opensource environment
+SketchUp - Another free 3D modelling software
+File formats  STEP files (reference here) Initial Graphics Exchange Specification - IGES files (reference here) STereoLithography - STL standard files, both ASCII and BINARY (reference here)  CFD info and communities CFD Online - An online center for Computational Fluid Dynamics with services like discussion forums, jobs, links and a wiki</description>
     </item>
     
     <item>

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://docs.conself.com/contributing/external-link/</loc>
+    <loc>http://docs.conself.com/contributing/downloads/</loc>
   </url>
   
   <url>
@@ -23,6 +23,10 @@
   
   <url>
     <loc>http://docs.conself.com/manual/case-management-and-credits/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.conself.com/contributing/external-link/</loc>
   </url>
   
   <url>

@@ -11,6 +11,24 @@
     
     
     <item>
+      <title>Downloads</title>
+      <link>http://docs.conself.com/contributing/downloads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.conself.com/contributing/downloads/</guid>
+      <description>CAD Files Ahmed_bb.stl (31 KB)
+Airfoil.stp (74 KB)
+Airplane.stl (6.3 MB)
+ButterflyValve.stp (84 KB)
+CarParkExample.stp (199 KB)
+CPU.stp (135 KB)
+LCA_geometrysimplified.zip (6.3 MB)
+LidDriven.stp (14 KB)
+Sphere.stl (48 KB)
+UrbanMicroclimateSTLFile.stl (34 KB)</description>
+    </item>
+    
+    <item>
       <title>External Link</title>
       <link>http://docs.conself.com/contributing/external-link/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
