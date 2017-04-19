@@ -4,3 +4,18 @@
     /* background: #323232; */
     border-color: #ff671b;
 }
+
+/* figure img */
+.figure-50 > img {
+	width: 50%;
+}
+.figure-80 > img {
+	width: 80%;
+}
+
+/* youtube player */
+.video-player {
+	text-align: center;
+}
+.youtube-player {
+}

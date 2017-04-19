@@ -6,7 +6,7 @@ weight: 3
 
 After each STEPS has been performed, it is possible to check its results by clicking on the steps summary button. This will report a summary table where RED items are problematic steps. For each problem an error message, with a brief description and suggested action is reported. For the sake of clarity, we report a more detailed description of the problem and the suggested solution to make even easier to our customers the web-application.
  
-{{< figure src="/images/STEPS_completed.png" alt="STEPS completed" >}}
+{{< figure src="/images/STEPS_completed.png" alt="STEPS completed" class="figure-80" >}}
 
 ## Common GEOMETRY errors
 

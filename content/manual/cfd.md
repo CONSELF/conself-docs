@@ -53,7 +53,7 @@ Properties and parameters to insert vary with the Turbulence
 
 The boundary conditions are the fundamental stage of the CFD simulations. CONSELF gives you a multiple choice of boundaries, each of which is target for the peculiar application you are currently using. Here you are a brief summary of what you are required to insert.
 
-{{< figure src="/images/BC_selection.png" alt="Velocity inlet boundary condition application to selected boundary \"asmo\"" title="Velocity inlet boundary condition application to selected boundary \"asmo\"" >}}
+{{< figure src="/images/BC_selection.png" alt="Velocity inlet boundary condition application to selected boundary \"asmo\"" title="Velocity inlet boundary condition application to selected boundary \"asmo\"" class="figure-50" >}}
 
 In this section it is possible to specify the boundary condition to apply to the flow. For instance, it is possible to define an inlet, an outlet or a wall. In order to do that the user has to specify for each flow variable its value (or gradient) at a specific boundary.
 
