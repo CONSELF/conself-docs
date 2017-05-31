@@ -13,7 +13,7 @@ Thanks to the simplicity of Hugo, this page is as empty as this theme needs requ
 
 Just download [Hugo](https://github.com/spf13/hugo/releases) binary for your OS (Windows, Linux, Mac) : it’s that simple.
 
-Check that your Hugo version installed is ```0.20.2``` with ```hugo version```.
+Check that your Hugo version installed is ```0.21``` with ```hugo version```.
 
 ## Hugo commands
 
