@@ -6,10 +6,10 @@
 }
 
 /* figure img */
-.figure-50 > img {
+.figure-50 > img, .figure-50 > a > img {
 	width: 50%;
 }
-.figure-80 > img {
+.figure-80 > img, .figure-80 > a > img {
 	width: 80%;
 }
 
