@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.20.2" />
+    <meta name="generator" content="Hugo 0.21" />
     <meta name="description" content="CONSELF Docs">
 <meta name="author" content="Alberto Palazzin">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
     
     <title>Common Errors</title>
     <link href="http://docs.conself.com/css/nucleus.css" rel="stylesheet">
@@ -286,9 +287,10 @@
         <section id="body">
         <div id="overlay"></div>
 
-        <div class="padding highlightable">
-
-            <div id="top-bar">
+        <div class="padding highlightable sticky-parent">
+            
+            <div class="sticky-spacer">
+              <div id="top-bar">
               
                 
                 
@@ -341,6 +343,7 @@
 </div>
 
               
+            </div>
 
             </div>
             
@@ -408,7 +411,7 @@
             <td>
                 MESH
             </td>
-            <td>Overlapping surfaces in input geometry file. Remember to simplify them as explained in <a href="/index.php?title=CAD_file" title="CAD file">CAD_file</a>. For IGES files, try also the <i>STEP / IGES file healing</i> to sew faces into a single solid.</td>
+            <td>Overlapping surfaces in input geometry file. Remember to simplify them as explained in <a href="http://docs.conself.com/hints/input-cad-files/">Input CAD Files</a>. For IGES files, try also the <i>STEP / IGES file healing</i> to sew faces into a single solid.</td>
         </tr>
         <tr>
             <td>
@@ -421,17 +424,7 @@
             </td>
             <td>
                 Irregular STL/OBJ file uploaded. This may be due to non watertight models, very elongated triangles, etc. Try exporting a STEP or IGES file if possible.
-                <div class="center">
-                    <div class="thumb tnone">
-                        <div class="thumbinner" style="width:182px;">
-                            <a href="/index.php?title=File:Stl2_720.png" class="image"><img alt="" src="/images/thumb/f/fa/Stl2_720.png/180px-Stl2_720.png" width="180" height="93" class="thumbimage" srcset="/images/thumb/f/fa/Stl2_720.png/270px-Stl2_720.png 1.5x, /images/thumb/f/fa/Stl2_720.png/360px-Stl2_720.png 2x"></a>  
-                            <div class="thumbcaption">
-                                <div class="magnify"><a href="/index.php?title=File:Stl2_720.png" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt=""></a></div>
-                                If triangles overlap, the definition of a unique volume is not possible. In such a case try using HEXAHEDRAL mesh if possible.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <figure><img src="/images/Stl2_720.png"><figcaption><h4>If triangles overlap, the definition of a unique volume is not possible. In such a case try using HEXAHEDRAL mesh if possible.</h4></figcaption></figure>
             </td>
         </tr>
         <tr>
@@ -621,8 +614,147 @@
     </tbody>
 </table>
 
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+      
+      
+      </div>
+    </div>
+
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+    
+      
+        
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+      
+        
+      
+    
+      
+        
+      
+      
+        
+      
+        
+      
+    
+    
+
+    <div id="navigation">
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+                <a class="nav nav-prev" href="/hints/boundary-conditions/"> <i class="fa fa-chevron-left"></i></a>
+              
+            
+            
+              
+                <a class="nav nav-next" href="/validation/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+              
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="http://docs.conself.com/js/clipboard.min.js"></script>
+    <script src="http://docs.conself.com/js/perfect-scrollbar.min.js"></script>
+    <script src="http://docs.conself.com/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="http://docs.conself.com/js/jquery.sticky-kit.min.js"></script>
+    <script src="http://docs.conself.com/js/featherlight.min.js"></script>
+    <script src="http://docs.conself.com/js/html5shiv-printshiv.min.js"></script>
+    <script src="http://docs.conself.com/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="http://docs.conself.com/js/modernizr.custom.71422.js"></script>
+    <script src="http://docs.conself.com/js/learn.js"></script>
+    <script src="http://docs.conself.com/js/hugo-learn.js"></script>
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 <script type="text/x-mathjax-config">
@@ -630,3 +762,6 @@ MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
 </script>
+  </body>
+</html>
+

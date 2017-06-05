@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.conself.com/validation/lid-driven-cavity/</guid>
-      <description>GEOMETRY Input file from File:LidDriven.stp
+      <description>GEOMETRY Input file from LidDriven.stp (14 KB)
 File data  In File units select Millimeters In Grouping Criteria STEP select By Curve Entity  Domain  In Flow Type select Internal  MESH2D Surface mesh Complete this section by filling the input data according to the following table
    Boundary name Uniformity level [%] Max element size [m]     BC-Parte1FACE1 70 0.04   BC-Parte1FACE2 70 0.</description>
     </item>
