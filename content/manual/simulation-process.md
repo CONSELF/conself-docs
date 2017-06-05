@@ -75,4 +75,4 @@ The application is generally divided into two sides:
 
 - *Right side*: view of the simulation results up to the current step
 
-It is fundamental to note the button (GREEN or RED) on the top right of the page named *Steps completed*. By clicking it is possible to access a summary of performed steps with error messages, settings used and other information useful to keep improving your simulation. We recommend to **check the [error](:Errors "wikilink")** to have a quick overview of the most common error and their solution.
+It is fundamental to note the button (GREEN or RED) on the top right of the page named *Steps completed*. By clicking it is possible to access a summary of performed steps with error messages, settings used and other information useful to keep improving your simulation. We recommend to **check the [error]({{< ref "common-errors.md" >}})** to have a quick overview of the most common error and their solution.

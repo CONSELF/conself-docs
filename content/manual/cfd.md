@@ -61,7 +61,7 @@ In this section it is possible to specify the boundary condition to apply to the
 
 - *BC TYPE list*: a list of available boundary conditions to be assigned to every surface. Every choice of this list gives access to a certain number of parameters to be defined in order to process it correctly.
 
-**In order to get hints and details about boundary conditions you may encounter check [this page](:Boundaries "wikilink").**
+**In order to get hints and details about boundary conditions you may encounter check [this page]({{< ref "boundary-conditions.md" >}}).**
 
 {{% notice info %}}
 By default every surface is assigned an adiabatic no-slip wall boundary condition.

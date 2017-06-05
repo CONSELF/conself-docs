@@ -23,6 +23,5 @@ Thanks to them <3
 
 ## TODO
 
-- Navigation prev/next arrows
 - Search in site
 - Add optional button to create doc issue (like github)

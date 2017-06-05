@@ -54,7 +54,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 			<td>
 				MESH
 			</td>
-			<td>Overlapping surfaces in input geometry file. Remember to simplify them as explained in <a href="/index.php?title=CAD_file" title="CAD file">CAD_file</a>. For IGES files, try also the <i>STEP / IGES file healing</i> to sew faces into a single solid.</td>
+			<td>Overlapping surfaces in input geometry file. Remember to simplify them as explained in <a href="http://docs.conself.com/hints/input-cad-files/">Input CAD Files</a>. For IGES files, try also the <i>STEP / IGES file healing</i> to sew faces into a single solid.</td>
 		</tr>
 		<tr>
 			<td>
@@ -67,17 +67,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 			</td>
 			<td>
 				Irregular STL/OBJ file uploaded. This may be due to non watertight models, very elongated triangles, etc. Try exporting a STEP or IGES file if possible.
-				<div class="center">
-					<div class="thumb tnone">
-						<div class="thumbinner" style="width:182px;">
-							<a href="/index.php?title=File:Stl2_720.png" class="image"><img alt="" src="/images/thumb/f/fa/Stl2_720.png/180px-Stl2_720.png" width="180" height="93" class="thumbimage" srcset="/images/thumb/f/fa/Stl2_720.png/270px-Stl2_720.png 1.5x, /images/thumb/f/fa/Stl2_720.png/360px-Stl2_720.png 2x"></a>  
-							<div class="thumbcaption">
-								<div class="magnify"><a href="/index.php?title=File:Stl2_720.png" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt=""></a></div>
-								If triangles overlap, the definition of a unique volume is not possible. In such a case try using HEXAHEDRAL mesh if possible.
-							</div>
-						</div>
-					</div>
-				</div>
+				<figure><img src="/images/Stl2_720.png"><figcaption><h4>If triangles overlap, the definition of a unique volume is not possible. In such a case try using HEXAHEDRAL mesh if possible.</h4></figcaption></figure>
 			</td>
 		</tr>
 		<tr>

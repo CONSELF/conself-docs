@@ -6,7 +6,7 @@ weight: 2
 
 ## GEOMETRY
 
-Input file from File:LidDriven.stp
+Input file from [LidDriven.stp](/files/LidDriven.stp) (14 KB)
 
 ### File data
 
