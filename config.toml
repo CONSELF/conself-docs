@@ -4,6 +4,7 @@ title = "CONSELF Docs"
 theme = "hugo-theme-learn"
 MetaDataFormat = "yaml"
 publishDir = "docs"
+googleAnalytics = "UA-51513359-1"
 
 [params]
   editURL = "https://github.com/CONSELF/conself-docs/tree/master/content/"
