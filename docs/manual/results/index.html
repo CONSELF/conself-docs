@@ -351,22 +351,18 @@
 <p></center>
 Beside this tool, there are two more functionalities, highlighted in the picture: residual plot and results download. The first one displays the residuals of pressure and velocity fields obtained during the calculation, the latter instead allows to download the results in your local machine. This gives you access to advanced postprocessing functionalities with software such as <a href="http://www.paraview.org/download/">ParaView</a>, available for Unix, Windows and OSx systems.</p>
 
-<div class="notices info" ><p>The file is downloaded in ZIP format, so uncompress it and open the &ldquo;.case&rdquo; file with the abovementioned Paraview.</p>
+<div class="notices info" ><p>The file you download is generally a ZIP file with the following information:
+- <em>EnSight</em> folder: simulation results files in ensight format
+- <em>ParaView</em> folder: simulation results files in VTK format
+- <em>RotatingZone</em> folder: extraction of the rotating zone selected with volume modelling in VTK format
+- <em>residuals</em> folder: text files with residuals tabulated values
+- <em>yPlus</em> folder: text files with y+ tabulated values in all wall surfaces
+- <em>wallShearStress</em> folder: text files with wall shear stress tabulated values in all wall surfaces
+- <em>residuals.png</em> image: residual plot
+- <em>frequencies.csv</em> file: CSV file with all the frequencies calculated</p>
+
+<p>All these data are available or not depending on the simulation you are running and on the settings you chose.</p>
 </div>
-
-
-
-<figure >
-    
-        <img src="/images/Result_page.png" alt="Postprocessing options available" />
-    
-    
-    <figcaption>
-        <h4>Postprocessing options available</h4>
-        
-    </figcaption>
-    
-</figure>
 
 
 

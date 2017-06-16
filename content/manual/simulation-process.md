@@ -39,8 +39,9 @@ After having logged in, the CONSELF dashboard appears on screen. On the menu on 
 |CFD|TURBO - SRF PUMPS|Single reference frame (rotating) incompressible flow. Steady simulation for pumps.|
 |CFD|OIL&GAS - FLOW WITH PARTICLES|Incompressible flow with with solid particles transported.|
 |CFD|OIL&GAS - MULTIPHASE FLOW|Incompressible flow of two inmiscible species.|
-|CFD|HVAC - JET FANS|CO and FIRE scenarios for indoor car park simulations.|
-|MECH|STATIC|Mechanical simulation using an isotropic linear elastic material.|
+|CFD|HVAC - PASSIVE SCALAR TRANSPORT|Passive scalar transport for compressible and incompressible flows.|
+|MECH|STATIC - LINEAR ELASTIC|Mechanical simulation using an isotropic linear elastic material.|
+|MECH|DYNAMIC - FREQUENCY|Modal analysis of an isotropic linear elastic material.|
 
 {{% notice info %}}
 Type the first part of the application name to filter the available choices.
