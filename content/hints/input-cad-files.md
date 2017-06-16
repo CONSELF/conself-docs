@@ -10,8 +10,6 @@ The generation of a CAD file is one of the most important parts of any CFD simul
 
 In order to run a CFD simulation you have to generate the **volume of fluid**. In other words you have to model the geometry occupied by the fluid and not by the solid. Compared to standard modelling, *CFD usually requires the negative of the solid model*. The picture shows a pump diffuser solid model (incorrect) compared against its fluid model (correct for a CFD simulation).
 
-{{< figure src="/images/SolidVsFluid.png" alt="Solid vs Fluid" class="figure-80" >}}
-
 {{< youtube zqbSQJEEYXU >}}
 
 ### Simplify your geometry
@@ -24,16 +22,16 @@ In order to run a CFD simulation you have to generate the **volume of fluid**. I
 
 **Avoid narrow angles** by creating fillets with a radius of, at least, 0.1% times the maximum size of your 3D model. Very often, this CFD restriction is also a structural problem when actually making the prototype.
 
-{{< figure src="/images/NarrowAngles.png" alt="Narrow Angles" class="figure-80" >}}
+{{< figure src="/images/NarrowAngles.png" alt="Narrow Angles" class="figure-30" >}}
 
 ### Colors are helpful
 
 **Define colors carefully** as they help you when applying boundary conditions. In the picture an example of three colors: with them it is possible to define different meshing and CFD parameters on different surfaces. CONSELF also handles different type of boundaries (based on surfaces) by selecting the appropriate option in the *GEOMETRY* step.
 
-{{< figure src="/images/GeometryColors.png" alt="Geometry Colors" class="figure-80" >}}
+{{< figure src="/images/GeometryColors.png" alt="Geometry Colors" class="figure-30" >}}
 
 ### Use assembly for multiple elements
 
 CONSELF also accepts **assembly STEP** files - very useful to use in case you have multiple object with the same shape or series that share boundary conditions. Remember that, also for assembly, you need to specify the fluid volume. **N.B.** The boolean operation (i.e. removing the jet fans volume from the room volume) is automatically performed by the *GEOMETRY* step.
 
-{{< figure src="/images/Assembly.png" alt="Assembly.png" class="figure-80" >}}
+{{< figure src="/images/Assembly.png" alt="Assembly.png" class="figure-30" >}}

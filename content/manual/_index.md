@@ -6,6 +6,4 @@ weight: 1
 
 # Manual
 
-CFD simulations are very powerful instruments: the models they involve are extremely accurate and, thus, close attention is needed when setting up the case. Every section of the process presents some specific features that have to be addressed bearing few (but important) concepts in mind.
-
-This page serves precisely the purpose of giving the user general advice on how to approach each and every step of the CFD study setup with CONSELF CFD on Cloud. Every user, from novices to pros, will find fundamental tips to help them reach a state of the art result. In order to guide the user through each GUI parameter, a detailed explanation of every field is reported here.
+Thanks to CONSELF you can now start your own CAE (Computer Aided Engineering) workstation in just few clicks. CONSELF, in fact, brings you the most innovative feature of cloud computing and opensource software. CONSELF is in fact a web-application which allows to run CFD/FEM simulations directly from your browser. The software used to run the calculations are [OpenFOAM®](https://openfoam.org/) and [CodeAster®](http://www.code-aster.org/). These two tools represent the most advanced software for CAE simulations currently available.
