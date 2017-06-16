@@ -101,15 +101,15 @@
         
         <ul>
           
-            <li class="dd-item active" data-nav-id="/manual/simulation-process/">
-              <a href="/manual/simulation-process/">
-                <span>Simulation Process     </i></span>
+            <li class="dd-item " data-nav-id="/manual/account/">
+              <a href="/manual/account/">
+                <span>Account     </i></span>
               </a>
             </li>
           
-            <li class="dd-item " data-nav-id="/manual/case-management-and-credits/">
-              <a href="/manual/case-management-and-credits/">
-                <span>Case Management and Credits     </i></span>
+            <li class="dd-item active" data-nav-id="/manual/simulation-process/">
+              <a href="/manual/simulation-process/">
+                <span>Simulation Process     </i></span>
               </a>
             </li>
           
@@ -331,12 +331,15 @@
 <ul>
 <li>
 <ul>
+<li><a href="#introduction">INTRODUCTION</a>
+<ul>
 <li>
 <ul>
-<li><a href="#case-management">Case Management</a></li>
-<li><a href="#disk-management">Disk Management</a></li>
-<li><a href="#conself-step-by-step">CONSELF step by step</a></li>
+<li><a href="#case-management">CASE MANAGEMENT</a></li>
+<li><a href="#disk-management">DISK MANAGEMENT</a></li>
 </ul></li>
+</ul></li>
+<li><a href="#conself-step-by-step">CONSELF STEP BY STEP</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -354,6 +357,8 @@
                 
 
 
+
+<h2 id="introduction">INTRODUCTION</h2>
 
 <p>Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:</p>
 
@@ -377,11 +382,11 @@
 
 <figure >
     
-        <img src="/images/Step_selection.png" alt="Selection of a precursor MESH 2D step when starting a MESH 3D one" />
+        <img src="/images/Step_selection.png" alt="Selection of a precursor MESH step when starting a CFD one" />
     
     
     <figcaption>
-        <h4>Selection of a precursor MESH 2D step when starting a MESH 3D one</h4>
+        <h4>Selection of a precursor MESH step when starting a CFD one</h4>
         
     </figcaption>
     
@@ -390,20 +395,35 @@
 
 <p>In the present manual, each of these steps are accurately described and displayed, with examples taken form CONSELF-run tutorials.</p>
 
-<h3 id="case-management">Case Management</h3>
+<h4 id="case-management">CASE MANAGEMENT</h4>
 
-<p>After having logged in, the CONSELF dashboard appears on screen. On the menu on the left side, the last entry is the <strong>Simulations</strong> tab. Click on it to be redirected to the simulations front page, shown in the following figure. There are three main sections: two in the upper part and one in the bottom part of the figure.</p>
+<p>After having logged in, the CONSELF dashboard appears on screen. On the menu on the left side, the last entry is the <strong>Simulations</strong> tab. Click on it to be redirected to the simulations front page, shown in the following figure. There are three main sections: two in the upper part and one in the bottom part as also highlighted by the following image.</p>
+
+
+<figure class="figure-50">
+    
+        <img src="/images/CarSimulationCaseCreation.png" alt="Definitions of the zones in which the user interface is divided" />
+    
+    
+    <figcaption>
+        <h4>Definitions of the zones in which the user interface is divided</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>When defining a new case, the user is requested a certain number of inputs:</p>
 
 <ul>
-<li><em>Creation of new case</em>: the case name has to be inserted in the edit box and must be no longer than 255 characters.</li>
-<li><em>Application selection</em> drop-down menu. This menu defines the application to be used in the current case among the available ones.</li>
-<li><em>Create</em> button redirects the user to <a href="http://docs.conself.com/manual/geometry/#file-data">Section A</a> of the GEOMETRY step of the newly created case.</li>
+<li><em>Case name</em>: the case name has to be inserted in the edit box and must be no longer than 255 characters.</li>
+<li><em>Application selection</em> drop-down menu. This menu defines the application to be used in the current case among the available ones. The following table clearly shows the currently available applications and the simulation feature the user access when using it.</li>
 </ul>
 
 <table>
 <thead>
 <tr>
-<th>Field name</th>
+<th>Sector</th>
 <th>Application name</th>
 <th>Main features</th>
 </tr>
@@ -454,18 +474,34 @@
 </tbody>
 </table>
 
+<ul>
+<li><em>Create</em> button redirects the user to the <a href="http://docs.conself.com/manual/geometry/">GEOMETRY</a> step of the created case.</li>
+</ul>
+
 <div class="notices info" ><p>Type the first part of the application name to filter the available choices.</p>
 </div>
 
 
+<p>On the right handside, it is possible to access previously created simulation which have not been erased yet. All the data are in fact stored using the cloud <a href="http://docs.conself.com/manual/simulation-process/#disk-management">space available</a> according to your cloud account.</p>
 
-<figure >
+<ul>
+<li><em>Selection of case</em>: the user can open a previously created case from the drop-down list.
+
+<ul>
+<li><em>Open</em> button redirects the user to the section/step where they left the last time that particular case was edited.</li>
+</ul></li>
+</ul>
+
+<p>The bottom part of this page is actually peculiar because it gives quite a few information about the steps which are submitted to the system to be processed.</p>
+
+
+<figure class="figure-80">
     
-        <img src="/images/CarSimulationCaseCreation.png" alt="Definitions of the zones in which the user interface is divided" />
+        <img src="/images/ProgressBar.png" alt="Progress bar" />
     
     
     <figcaption>
-        <h4>Definitions of the zones in which the user interface is divided</h4>
+        <h4>Progress bar</h4>
         
     </figcaption>
     
@@ -473,26 +509,40 @@
 
 
 <ul>
-<li><p><em>Selection of case</em>: the user can open a previously created case from the drop-down list.</p>
-
-<ul>
-<li><em>Open</em> button redirects the user to the section/step where they left the last time that particular case was edited.</li>
-</ul></li>
-
-<li><p><em>Cases in progress</em>: all running simulations are shown in a table with the following details</p>
-
-<ul>
 <li><em>Case name</em>: as inserted by the user during the creation</li>
-<li><em>Step</em>: the step that is running in that moment</li>
+<li><em>Step type</em>: the step that is running in that moment</li>
+<li><em>Step name</em>: the name assigned to the running step</li>
+<li><em>State</em>: Status of the current step. It can be one among
+
+<ul>
+<li>PREPARED -&gt; Process is waiting for the system to start it</li>
+<li>RUNNING -&gt; Process is running</li>
+</ul></li>
 <li><em>Progress</em>: both progress and percentage bars show the completion status for a given step</li>
 <li><em>ETA</em>: estimated time remaining to the end of the current step</li>
+<li><em>Operations</em>: functionalities to interact with the running process and in particular:
+
+<ul>
+<li>Residuals button -&gt; Check the residuals graph of the running step (only for CFD and MECH steps)</li>
+<li>Stop button -&gt; Stop the execution of the current process</li>
 </ul></li>
 </ul>
 
-<h3 id="disk-management">Disk Management</h3>
+<p>It is important to note that there is no limit of number of contemporary running steps a user can have, as long as there are sufficient credits.</p>
+
+<h4 id="disk-management">DISK MANAGEMENT</h4>
+
+<p>CFD and FEM simulations are quite expencive in terms of storage resources. According to the subscription you are using, a limit is applied to the storage available to your user. If you filled the amount of storage available it is possible to:</p>
+
+<ul>
+<li><a href="http://docs.conself.com/manual/results/#downloads">Download</a> the results of completed case in your local machine</li>
+<li>Erase old cases which are no more in use.</li>
+</ul>
+
+<p>Under the <strong>storage</strong> page, the user can find analytical data about his storage usage. At the same time it is possible to delete old cases by selecting them one by one. In this way you are removing non necessary data and you can free more storage space for future cases.</p>
 
 
-<figure >
+<figure class="figure-50">
     
         <img src="/images/Storage_page.png" alt="Disk management interface with reference to the area of the screen and the information displayed" />
     
@@ -505,14 +555,12 @@
 </figure>
 
 
-<p>CONSELF provides also cloud storage to save your remote cases. The storage availability may be different according to the plan you activate in our store. It is possible to check the space available on the disk and manage old cases.</p>
-
-<h3 id="conself-step-by-step">CONSELF step by step</h3>
+<h2 id="conself-step-by-step">CONSELF STEP BY STEP</h2>
 
 <p>CONSELF guides you through the simulation literally step by step; in fact, in order to complete a simulation, the user has to go through several steps, each of which fulfills a precise task. Given the high flexibility of this method, users, less experienced as well, may take advantage of this philosophy of work: they have the ability to control the process, start over or modify what had previously been done. When a CASE is opened, a STEP interface is accessed, as shown in the picture below.</p>
 
 
-<figure >
+<figure class="figure-50">
     
         <img src="/images/General_STEP_page.png" alt="General STEP page" />
     
@@ -523,12 +571,45 @@
 <p>The application is generally divided into two sides:</p>
 
 <ul>
-<li><p><em>Left side</em>: current step options to be defined by the user</p></li>
-
-<li><p><em>Right side</em>: view of the simulation results up to the current step</p></li>
+<li><em>Left side</em>: current step options to be defined by the user</li>
+<li><em>Right side</em>: view of the simulation results up to the current step</li>
 </ul>
 
-<p>It is fundamental to note the button (GREEN or RED) on the top right of the page named <em>Steps completed</em>. By clicking it is possible to access a summary of performed steps with error messages, settings used and other information useful to keep improving your simulation. We recommend to <strong>check the <a href="http://docs.conself.com/hints/common-errors/">error</a></strong> to have a quick overview of the most common error and their solution.</p>
+<p>A fundamental part of the application is given by the <em>Steps completed</em> button, which gives access to a detailed summary table of the performed steps within the current case. After clicking this button a new windows pops-up with one row for every step submitted in the current case.</p>
+
+
+<figure class="figure-80">
+    
+        <img src="/images/SimulationStep.png" alt="Summary table of all the performed steps within a single case." />
+    
+    
+</figure>
+
+
+<p>The data available for each step are:</p>
+
+<ul>
+<li><em>Step Type</em>: type of the performed step</li>
+<li><em>Operations</em>: a set of functionalities to interact with the current step
+
+<ul>
+<li><em>View settings</em>: opens the settings used</li>
+<li><em>Reload settings</em>: reload the settings defined in the current step in a new one. This option is only available if we are now in a new step with the same tipe as the one we want to reload.</li>
+<li><em>Initialize CFD</em>: initialize a new CFD step from the results of a previous one. This option is only available if we are now in a new CFD step.</li>
+<li><em>View problems</em>: in case of <em>ERROR</em> or <em>WARNING</em>, it opens a new pop-up window where the user can visualize where the problem was.</li>
+</ul></li>
+<li><em>Step name</em>: name assigned to the current step. To edit the name double click this field.</li>
+<li><em>Result code</em>: result code obtained after the execution is completed. It can be one among
+
+<ul>
+<li><em>SUCCESS</em></li>
+<li><em>ERROR</em></li>
+<li><em>WARNING</em></li>
+</ul></li>
+<li><em>Result message</em>: communication and suggestion of action to take in case of <em>ERROR</em> or <em>WARNING</em>.</li>
+</ul>
+
+<p>To discover the resolution of the most common error experienced when using CONSELF web-application check the <a href="http://docs.conself.com/hints/common-errors/">error page</a>.</p>
 
 
       
@@ -607,18 +688,18 @@
           
         
           
-            
-              
-                <a class="nav nav-prev" href="/manual/"> <i class="fa fa-chevron-left"></i></a>
-              
-            
-            
-              
-                <a class="nav nav-next" href="/manual/case-management-and-credits/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
-              
-            
-          
         
+          
+            
+              
+                <a class="nav nav-prev" href="/manual/account/"> <i class="fa fa-chevron-left"></i></a>
+              
+            
+            
+              
+                <a class="nav nav-next" href="/manual/geometry/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+              
+            
           
         
           

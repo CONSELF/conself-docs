@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://docs.conself.com/manual/account/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.conself.com/contributing/downloads/</loc>
   </url>
   
@@ -15,15 +19,7 @@
   </url>
   
   <url>
-    <loc>http://docs.conself.com/manual/simulation-process/</loc>
-  </url>
-  
-  <url>
     <loc>http://docs.conself.com/hints/boundary-conditions/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.conself.com/manual/case-management-and-credits/</loc>
   </url>
   
   <url>
@@ -36,6 +32,10 @@
   
   <url>
     <loc>http://docs.conself.com/validation/lid-driven-cavity/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.conself.com/manual/simulation-process/</loc>
   </url>
   
   <url>

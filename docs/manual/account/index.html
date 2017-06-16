@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Case Management and Credits</title>
+    <title>Account</title>
     <link href="http://docs.conself.com/css/nucleus.css" rel="stylesheet">
     <link href="http://docs.conself.com/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://docs.conself.com/css/hybrid.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     {display:none !important;}</style>
     <link href="/css/conself.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/manual/case-management-and-credits/">
+  <body class="" data-url="/manual/account/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -101,15 +101,15 @@
         
         <ul>
           
-            <li class="dd-item " data-nav-id="/manual/simulation-process/">
-              <a href="/manual/simulation-process/">
-                <span>Simulation Process     </i></span>
+            <li class="dd-item active" data-nav-id="/manual/account/">
+              <a href="/manual/account/">
+                <span>Account     </i></span>
               </a>
             </li>
           
-            <li class="dd-item active" data-nav-id="/manual/case-management-and-credits/">
-              <a href="/manual/case-management-and-credits/">
-                <span>Case Management and Credits     </i></span>
+            <li class="dd-item " data-nav-id="/manual/simulation-process/">
+              <a href="/manual/simulation-process/">
+                <span>Simulation Process     </i></span>
               </a>
             </li>
           
@@ -296,7 +296,7 @@
                 
                 
               <div id="top-github-link">
-                  <a class="github-link" href="https://github.com/CONSELF/conself-docs/tree/master/content/manual/case-management-and-credits.md" target="blank">
+                  <a class="github-link" href="https://github.com/CONSELF/conself-docs/tree/master/content/manual/account.md" target="blank">
                     <i class="fa fa-code-fork"></i>
                     Edit this page
                   </a>
@@ -322,12 +322,28 @@
                     
                   
                 
-                <span itemprop="title"> Case Management and Credits</span>
+                <span itemprop="title"> Account</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#subscription">SUBSCRIPTION</a>
+<ul>
+<li>
+<ul>
+<li><a href="#credits">CREDITS</a></li>
+<li><a href="#subscription-activation">SUBSCRIPTION ACTIVATION</a></li>
+<li><a href="#invoices-and-order-status">INVOICES AND ORDER STATUS</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#credits-balance">CREDITS BALANCE</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -338,17 +354,61 @@
             
               <div id="body-inner">
                 
-                <h1>Case Management and Credits</h1>
+                <h1>Account</h1>
                 
 
+
+
+<h2 id="subscription">SUBSCRIPTION</h2>
+
 <p>CONSELF it is a <strong>pay-per-use CFD</strong> application available via browser. In order to enjoy this service, you must <strong>activate</strong> one of the <a href="https://conself.com/product/subscriptions/">available plans</a>.</p>
+
+
+<figure class="figure-50">
+    
+        <img src="/images/pricing.jpg" alt="Subscription plans" />
+    
+    
+    <figcaption>
+        <h4>Subscription plans</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>The plans currently abailable are mainly three:</p>
+
+<ul>
+<li><p><strong>WELCOME</strong>: free plan, every user can activate. No credit card data required. With a free plan you can access up to 100 credits every month and 10GB of cloud storage. The main limitation regards the lack of commercial features, which are frozen for the current plan.</p></li>
+
+<li><p><strong>FREELANCE</strong> and <strong>ENTERPRISE</strong>: these two plans can be activated automatically. They both give access to the complete set of commercial features present in the application and their difference regards the number of credits given every month to the user: 250 for the FREELANCE and 1500 for the ENTERPRISE.</p></li>
+</ul>
+
+<h4 id="credits">CREDITS</h4>
+
+<p>With the subscription the user obtains a certain number of credits. Since each credit represents 1 CPU/hour of usage of CONSELF hardware resources, it is not possible to use the web application without a subscription activated. The credits calculation only starts when the proces is actually submitted and in <em>RUNNING</em> status - so the whole settings phase has absolutely no influence on the amount of credits used.</p>
+
+<div class="notices info" ><p>In case the process returns an ERROR message, the credits used are not charged to the user balance.</p>
+</div>
+
+
+<h4 id="subscription-activation">SUBSCRIPTION ACTIVATION</h4>
+
+<p>Before start using the web application for your FEM/CFD simulations, make sure you activated at least the WELCOME plan. The following tutorial guides you through the activation process.</p>
 
 <div class="video-player">
 	<iframe class="youtube-player" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/XAHheCiJDYA" allowfullscreen frameborder="0">
 	</iframe>
 </div>
 
-<p>When entering the application you can access two main pages: the <em>dashboard</em> and the <em>simulations</em>. Before proceeding to the part concerning the CFD, let&rsquo;s have a look at what is reported in the dashboard. In here you keep under control the whole application and you have at a glance all the information about your simulations and credits availability.</p>
+<h4 id="invoices-and-order-status">INVOICES AND ORDER STATUS</h4>
+
+<p>[To be completed &hellip;]</p>
+
+<h2 id="credits-balance">CREDITS BALANCE</h2>
+
+<p>CONSELF provides you a real time status of the amount of credits used. After entering the application <a href="https://app.conself.com">https://app.conself.com</a> the main screen, under the <em>dashboard</em> page, provides you with a number of charts with all the info about the credits used and available.</p>
 
 
 <figure >
@@ -364,15 +424,13 @@
 </figure>
 
 
-<p>Entering into the details of the dashboard, we have:</p>
+<p>Entering into the details of the <em>dashboard</em>, you can find:</p>
 
 <ul>
 <li><strong>Pie chart</strong>: report of the used vs available credits. The report refers to your current plan and it gets updated after every simulation finishes.</li>
 <li><strong>Horizontal bars chart</strong>: credits used during latest cases. With CONSELF you keep track of your costs in every moment and with this tool you can understand how you are using your credits and thus charging your customer according to this.</li>
 <li><strong>Bottom left buttons</strong>: link to this manual and to the CONSELF support team.</li>
 </ul>
-
-<p>More statistics are reported in the dashboard, such as the number of simulation steps performed. You are all invited to suggest even more by contacting the support team.</p>
 
 
       
@@ -451,18 +509,18 @@
           
         
           
-        
+            
+              
+                <a class="nav nav-prev" href="/manual/"> <i class="fa fa-chevron-left"></i></a>
+              
+            
+            
+              
+                <a class="nav nav-next" href="/manual/simulation-process/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+              
+            
           
-            
-              
-                <a class="nav nav-prev" href="/manual/simulation-process/"> <i class="fa fa-chevron-left"></i></a>
-              
-            
-            
-              
-                <a class="nav nav-next" href="/manual/geometry/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
-              
-            
+        
           
         
           

@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>Account</title>
+      <link>http://docs.conself.com/manual/account/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.conself.com/manual/account/</guid>
+      <description>SUBSCRIPTION CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans.
+ Subscription plans   The plans currently abailable are mainly three:
+ WELCOME: free plan, every user can activate. No credit card data required. With a free plan you can access up to 100 credits every month and 10GB of cloud storage. The main limitation regards the lack of commercial features, which are frozen for the current plan.</description>
+    </item>
+    
+    <item>
       <title>Downloads</title>
       <link>http://docs.conself.com/contributing/downloads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -39,16 +50,6 @@ Create fluid volumes In order to run a CFD simulation you have to generate the v
     </item>
     
     <item>
-      <title>Simulation Process</title>
-      <link>http://docs.conself.com/manual/simulation-process/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://docs.conself.com/manual/simulation-process/</guid>
-      <description>Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:
-Simulation: a mathematical procedure that allows to reproduce in a virtual environment - software - a physical behavior. Compared to laboratory tests, it is a quicker and cheaper process. Ultimately, simulations help engineers validate the hypothesis behind every design phase.</description>
-    </item>
-    
-    <item>
       <title>Boundary Conditions</title>
       <link>http://docs.conself.com/hints/boundary-conditions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -57,16 +58,6 @@ Simulation: a mathematical procedure that allows to reproduce in a virtual envir
       <description>The table below report an overview of available boundary conditions and specifications. The description specifies the application and the restriction of the boundary conditions.
 Boundary availability depends on the application you are currently using.
     Boundary Description   IN/OUT - Total pressure Total pressure inlet and outlet condition   p [Pa] - Total pressure Φ [%] - Fluid-A volume concentration     IN/OUT - Velocity Inlet and outlet velocity - Velocity vector normal to the surface (use negative value for outflow)   U [m/s] - Velocity Dₕ [m] - Hydraulic diameter s [unit/m³] - Passive scalar value     IN/OUT - Velocity fixed temperature Inlet and outlet velocity with specified temperature - Velocity vector normal to the surface   U [m/s] - Velocity T [K] - Temperature Dₕ [m] - Hydraulic diameter     IN/OUT - Velocity vector Inlet and outlet velocity where the user specifies the velocity vector   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z Dₕ [m] - Hydraulic diameter s [unit/m³] - Passive scalar value     IN/OUT - Velocity vector fixed temperature Inlet and outlet velocity where the user specifies the velocity vector and the temperature   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z T [K] - Temperature Dₕ [m] - Hydraulic diameter     IN/OUT - Volume flow Inlet and outlet condition with prescribed volume flow (use negative value for outflow)   Q [m³/s] - Volume flow Dₕ [m] - Hydraulic diameter s [unit/m³] - Passive scalar value     IN/OUT - Volume flow fixed temperature Inlet and outlet condition with prescribed volume flow and temperature (use negative value for outflow)   Q [m³/s] - Volume flow T [K] - Temperature Dₕ [m] - Hydraulic diameter     INLET - Absolute velocity Inlet velocity - Velocity vector is specified in an absolute reference frame   Uabsx [m/s] - Absolute velocity X Uabsy [m/s] - Absolute velocity Y Uabsz [m/s] - Absolute velocity Z Dₕ [m] - Hydraulic diameter     INLET - Cylindrical velocity Inlet velocity in a cylindrical reference frame   Centre X [m] - Centre X Centre Y [m] - Centre Y Centre Z [m] - Centre Z Axis X - Normalized axis X Axis Y - Normalized axis Y Axis Z - Normalized axis Z U axial [m/s] - Axial velocity U radial [m/s] - Radial velocity ω [rpm] - Rotational velocity Dₕ [m] - Hydraulic diameter     INLET - Relative velocity Inlet velocity - Velocity vector is specified in a relative reference frame   Urelx [m/s] - Relative velocity X Urely [m/s] - Relative velocity Y Urelz [m/s] - Relative velocity Z Dₕ [m] - Hydraulic diameter     INLET - Total pressure Total pressure inlet condition   pₜ [Pa] - Total Pressure Dₕ [m] - Hydraulic diameter s [unit/m³] - Passive scalar value     INLET - Velocity Inlet velocity - Velocity vector normal to the surface   U [m/s] - Velocity Φ [%] - Fluid-A volume concentration Dₕ [m] - Hydraulic diameter     INLET - Velocity and particles Inlet velocity with specified inlet particles   U [m/s] - Fluid velocity Uxₚ [m/s] - Particles velocity X Uyₚ [m/s] - Particles velocity Y Uzₚ [m/s] - Particles velocity Z Mₚ [kg] - Particles total mass Dₚ [m] - Particles dimension Dₕ [m] - Hydraulic diameter     INLET - Velocity vector Inlet velocity where the user specifies the velocity vector   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z Φ [%] - Fluid-A volume concentration Dₕ [m] - Hydraulic diameter     OUTLET - Pressure Outlet condition for pressure - Backscatter flow is denied   p [Pa] - Absolute pressure     OUTLET - Velocity Outlet velocity - Velocity vector normal to the surface   U [m/s] - Velocity     WALL - Adiabatic no slip No slip adiabatic wall   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z     WALL - Fire location No slip wall with imposed temperature gradient   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z s [unit/(s·m²)] - Passive scalar production q [W/m²] - Heat flux     WALL - No slip No slip adiabatic wall   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z     WALL - No slip fixed temperature No slip wall with imposed temperature   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z T [K] - Temperature s [unit/(s·m²)] - Passive scalar production     WALL - No slip rough wall No slip rough wall   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z Ks [m] - Sand-grain roughness height Cs - Roughness constant     WALL - No slip with heat flux No slip wall with imposed heat flux per surface unit   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z q [W/m²] - Heat flux s [unit/(s·m²)] - Passive scalar production ∇T [K/m] - Temperature gradient     WALL - No slip with heat power No slip wall with imposed global heat flux   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z Q [W] - Heat power     WALL - No slip with passive scalar production No slip wall with imposed CO production   Ux [m/s] - Velocity X Uy [m/s] - Velocity Y Uz [m/s] - Velocity Z s [unit/(s·m²)] - Passive scalar production     WALL - Rotating Rotating adiabatic wall   Centre X [m] - Centre X Centre Y [m] - Centre Y Centre Z [m] - Centre Z Axis X - Normalized axis X Axis Y - Normalized axis Y Axis Z - Normalized axis Z ω [rpm] - Rotational velocity     WALL - Rotating no slip Rotating adiabatic wall   ω [rpm] - Relative rotational speed     WALL - Rotating no slip rough wall No slip rotating rough wall   ω [rpm] - Relative rotational speed Ks [m] - Sand-grain roughness height Cs - Roughness constant      </description>
-    </item>
-    
-    <item>
-      <title>Case Management and Credits</title>
-      <link>http://docs.conself.com/manual/case-management-and-credits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://docs.conself.com/manual/case-management-and-credits/</guid>
-      <description>CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans.
-  When entering the application you can access two main pages: the dashboard and the simulations. Before proceeding to the part concerning the CFD, let&amp;rsquo;s have a look at what is reported in the dashboard. In here you keep under control the whole application and you have at a glance all the information about your simulations and credits availability.</description>
     </item>
     
     <item>
@@ -92,6 +83,16 @@ File formats  STEP files (reference here) Initial Graphics Exchange Specificatio
       <description>GEOMETRY Input file from LidDriven.stp (14 KB)
 File data  In File units select Millimeters In Grouping Criteria STEP select By Curve Entity  Domain  In Flow Type select Internal  MESH2D Surface mesh Complete this section by filling the input data according to the following table
    Boundary name Uniformity level [%] Max element size [m]     BC-Parte1FACE1 70 0.04   BC-Parte1FACE2 70 0.</description>
+    </item>
+    
+    <item>
+      <title>Simulation Process</title>
+      <link>http://docs.conself.com/manual/simulation-process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.conself.com/manual/simulation-process/</guid>
+      <description>INTRODUCTION Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:
+Simulation: a mathematical procedure that allows to reproduce in a virtual environment - software - a physical behavior. Compared to laboratory tests, it is a quicker and cheaper process. Ultimately, simulations help engineers validate the hypothesis behind every design phase.</description>
     </item>
     
     <item>
@@ -143,7 +144,7 @@ Fluid Models The first section is about defining the fluid models, turbulence an
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.conself.com/manual/mech/</guid>
-      <description>[To be completed ciao ciao come va …]</description>
+      <description>[To be completed …]</description>
     </item>
     
     <item>

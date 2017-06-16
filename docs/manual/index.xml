@@ -11,23 +11,24 @@
     
     
     <item>
+      <title>Account</title>
+      <link>http://docs.conself.com/manual/account/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.conself.com/manual/account/</guid>
+      <description>SUBSCRIPTION CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans.
+ Subscription plans   The plans currently abailable are mainly three:
+ WELCOME: free plan, every user can activate. No credit card data required. With a free plan you can access up to 100 credits every month and 10GB of cloud storage. The main limitation regards the lack of commercial features, which are frozen for the current plan.</description>
+    </item>
+    
+    <item>
       <title>Simulation Process</title>
       <link>http://docs.conself.com/manual/simulation-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.conself.com/manual/simulation-process/</guid>
-      <description>Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:
+      <description>INTRODUCTION Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:
 Simulation: a mathematical procedure that allows to reproduce in a virtual environment - software - a physical behavior. Compared to laboratory tests, it is a quicker and cheaper process. Ultimately, simulations help engineers validate the hypothesis behind every design phase.</description>
-    </item>
-    
-    <item>
-      <title>Case Management and Credits</title>
-      <link>http://docs.conself.com/manual/case-management-and-credits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://docs.conself.com/manual/case-management-and-credits/</guid>
-      <description>CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans.
-  When entering the application you can access two main pages: the dashboard and the simulations. Before proceeding to the part concerning the CFD, let&amp;rsquo;s have a look at what is reported in the dashboard. In here you keep under control the whole application and you have at a glance all the information about your simulations and credits availability.</description>
     </item>
     
     <item>
@@ -70,7 +71,7 @@ Fluid Models The first section is about defining the fluid models, turbulence an
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.conself.com/manual/mech/</guid>
-      <description>[To be completed ciao ciao come va …]</description>
+      <description>[To be completed …]</description>
     </item>
     
     <item>
