@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>GEOMETRY</title>
+    <title>Geometry</title>
     <link href="http://docs.conself.com/css/nucleus.css" rel="stylesheet">
     <link href="http://docs.conself.com/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://docs.conself.com/css/hybrid.css" rel="stylesheet">
@@ -115,13 +115,13 @@
           
             <li class="dd-item active" data-nav-id="/manual/geometry/">
               <a href="/manual/geometry/">
-                <span>GEOMETRY     </i></span>
+                <span>Geometry     </i></span>
               </a>
             </li>
           
             <li class="dd-item " data-nav-id="/manual/mesh/">
               <a href="/manual/mesh/">
-                <span>MESH     </i></span>
+                <span>Mesh     </i></span>
               </a>
             </li>
           
@@ -322,7 +322,7 @@
                     
                   
                 
-                <span itemprop="title"> GEOMETRY</span>
+                <span itemprop="title"> Geometry</span>
               </div>
               
                   <div class="progress">
@@ -331,11 +331,16 @@
 <ul>
 <li>
 <ul>
+<li><a href="#file-data">FILE DATA</a></li>
+<li><a href="#domain">DOMAIN</a></li>
+<li><a href="#practice">PRACTICE</a>
+<ul>
 <li>
 <ul>
-<li><a href="#file-data">File data</a></li>
-<li><a href="#domain">Domain</a></li>
-<li><a href="#practice">Practice</a></li>
+<li><a href="#boundary-selection">BOUNDARY SELECTION</a></li>
+<li><a href="#fluid-volume-creation">FLUID VOLUME CREATION</a></li>
+<li><a href="#to-know-even-more">TO KNOW EVEN MORE</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -350,19 +355,18 @@
             
               <div id="body-inner">
                 
-                <h1>GEOMETRY</h1>
+                <h1>Geometry</h1>
                 
 
 
 
-<p>The geometry step represents the phase in which the user defines the main geometrical characteristics of the case. The user is required to draw a complete geometry using a CAD software - see <a href="http://docs.conself.com/contributing/external-link/#cad-and-3d-modelling">External Link</a> to find free CAD softwares available on the internet that can be used with CONSELF CFD on Cloud. <strong>In order to get more information about the generation of CAD files, see <a href="http://docs.conself.com/contributing/downloads/#cad-files">this page</a>.</strong></p>
+<p>The geometry step represents the phase in which the user defines the main geometrical characteristics of the case. The user is required to draw a complete geometry using a <a href="http://docs.conself.com/contributing/external-link/#cad-and-3d-modelling">CAD software</a>. The geometry file must be loaded in terms of <em>fluid volume</em> in case of a CFD analysis and <em>solid volume</em> in case of MECH analysis.
+Some geometry files are available to be freely downloaded and used in our web application in <strong><a href="http://docs.conself.com/contributing/downloads/#cad-files">this page</a></strong>.</p>
 
-<p>CONSELF can handle multiple unit systems and, furthermore, the user interface has the capability to generate a wind-tunnel geometry around the geometry, in order to speed up the setup process.</p>
-
-<h3 id="file-data">File data</h3>
+<h2 id="file-data">FILE DATA</h2>
 
 <ul>
-<li>Upload your geometry file. Supported formats are: <em>STEP</em>, <em>STP</em>, <em>IGES</em>, <em>IGS</em>, <em>STL</em></li>
+<li>Upload your geometry file. Supported formats are: <em>STEP</em>, <em>STP</em>, <em>IGES</em>, <em>IGS</em>, <em>STL</em>, <em>OBJ</em>, <em>IFC</em>.</li>
 <li><em>File Units</em>: definition of the unit system used to generate the geometry file.</li>
 </ul>
 
@@ -370,7 +374,7 @@
 </div>
 
 
-<h3 id="domain">Domain</h3>
+<h2 id="domain">DOMAIN</h2>
 
 <ul>
 <li><em>Flow type</em>: definition of the type of flow, whether <em>internal</em> or <em>external</em>.</li>
@@ -379,16 +383,33 @@
 
 <p>After the completion of all fields, the user can finalize the step by clicking on the <em>Submit</em> button. This will start the <strong>Geometry</strong> step application that will appear in the <em>Case in progress</em> section of main <em>Simulation</em> page.</p>
 
-<h3 id="practice">Practice</h3>
+<h2 id="practice">PRACTICE</h2>
+
+<h4 id="boundary-selection">BOUNDARY SELECTION</h4>
+
+<p>In geometry phase the user is requested to group the input cad file surfaces into boundaries. These boundaries are going to define specific behaviour in later stages: they are reference of a certain refinement level while meshing, they impose inlet/outlet/wall boundaries during cfd simulation or loads/contraints in mech analysis. The following video shows the way to handle with these grouping generation using our user interface.</p>
 
 <div class="video-player">
 	<iframe class="youtube-player" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/neXBd2zPJbc" allowfullscreen frameborder="0">
 	</iframe>
 </div>
 
-<!-- TODO fix problem with reference to validation/_index.md -->
+<div class="notices info" ><p>Once we submit the geometry step it is not possible to edit the boundaries group defined. In case of miskates, it is necessary to start over again with a new case.</p>
+</div>
 
-<p>In order to practice with the geometry step, please have a look at <a href="http://docs.conself.com/validation/lid-driven-cavity/">these tutorials</a>.</p>
+
+<h4 id="fluid-volume-creation">FLUID VOLUME CREATION</h4>
+
+<p>As mentioned before, in a CFD analysis it is important to define the fluid volume we want to simulate, rather than the solid component. This fluid volume must be generated by the user using an external CAD application. For this reason we provide here a brief example of this boolean operation made with <a href="https://www.onshape.com/">OnShape</a>.</p>
+
+<div class="video-player">
+	<iframe class="youtube-player" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/zqbSQJEEYXU" allowfullscreen frameborder="0">
+	</iframe>
+</div>
+
+<h4 id="to-know-even-more">TO KNOW EVEN MORE</h4>
+
+<p>CONSELF is constantly producing more and more tutorials and guidelines to users so they can get benefits out of CFD/FEM simulations. In particular, referring to input CAD files and geometries, you can find a certain number of posts by visiting <a href="https://conself.com/blog/category/cad/">this page</a>.</p>
 
 
       

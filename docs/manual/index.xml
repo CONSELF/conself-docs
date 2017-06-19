@@ -32,23 +32,22 @@ Simulation: a mathematical procedure that allows to reproduce in a virtual envir
     </item>
     
     <item>
-      <title>GEOMETRY</title>
+      <title>Geometry</title>
       <link>http://docs.conself.com/manual/geometry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.conself.com/manual/geometry/</guid>
-      <description>The geometry step represents the phase in which the user defines the main geometrical characteristics of the case. The user is required to draw a complete geometry using a CAD software - see External Link to find free CAD softwares available on the internet that can be used with CONSELF CFD on Cloud. In order to get more information about the generation of CAD files, see this page.
-CONSELF can handle multiple unit systems and, furthermore, the user interface has the capability to generate a wind-tunnel geometry around the geometry, in order to speed up the setup process.</description>
+      <description>The geometry step represents the phase in which the user defines the main geometrical characteristics of the case. The user is required to draw a complete geometry using a CAD software. The geometry file must be loaded in terms of fluid volume in case of a CFD analysis and solid volume in case of MECH analysis. Some geometry files are available to be freely downloaded and used in our web application in this page.</description>
     </item>
     
     <item>
-      <title>MESH</title>
+      <title>Mesh</title>
       <link>http://docs.conself.com/manual/mesh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.conself.com/manual/mesh/</guid>
       <description>Mesh is the STEP required in order to define the mesh.
-Volume mesh In this section the user is asked to define the mesh algorithm and the basic mesh feature.
+VOLUME MESH In this section the user is asked to define the mesh algorithm and the basic mesh feature.
  Meshing algorithm: drop down list from which the user has to select the meshing algorithm (see pictures below).
  Hexahedral: by using this algorithm, a fully cartesian grid is obtained. Depending on the mesh dimension specifications on the boundaries, local grid refinements are applied to meet the resolution constraints.</description>
     </item>
@@ -60,7 +59,7 @@ Volume mesh In this section the user is asked to define the mesh algorithm and t
       
       <guid>http://docs.conself.com/manual/cfd/</guid>
       <description>The CFD step represents the widest part of the whole simulation settings. The parameters present in the current step may vary according to the application chosen.
-Fluid Models The first section is about defining the fluid models, turbulence and density in particular.
+FLUID MODELS The first section is about defining the fluid models, turbulence and density in particular.
  Flow type: drop down list from which the user has to select the flow type
  Incompressible: to simulate incompressible fluids like water, oil or air at low velocity.</description>
     </item>

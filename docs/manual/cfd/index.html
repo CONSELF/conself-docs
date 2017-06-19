@@ -115,13 +115,13 @@
           
             <li class="dd-item " data-nav-id="/manual/geometry/">
               <a href="/manual/geometry/">
-                <span>GEOMETRY     </i></span>
+                <span>Geometry     </i></span>
               </a>
             </li>
           
             <li class="dd-item " data-nav-id="/manual/mesh/">
               <a href="/manual/mesh/">
-                <span>MESH     </i></span>
+                <span>Mesh     </i></span>
               </a>
             </li>
           
@@ -331,13 +331,11 @@
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href="#fluid-models">Fluid Models</a></li>
-<li><a href="#special-sections">Special sections</a></li>
-<li><a href="#boundary-conditions">Boundary Conditions</a></li>
-<li><a href="#simulation-settings">Simulation Settings</a></li>
-</ul></li>
+<li><a href="#fluid-models">FLUID MODELS</a></li>
+<li><a href="#special-section">SPECIAL SECTION</a></li>
+<li><a href="#boundary-conditions">BOUNDARY CONDITIONS</a></li>
+<li><a href="#simulation-settings">SIMULATION SETTINGS</a></li>
+<li><a href="#runtime-residuals-and-convergence">RUNTIME RESIDUALS AND CONVERGENCE</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -358,7 +356,7 @@
 
 <p>The CFD step represents the widest part of the whole simulation settings. The parameters present in the current step may vary according to the application chosen.</p>
 
-<h3 id="fluid-models">Fluid Models</h3>
+<h2 id="fluid-models">FLUID MODELS</h2>
 
 <p>The first section is about defining the fluid models, turbulence and density in particular.</p>
 
@@ -384,7 +382,7 @@
 <li><p><em>Fluid initialization</em>: definition of the initial condition for the fluid variables</p></li>
 </ul>
 
-<div class="notices info" ><p>Properties and parameters to insert vary with the Flow Type</p>
+<div class="notices info" ><p>Properties and parameters to insert vary with the <em>Flow Type</em>.</p>
 </div>
 
 
@@ -406,20 +404,20 @@
 
 <p>where $I$ is the turbulence intensity (suggested between 1% and 10%) and l is the turbulence length scale, approximated with the hydraulic diameter $D_h$.</p>
 
-<div class="notices info" ><p>Properties and parameters to insert vary with the Turbulence</p>
+<div class="notices info" ><p>Properties and parameters to insert vary with the <em>turbulence model</em></p>
 </div>
 
 
-<h3 id="special-sections">Special sections</h3>
+<h2 id="special-section">SPECIAL SECTION</h2>
 
 <p><em>[To be completed &hellip;]</em></p>
 
-<h3 id="boundary-conditions">Boundary Conditions</h3>
+<h2 id="boundary-conditions">BOUNDARY CONDITIONS</h2>
 
 <p>The boundary conditions are the fundamental stage of the CFD simulations. CONSELF gives you a multiple choice of boundaries, each of which is target for the peculiar application you are currently using. Here you are a brief summary of what you are required to insert.</p>
 
 
-<figure class="figure-50">
+<figure class="figure-30">
     
         <img src="/images/BC_selection.png" alt="Velocity inlet boundary condition application to selected boundary &#34;asmo&#34;" />
     
@@ -446,7 +444,7 @@
 </div>
 
 
-<h3 id="simulation-settings">Simulation Settings</h3>
+<h2 id="simulation-settings">SIMULATION SETTINGS</h2>
 
 <ul>
 <li><em>Time scheme</em>: drop down list from which the user has to select which type of simulation they want to perform in terms of behavior in time
@@ -472,10 +470,53 @@
 <li><em>Output frequency</em>: specifies how often simulation results are saved for the visualization.</li>
 </ul>
 
+<p>After these options you have the possibility to select the number of cores used to run the simulation. Using the dropdown menu you can pick the number of cores you are using to run the simulation. In general, a higher number of cores allows you to get the results in a shorter amount of time.</p>
+
 <p>After completion of all fields, the user can finalize the step clicking on <em>Submit</em> button. This will start the <strong>CFD</strong> step application that will appear in the <em>Case in progress</em> section of the main <em>Simulation</em> page.</p>
 
 <div class="notices info" ><p>The CFD step usually requires a high number of iterations (few thousands) in order to produce accurate results.</p>
 </div>
+
+
+<h2 id="runtime-residuals-and-convergence">RUNTIME RESIDUALS AND CONVERGENCE</h2>
+
+<p>While the CFD analysis is running you can check in realtime the progress of your CFD analysis by using the residual plot. This plot returns the residual values for pressure and velocities whilst the simulation is actually proceeding. These residuals represent a fundamental parameter when running a steady case simulation: to monitor the convergece they should keep decreasing while the iterations proceeds, until they reach a threshold value of 10^-4 which actually stops the simulation. For a steady case instead they do not have a convergence threshold, since the simulation proceeds until the specified final time is encountered.</p>
+
+<p>To access the residual graph just click on this icon.</p>
+
+
+<figure class="figure-80">
+    
+        <img src="/images/ProgressBarResiduals.png" alt="Progress bar" />
+    
+    
+    <figcaption>
+        <h4>Progress bar</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>A new image pops-up with the residual plot of the simulation. This image is updated in real-time, so if you wait few minutes and click it again you are going to see what has happened meanwhile in the calculation. When the simulation is completed the residual plot of a steady case should look like the following one. The reason of the spick you see after about 1000 iterations is in the simulation process. CONSELF runs in fact two separate simulations for every CFD submitted:</p>
+
+<ol>
+<li>First order CFD simulation. Very stable but with low accuracy.</li>
+<li>Second order CFD simulation. Initialized from the precursor first order CFD simulation, is much more accurate.</li>
+</ol>
+
+
+<figure class="figure-30">
+    
+        <img src="/images/residuals.png" alt="Residuals plot of p (pressure), U (velocity)" />
+    
+    
+    <figcaption>
+        <h4>Residuals plot of p (pressure), U (velocity)</h4>
+        
+    </figcaption>
+    
+</figure>
 
 
 
