@@ -31,6 +31,31 @@ The file you download is generally a ZIP file with the following information:
 
 All these data are available or not depending on the simulation you are running and on the settings you chose. Once you download these files, it is possible to open them using one among the [post-processors]({{< ref "external-link.md#results-postprocessing" >}}) available on the market.
 
+#### OUTPUT VARIABLES
+
+When using both the online post-processor or the offline ones, you can use all the variables created by your simulation to analyze your results. These variables, which are depending on the application and settings you defined, are among the followings for a CFD simulation:
+
+- **p**: normalized pressure in m²/s² for incompressible flows or pressure in Pa for compressible flows
+- **static(p)**: static pressure in Pa for compressible flows
+- **U**: velocity vector with components *Ux*, *Uy* and *Uz* in m/s
+- **k**: turbulent kinetc energy in m²/s²
+- **epsilon**: turbulent dissipation rate in m²/s³
+- **omega**: turbulent dissipation frequency in Hz
+- **nuTilda**: SpalartAllmaras' viscosity in m²/s
+- **nut**: turbulent eddy viscosity in m²/s
+- **alpha.fluidA**: fluid A volume concentration
+- **s**: passive scalar
+- **T**: temperature in K
+- **yPlus**: y+ value for the first fluid cell. This variable is valid only on surfaces
+- **wallShearStress**: normalized wall shear stress in m²/s². This variable is valid only on surfaces
+
+In case of a MECH analysis instead you get access to the following range of variables:
+
+- **stress**: stress tensor in Pa
+- **strain**: strain tensor
+- **displacement**: displacement in m
+- **sigma von mises**: equivalent stress tension in Pa, calculated using the Von Mises criterion
+
 ## PRACTICE
 
 #### TO KNOW EVEN MORE
