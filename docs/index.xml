@@ -50,7 +50,7 @@ Create fluid volumes In order to run a CFD simulation you have to generate the v
     </item>
     
     <item>
-      <title>Boundary Conditions</title>
+      <title>CFD boundary Conditions</title>
       <link>http://docs.conself.com/hints/boundary-conditions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -131,10 +131,9 @@ VOLUME MESH In this section the user is asked to define the mesh algorithm and t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.conself.com/manual/cfd/</guid>
-      <description>The CFD step represents the widest part of the whole simulation settings. The parameters present in the current step may vary according to the application chosen.
+      <description>This step is actually common to a certain number of different applications. The instruction mentioned in this page are completely defining all these applications, even though some limitations may occour in some of them, consisting in a reduced number of possible choices availability.
 FLUID MODELS The first section is about defining the fluid models, turbulence and density in particular.
- Flow type: drop down list from which the user has to select the flow type
- Incompressible: to simulate incompressible fluids like water, oil or air at low velocity.</description>
+ Flow type: drop down list from which the user has to select the flow type</description>
     </item>
     
     <item>
@@ -143,7 +142,8 @@ FLUID MODELS The first section is about defining the fluid models, turbulence an
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.conself.com/manual/mech/</guid>
-      <description>[To be completed …]</description>
+      <description>This step is actually common to a certain number of different applications. The instruction mentioned in this page are completely defining all these applications, even though some limitations may occour in some of them, consisting in a reduced number of possible choices availability.
+MECHANICAL MODELS The first section someone has to define in a static mechanical simulation regards the mechanical model. This is a system of hypothesis that link calculated displacement with stress and shear.</description>
     </item>
     
     <item>

@@ -181,7 +181,7 @@
           
             <li class="dd-item " data-nav-id="/hints/boundary-conditions/">
               <a href="/hints/boundary-conditions/">
-                <span>Boundary Conditions     </i></span>
+                <span>CFD boundary Conditions     </i></span>
               </a>
             </li>
           
@@ -327,7 +327,25 @@
               
                   <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#mechanical-models">MECHANICAL MODELS</a></li>
+<li><a href="#body-force">BODY FORCE</a></li>
+<li><a href="#boundary-conditions">BOUNDARY CONDITIONS</a></li>
+<li><a href="#simulation-settings">SIMULATION SETTINGS</a></li>
+<li><a href="#runtime-residuals-and-convergence">RUNTIME RESIDUALS AND CONVERGENCE</a></li>
+<li><a href="#practice">PRACTICE</a>
+<ul>
+<li>
+<ul>
+<li><a href="#to-know-even-more">TO KNOW EVEN MORE</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -341,7 +359,110 @@
                 <h1>MECH</h1>
                 
 
-<p>[To be completed …]</p>
+
+
+<p>This step is actually common to a certain number of different applications. The instruction mentioned in this page are completely defining all these applications, even though some limitations may occour in some of them, consisting in a reduced number of possible choices availability.</p>
+
+<h2 id="mechanical-models">MECHANICAL MODELS</h2>
+
+<p>The first section someone has to define in a static mechanical simulation regards the mechanical model. This is a system of hypothesis that link calculated displacement with stress and shear. The models available are:</p>
+
+<ul>
+<li><em>Mechanical model</em>: dropdown menu with all the choices
+
+<ul>
+<li><em>Isotropic linear elastic</em>: isotropic matherial with linear relation between stress and shear: $ \sigma = E \cdot \varepsilon $</li>
+<li><em>Isotropic linear elastic (large displacement)</em>: isotropic matherial with linear relation between stress and shear. Displacement are not negligigle considering the matherial elasticity.</li>
+</ul></li>
+</ul>
+
+<p>For each of the choices made in the mechanical model, it is then necessary the definition of the matherial properties such as:</p>
+
+<ul>
+<li>$\rho$ density</li>
+<li>$\nu$ poisson ration</li>
+<li>$E$ Young modulus</li>
+</ul>
+
+<h2 id="body-force">BODY FORCE</h2>
+
+<p>In this section it is possible to insert a body force, a force acting on the whole volume we are simulating. Among the possible choices you have:</p>
+
+<ul>
+<li><em>None</em>: no body force is applied</li>
+<li><em>Centrifugal force</em>: the whole body is considered in rotation.
+
+<ul>
+<li><em>Rotating point</em> represents the centre of the rotation</li>
+<li><em>Rotating axis</em> is the axis along which the body is rotating</li>
+<li><em>Rotating speed</em> is the rotational speed</li>
+</ul></li>
+</ul>
+
+<h2 id="boundary-conditions">BOUNDARY CONDITIONS</h2>
+
+<p>Similarly to what happens in CFD simulations, it is now necessary to insert a mixed of boundary conditions in order to define the external loads and constraints. To do so, CONSELF web applications gives you the opportunity to use the following boundaries:</p>
+
+<ul>
+<li><strong>CONSTRAINT - Free</strong>: simple boundary condition where neither constraints nor loads are applied.</li>
+<li><strong>CONSTRAINT - Fixed</strong>: possibility to define a constraint boundary condition. The constraint can be applied through a combinations of constraints along the X, Y and Z axis. It is user responsability the definition of a fully constraint system to avoid liabilities.</li>
+<li><strong>LOAD - Force</strong>: load application as a distributed force in N/mm². The force direction is specified by the user by the definition of the three components along the X, Y and Z axis.</li>
+<li><strong>LOAD - Pressure</strong>: load application of a pressure in Pa. The pressure generates a force which is always orthogonal to the surface.</li>
+</ul>
+
+<div class="notices info" ><p>Before running a MECH simulation make sure you are limiting al possible liabilities in all directions. If this condition is not satisfied you are going to get an error from the application.</p>
+</div>
+
+
+<h2 id="simulation-settings">SIMULATION SETTINGS</h2>
+
+<p>In simulation settings the user interface requires a set of numerical parameters. In particular:</p>
+
+<ul>
+<li><strong>Iterations number</strong>: definition of the number of iterations required to complete the simulation</li>
+<li><strong>Output frequency</strong>: the frequency we are using to save an output visualization file</li>
+<li><strong>Cores number</strong>: the number of cores required to run the simulation</li>
+</ul>
+
+<div class="notices info" ><p>The <strong>iterations number</strong>, and consequently, the <strong>output frequency</strong> are useful parameters when dealing with non-linear simulations. A higher number of iterations helps the solver to achieve a complete level of convergence.</p>
+</div>
+
+
+<h2 id="runtime-residuals-and-convergence">RUNTIME RESIDUALS AND CONVERGENCE</h2>
+
+
+<figure class="figure-80">
+    
+        <img src="/images/ProgressBarResiduals.png" alt="Progress bar" />
+    
+    
+    <figcaption>
+        <h4>Progress bar</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<figure class="figure-30">
+    
+        <img src="/images/residualsMECH.png" alt="Residuals of MECH analysis" />
+    
+    
+    <figcaption>
+        <h4>Residuals of MECH analysis</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<h2 id="practice">PRACTICE</h2>
+
+<h4 id="to-know-even-more">TO KNOW EVEN MORE</h4>
+
+<p>CONSELF is constantly producing more and more tutorials and guidelines to users so they can get benefits out of CFD/FEM simulations. In particular, referring to MECH analysis, you can find a certain number of posts by visiting <a href="https://conself.com/blog/category/fea/">this page</a>.</p>
 
 
       
