@@ -332,7 +332,13 @@
 <li>
 <ul>
 <li><a href="#results-post-processing">RESULTS POST-PROCESSING</a></li>
-<li><a href="#downloads">DOWNLOADS</a></li>
+<li><a href="#downloads">DOWNLOADS</a>
+<ul>
+<li>
+<ul>
+<li><a href="#output-variables">OUTPUT VARIABLES</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#practice">PRACTICE</a>
 <ul>
 <li>
@@ -391,6 +397,35 @@
 </ul>
 
 <p>All these data are available or not depending on the simulation you are running and on the settings you chose. Once you download these files, it is possible to open them using one among the <a href="http://docs.conself.com/contributing/external-link/#results-postprocessing">post-processors</a> available on the market.</p>
+
+<h4 id="output-variables">OUTPUT VARIABLES</h4>
+
+<p>When using both the online post-processor or the offline ones, you can use all the variables created by your simulation to analyze your results. These variables, which are depending on the application and settings you defined, are among the followings for a CFD simulation:</p>
+
+<ul>
+<li><strong>p</strong>: normalized pressure in m²/s² for incompressible flows or pressure in Pa for compressible flows</li>
+<li><strong>static(p)</strong>: static pressure in Pa for compressible flows</li>
+<li><strong>U</strong>: velocity vector with components <em>Ux</em>, <em>Uy</em> and <em>Uz</em> in m/s</li>
+<li><strong>k</strong>: turbulent kinetc energy in m²/s²</li>
+<li><strong>epsilon</strong>: turbulent dissipation rate in m²/s³</li>
+<li><strong>omega</strong>: turbulent dissipation frequency in Hz</li>
+<li><strong>nuTilda</strong>: SpalartAllmaras&rsquo; viscosity in m²/s</li>
+<li><strong>nut</strong>: turbulent eddy viscosity in m²/s</li>
+<li><strong>alpha.fluidA</strong>: fluid A volume concentration</li>
+<li><strong>s</strong>: passive scalar</li>
+<li><strong>T</strong>: temperature in K</li>
+<li><strong>yPlus</strong>: y+ value for the first fluid cell. This variable is valid only on surfaces</li>
+<li><strong>wallShearStress</strong>: normalized wall shear stress in m²/s². This variable is valid only on surfaces</li>
+</ul>
+
+<p>In case of a MECH analysis instead you get access to the following range of variables:</p>
+
+<ul>
+<li><strong>stress</strong>: stress tensor in Pa</li>
+<li><strong>strain</strong>: strain tensor</li>
+<li><strong>displacement</strong>: displacement in m</li>
+<li><strong>sigma von mises</strong>: equivalent stress tension in Pa, calculated using the Von Mises criterion</li>
+</ul>
 
 <h2 id="practice">PRACTICE</h2>
 
