@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>RESULTS</title>
+    <title>Results</title>
     <link href="http://docs.conself.com/css/nucleus.css" rel="stylesheet">
     <link href="http://docs.conself.com/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://docs.conself.com/css/hybrid.css" rel="stylesheet">
@@ -139,7 +139,7 @@
           
             <li class="dd-item active" data-nav-id="/manual/results/">
               <a href="/manual/results/">
-                <span>RESULTS     </i></span>
+                <span>Results     </i></span>
               </a>
             </li>
           
@@ -322,7 +322,7 @@
                     
                   
                 
-                <span itemprop="title"> RESULTS</span>
+                <span itemprop="title"> Results</span>
               </div>
               
                   <div class="progress">
@@ -331,11 +331,13 @@
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li>
-<ul>
+<li><a href="#results-post-processing">RESULTS POST-PROCESSING</a></li>
 <li><a href="#downloads">DOWNLOADS</a></li>
+<li><a href="#practice">PRACTICE</a>
+<ul>
+<li>
+<ul>
+<li><a href="#to-know-even-more">TO KNOW EVEN MORE</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -351,36 +353,50 @@
             
               <div id="body-inner">
                 
-                <h1>RESULTS</h1>
+                <h1>Results</h1>
                 
 
 
 
-<p>CONSELF offers a web based application to postprocess results. Have a look at the following video to check out the most important features of this web application.</p>
+<h2 id="results-post-processing">RESULTS POST-PROCESSING</h2>
+
+<p>Once the CFD/FEA simulation is completed, we are forwarded to the result analysis part of the application. In here it is possible to:</p>
+
+<ul>
+<li>Check the simulation convergence</li>
+<li>Check the output frequency for the modal/frequency analysis</li>
+<li>Download the results file locally to your computer.</li>
+</ul>
+
+<p>Furthermore, it is possible to post-process the results directly from your browser using the functionalities provided. Check out the following tutorial to see a simple postprocessing of a common case.</p>
 
 <div class="video-player">
 	<iframe class="youtube-player" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/00ZZvxKnQ6s" allowfullscreen frameborder="0">
 	</iframe>
 </div>
 
-<p></center>
-Beside this tool, there are two more functionalities, highlighted in the picture: residual plot and results download. The first one displays the residuals of pressure and velocity fields obtained during the calculation, the latter instead allows to download the results in your local machine. This gives you access to advanced postprocessing functionalities with software such as <a href="http://www.paraview.org/download/">ParaView</a>, available for Unix, Windows and OSx systems.</p>
+<h2 id="downloads">DOWNLOADS</h2>
 
-<h4 id="downloads">DOWNLOADS</h4>
+<p>The file you download is generally a ZIP file with the following information:</p>
 
-<div class="notices info" ><p>The file you download is generally a ZIP file with the following information:
-- <em>EnSight</em> folder: simulation results files in ensight format
-- <em>ParaView</em> folder: simulation results files in VTK format
-- <em>RotatingZone</em> folder: extraction of the rotating zone selected with volume modelling in VTK format
-- <em>residuals</em> folder: text files with residuals tabulated values
-- <em>yPlus</em> folder: text files with y+ tabulated values in all wall surfaces
-- <em>wallShearStress</em> folder: text files with wall shear stress tabulated values in all wall surfaces
-- <em>residuals.png</em> image: residual plot
-- <em>frequencies.csv</em> file: CSV file with all the frequencies calculated</p>
+<ul>
+<li><em>EnSight</em> folder: simulation results files in ensight format</li>
+<li><em>ParaView</em> folder: simulation results files in VTK format</li>
+<li><em>RotatingZone</em> folder: extraction of the rotating zone selected with volume modelling in VTK format</li>
+<li><em>residuals</em> folder: text files with residuals tabulated values</li>
+<li><em>yPlus</em> folder: text files with y+ tabulated values in all wall surfaces</li>
+<li><em>wallShearStress</em> folder: text files with wall shear stress tabulated values in all wall surfaces</li>
+<li><em>residuals.png</em> image: residual plot</li>
+<li><em>frequencies.csv</em> file: CSV file with all the frequencies calculated</li>
+</ul>
 
-<p>All these data are available or not depending on the simulation you are running and on the settings you chose.</p>
-</div>
+<p>All these data are available or not depending on the simulation you are running and on the settings you chose. Once you download these files, it is possible to open them using one among the <a href="http://docs.conself.com/contributing/external-link/#results-postprocessing">post-processors</a> available on the market.</p>
 
+<h2 id="practice">PRACTICE</h2>
+
+<h4 id="to-know-even-more">TO KNOW EVEN MORE</h4>
+
+<p>CONSELF is constantly producing more and more tutorials and guidelines to users so they can get benefits out of CFD/FEM simulations. In particular, referring to results post-processing, you can find a certain number of posts with guidelines and tutorials using <a href="https://www.paraview.org/">ParaView</a>, the post-processing software for which we guarantee 100% compatibility, directly on <a href="https://conself.com/blog/category/post-processing/">this page</a>.</p>
 
 
       

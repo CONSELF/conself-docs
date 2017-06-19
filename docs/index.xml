@@ -71,7 +71,7 @@ Blender - 3D modelling software popular in FabLabs and 3D printing
 DraftSight - Free 2D CAD software by Dassauld Systemes
 FreeCAD - 3D modelling in an opensource environment
 SketchUp - Another free 3D modelling software
-File formats  STEP files (reference here) Initial Graphics Exchange Specification - IGES files (reference here) STereoLithography - STL standard files, both ASCII and BINARY (reference here)  CFD info and communities CFD Online - An online center for Computational Fluid Dynamics with services like discussion forums, jobs, links and a wiki</description>
+File formats  STEP files (reference here) Initial Graphics Exchange Specification - IGES files (reference here) STereoLithography - STL standard files, both ASCII and BINARY (reference here)  Results PostProcessing ParaView - OpenSource and free post-processor</description>
     </item>
     
     <item>
@@ -147,13 +147,13 @@ MECHANICAL MODELS The first section someone has to define in a static mechanical
     </item>
     
     <item>
-      <title>RESULTS</title>
+      <title>Results</title>
       <link>http://docs.conself.com/manual/results/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.conself.com/manual/results/</guid>
-      <description>CONSELF offers a web based application to postprocess results. Have a look at the following video to check out the most important features of this web application.
-   Beside this tool, there are two more functionalities, highlighted in the picture: residual plot and results download. The first one displays the residuals of pressure and velocity fields obtained during the calculation, the latter instead allows to download the results in your local machine.</description>
+      <description>RESULTS POST-PROCESSING Once the CFD/FEA simulation is completed, we are forwarded to the result analysis part of the application. In here it is possible to:
+ Check the simulation convergence Check the output frequency for the modal/frequency analysis Download the results file locally to your computer.  Furthermore, it is possible to post-process the results directly from your browser using the functionalities provided. Check out the following tutorial to see a simple postprocessing of a common case.</description>
     </item>
     
   </channel>
