@@ -51,8 +51,6 @@ After having completed this setup, the user can finalize the step by clicking on
 
 ## PRACTICE
 
-
-
 #### TO KNOW EVEN MORE
 
 CONSELF is constantly producing more and more tutorials and guidelines to users so they can get benefits out of CFD/FEM simulations. In particular, referring to meshing, you can find a certain number of posts by visiting [this page](https://conself.com/blog/category/meshing/).

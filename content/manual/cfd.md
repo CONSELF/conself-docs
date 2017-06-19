@@ -107,5 +107,9 @@ A new image pops-up with the residual plot of the simulation. This image is upda
 
 {{< figure src="/images/residuals.png" alt="Residuals plot of p (pressure), U (velocity)" title="Residuals plot of p (pressure), U (velocity)" class="figure-30" >}}
 
+## PRACTICE
 
+#### TO KNOW EVEN MORE
+
+CONSELF is constantly producing more and more tutorials and guidelines to users so they can get benefits out of CFD/FEM simulations. In particular, referring to CFD analysis, you can find a certain number of posts by visiting [this page](https://conself.com/blog/category/cfd/).
 
