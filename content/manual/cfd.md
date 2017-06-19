@@ -4,7 +4,7 @@ toc: true
 weight: 5
 ---
 
-The CFD step represents the widest part of the whole simulation settings. The parameters present in the current step may vary according to the application chosen.
+This step is actually common to a certain number of different applications. The instruction mentioned in this page are completely defining all these applications, even though some limitations may occour in some of them, consisting in a reduced number of possible choices availability.
 
 ## FLUID MODELS
 

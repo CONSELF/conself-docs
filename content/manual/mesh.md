@@ -29,9 +29,9 @@ In this section it is possible to define mesh local refinement for each of the c
 
 - *Maximum mesh size*: it defines the local mesh refinement (i.e. the element size) on the selected surface.
 
-#### ADVICES
-
+{{% notice info %}}
 In order to choose correctly the *Maximum mesh size* it is important to run a convergence analysis.
+{{% /notice %}}
 
 ## BOUNDARY LAYER
 
