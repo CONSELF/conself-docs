@@ -20,8 +20,3 @@ Thanks to them <3
 - [apalazzin](https://github.com/apalazzin)
 - [rupole1185](https://github.com/rupole1185)
 - [alexpalms](https://github.com/alexpalms)
-
-## TODO
-
-- Search in site
-- Add optional button to create doc issue (like github)

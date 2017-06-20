@@ -57,9 +57,11 @@ The **iterations number**, and consequently, the **output frequency** are useful
 
 ## RUNTIME RESIDUALS AND CONVERGENCE
 
+Since MECH analysis can be non-linear (i.e. large displacement analysis), the FEA assumes an iterative process to calculate the results. As usual, it is possible to monitor real-time the residuals calculated after each iteration by clicking on the appropriate button of the progress bar.
 
 {{< figure src="/images/ProgressBarResiduals.png" alt="Progress bar" title="Progress bar" class="figure-80">}}
 
+The residual plot consists of two different graphs: the top one represents the residuals of the algebric method to solve the linear system of equations whilst the bottom one is the number of inner iterations made to achieve the level of residuals. In a correct analysis the residuals should always be below 10^-6, whilst the inner iterations number can be up to 20.
 
 {{< figure src="/images/residualsMECH.png" alt="Residuals of MECH analysis" title="Residuals of MECH analysis" class="figure-30" >}}
 

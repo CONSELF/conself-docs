@@ -6,7 +6,7 @@ weight: 2
 
 ## Software
 
-### CAD and 3D modelling
+#### CAD and 3D modelling
 
 [Onshape](https://www.onshape.com/) - Fully cloud solution for 3D modelling
 
@@ -18,19 +18,19 @@ weight: 2
 
 [SketchUp](http://www.sketchup.com/) - Another free 3D modelling software 
 
-### File formats
-
-* **STEP** files (reference [here](https://en.wikipedia.org/wiki/ISO_10303-21))
-* **I**nitial **G**raphics **E**xchange **S**pecification - **IGES** files (reference [here](https://en.wikipedia.org/wiki/IGES))
-* **ST**ereo**L**ithography - **STL** standard files, both *ASCII* and *BINARY* (reference [here](https://en.wikipedia.org/wiki/STL_(file_format)))
-
-## Results PostProcessing
+#### Results PostProcessing
 
 [ParaView](https://www.paraview.org/) - OpenSource and free post-processor
 
 [EnSight](https://www.ensight.com/) - Commercial post-processor for CFD and FEA data
 
 [TecPlot](http://www.tecplot.com/) - Commercial post-processor for CFD and FEA data
+
+## File formats
+
+* **STEP** files (reference [here](https://en.wikipedia.org/wiki/ISO_10303-21))
+* **I**nitial **G**raphics **E**xchange **S**pecification - **IGES** files (reference [here](https://en.wikipedia.org/wiki/IGES))
+* **ST**ereo**L**ithography - **STL** standard files, both *ASCII* and *BINARY* (reference [here](https://en.wikipedia.org/wiki/STL_(file_format)))
 
 ## CFD info and communities
 
