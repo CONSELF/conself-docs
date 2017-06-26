@@ -8,13 +8,15 @@ After each STEPS has been performed, it is possible to check its results by clic
  
 {{< figure src="/images/STEPS_completed.png" alt="STEPS completed" class="figure-30" >}}
 
+All the messagges can be classified into two different ways: *WARNING* and *ERROR*. **WARGNING** are yellow coloured and generally they just advice users about possible problems that may happen in a later stage, in particular when some combinations of options are used. **ERROR** messages, coloured in red, report a problem that forbid and advancement to later steps in the CFD/FEM simulation.
+
 ## Common GEOMETRY errors
 
 <table>
 	<tbody>
 		<tr>
 			<th>Error message</th>
-			<th>Step</th>
+			<th>Type</th>
 			<th>Fix</th>
 		</tr>
 		<tr>
@@ -22,9 +24,27 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>Open surfaces in internal flow are not allowed (Define an external flow for this type of geometry)</strong>
 			</td>
 			<td>
-				GEOMETRY
+				ERROR
 			</td>
 			<td>Open surfaces must always be contained within a closed fluid volume. For this reason every time one is detected we must assure we are in an external flow type before proceeding.</td>
+		</tr>
+		<tr>
+			<td>
+				<strong>Bounding Box intersects geometry (Use Hexahedral mesh to successfully create the grid)</strong>
+			</td>
+			<td>
+				WARNING
+			</td>
+			<td>When defining an external flow, it is possible to impose a 0 distance betweeb the input geometry file and one of the six external sides of the fluid domain. In this way the input geometry is tangent to the fluid domain. This configuration is currently stable only if used in combination with an <strong>HEXAHEDRAL meshing algorithm</strong>.</td>
+		</tr>
+		<tr>
+			<td>
+				<strong>Surface seems to be open near [X.XXX, Y.YYY, Z.ZZZ] m, this is not allowed in internal flows (Check your geometry)</strong>
+			</td>
+			<td>
+				WARNING
+			</td>
+			<td>Input file has a hole in the point coordinates expressed in the message. This hole can be a phisical hole or, in case of bad quality STEP or STL files, is the result of a failure in file conversion. In both events, double check your input file in order to avoid problems during the meshing phase.</td>
 		</tr>
 	</tbody>
 </table>
@@ -35,7 +55,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 	<tbody>
 		<tr>
 			<th>Error message</th>
-			<th>Step</th>
+			<th>Type</th>
 			<th>Fix</th>
 		</tr>
 		<tr>
@@ -43,16 +63,16 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>Mesh too coarse (Use smaller mesh sizes to increase refinement)</strong>
 			</td>
 			<td>
-				MESH
+				ERROR
 			</td>
 			<td>The refinement levels chosen returns a mesh division too coarse. This, beside giving problem in CFD/FEM analysis, is unacceptable. Generate a new mesh with higher refinement in all surfaces.</td>
 		</tr>
 		<tr>
 			<td>
-				<strong>Stop Tetrahedral meshing since surface mesh is overlapping. (If possible use Hexahedral meshing)</strong>
+				<strong>Stop Tetrahedral meshing since surface mesh is overlapping. (If possible use Hexahedral meshing or contact support@conself.com)</strong>
 			</td>
 			<td>
-				MESH
+				ERROR
 			</td>
 			<td>Overlapping surfaces in input geometry file. Remember to simplify them as explained in <a href="http://docs.conself.com/hints/input-cad-files/">Input CAD Files</a>. For IGES files, try also the <i>STEP / IGES file healing</i> to sew faces into a single solid.</td>
 		</tr>
@@ -63,7 +83,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>STL/OBJ file corrupted (Use STEP files for better geometry representation and portability)</strong>
 			</td>
 			<td>
-				MESH
+				ERROR
 			</td>
 			<td>
 				Irregular STL/OBJ file uploaded. This may be due to non watertight models, very elongated triangles, etc. Try exporting a STEP or IGES file if possible.
@@ -75,18 +95,16 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>Meshing phase failure: high aspect ratio face (check your input geometry file at location: x = xxxxxx y = yyyyyy z = zzzzzz)</strong>
 			</td>
 			<td>
-				MESH
+				ERROR
 			</td>
 			<td>A face with a high aspect ration (very long triangle) has been detected. This type of shapes, beside resulting difficult to mesh, may lead to problematic elements shapes. It is recommended to check with your preferred CAD software the faces near to the location given in the error message.</td>
 		</tr>
 		<tr>
 			<td>
-				<strong>Meshing failed on boundary(ies): <i>BC names</i> (Try STEP/IGES Cleaning Tool with tolerance X.XXX and check geometry at [x,y,z] = X.XX, Y.YY, Z.ZZ)</strong>
-				<hr>
-				<strong>Wall meshing failed (Use a smaller mesh size or try STEP/IGES Fix Tool with tolerance X.XXX and check geometry at [x,y,z] = X.XX, Y.YY, Z.ZZ)</strong>
+				<strong>Tetrahedral meshing failed (Use a smaller mesh size or try STEP/IGES Fix Tool with tolerance X.XXX and visualize geometry problems using dedicated button)</strong>
 			</td>
 			<td>
-				MESH
+				ERROR
 			</td>
 			<td>Meshing algorithm fails because of troubles with a certain surface. CONSELF provides a STEP/IGES cleaning tool which allows to try and fix the STEP file. It is recommended to use it with the tolerance given in the error message before proceeding any further.</td>
 		</tr>
@@ -95,7 +113,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>BL Extension needs to be reduced too much to avoid surface mesh overlap (Increase surface mesh refinement or deactivate boundary layer)</strong>
 			</td>
 			<td>
-				MESH
+				ERROR
 			</td>
 			<td>
 				Surface mesh triangles are overlapping and this cause a failure. In order to solve this problem you have three possibilities:
@@ -111,7 +129,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>Open cells found in the mesh. (Use smaller mesh sizes to increase refinement)</strong>
 			</td>
 			<td>
-				MESH
+				ERROR
 			</td>
 			<td>The current refinement used is too coarse to represent the geometry file. This generates open cells and others meshing failures. In order to fix it generate a new mesh with a higher refinement (i.e. reduce the surface element dimension).</td>
 		</tr>
@@ -124,7 +142,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>Failure in preparing HEXA mesh (contact support@conself.com)</strong>
 			</td>
 			<td>
-				MESH
+				ERROR
 			</td>
 			<td>The current setup in meshing results into a very large number of elements. This requires more RAM than currently installed on the machine. Either reduce the number of elements in current mesh or choose a plan that gives you access to machines with more RAM available.</td>
 		</tr>
@@ -133,7 +151,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>Stop Tetrahedral meshing since surface mesh is not consistent. (If possible use Hexahedral meshing)</strong>
 			</td>
 			<td>
-				MESH
+				ERROR
 			</td>
 			<td>
 				Another problem related with surface meshing. In general this is due to incorrect input geometry file (i.e. problem with surfaces). Solution to this problem are multiple:
@@ -150,7 +168,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>Tetrahedral volume meshing failed (If possible use Hexahedral meshing or increase surface refinement by reducing <strong>mesh size</strong> parameter)</strong>
 			</td>
 			<td>
-				MESH
+				ERROR
 			</td>
 			<td>If refinement levels are highly different between surfaces (difference &gt; 10^2) this error may occur. Use a more uniform elements dimension in all surfaces.</td>
 		</tr>
@@ -163,7 +181,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 	<tbody>
 		<tr>
 			<th>Error message</th>
-			<th>Step</th>
+			<th>Type</th>
 			<th>Fix</th>
 		</tr>
 		<tr>
@@ -173,7 +191,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>Floating point exception after XX iterations (check your mesh quality and increase its refinement)</strong>
 			</td>
 			<td>
-				CFD
+				ERROR
 			</td>
 			<td>Poor mesh quality or wrong boundary condition lead to a diverging simulation. Check the mesh quality and in case use a different level of refinement to get a better mesh quality. More <strong>information about</strong> mesh quality is available in <strong><a rel="nofollow" class="external text" href="https://conself.com/blog/4-mesh-issues-poor-accuracy/">this</a> blog post</strong> and <strong><a rel="nofollow" class="external text" href="https://conself.com/blog/what-is-boundary-layer-and-how-can-you-handle-it/">this</a></strong></td>
 		</tr>
@@ -182,7 +200,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>No OUTLET BC detected (insert one OUTLET boundary condition in a new CFD step)</strong>
 			</td>
 			<td>
-				CFD
+				ERROR
 			</td>
 			<td>Since we must <strong>specify pressure in at least one surface</strong>, CONSELF forces the definition of an outlet boundary condition. Create a new CFD step and define at least one surface as OUTLET.</td>
 		</tr>
@@ -195,7 +213,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 	<tbody>
 		<tr>
 			<th>Error message</th>
-			<th>Step</th>
+			<th>Type</th>
 			<th>Fix</th>
 		</tr>
 		<tr>
@@ -203,7 +221,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>Singular matrix detected (insert one CONSTRAINED boundary condition in a new MECH step)</strong>
 			</td>
 			<td>
-				MECH
+				ERROR
 			</td>
 			<td>In static analysis we must guarantee our <strong>part to be at least isostatic</strong>. Make sure you are using at least one CONSTRAINT - FIXED boundary.</td>
 		</tr>
@@ -212,7 +230,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>Singular matrix detected (Use CONSTAINT-FREE boundary in "bc_name" in a new MECH step)</strong>
 			</td>
 			<td>
-				MECH
+				ERROR
 			</td>
 			<td>You are not limiting any degree of freedom in a CONSTRAINT - FIXED boundary. Make sure you re-run a new MECH step with a CONSTRAINT - FREE in that particular boundary.</td>
 		</tr>
@@ -221,7 +239,7 @@ After each STEPS has been performed, it is possible to check its results by clic
 				<strong>Singular matrix detected (make sure you avoid movement in X, Y and Z directions with constraint boundaries)</strong>
 			</td>
 			<td>
-				MECH
+				ERROR
 			</td>
 			<td>One of the degree of freedom (translations in X, Y and Z directions) is not limited with the current configuration.</td>
 		</tr>

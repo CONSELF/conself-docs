@@ -33,7 +33,7 @@ We report here the most common initialization for the turbulent variables
 
 - Turbulent kinetic energy: $k = \cfrac{3}{2} \left( \overline{u} \cdot I \right)^{2}$
 
-- Turbulent dissipation rate: $\epsilon = \cfrac{0.09 k^{1.5}}{l}$
+- Turbulent dissipation rate: $\varepsilon = \cfrac{0.09 k^{1.5}}{l}$
 
 - Specific dissipation rate: $\omega = \cfrac{\sqrt{k}}{l}$
 
