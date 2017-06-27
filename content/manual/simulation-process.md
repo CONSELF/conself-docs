@@ -79,7 +79,7 @@ It is important to note that there is no limit of number of contemporary running
 
 #### DISK MANAGEMENT
 
-CFD and FEM simulations are quite expencive in terms of storage resources. According to the subscription you are using, a limit is applied to the storage available to your user. If you filled the amount of storage available it is possible to:
+CFD and FEM simulations are quite expensive in terms of storage resources. According to the subscription you are using, a limit is applied to the storage available to your user. If you filled the amount of storage available it is possible to:
 
 - [Download]({{< ref "results.md#downloads" >}}) the results of completed case in your local machine
 - Erase old cases which are no more in use.
@@ -109,7 +109,7 @@ The data available for each step are:
 - *Step Type*: type of the performed step
 - *Operations*: a set of functionalities to interact with the current step
 	- *View settings*: opens the settings used
-	- *Reload settings*: reload the settings defined in the current step in a new one. This option is only available if we are now in a new step with the same tipe as the one we want to reload.
+	- *Reload settings*: reload the settings defined in the current step in a new one. This option is only available if we are now in a new step with the same type as the one we want to reload.
 	- *Initialize CFD*: initialize a new CFD step from the results of a previous one. This option is only available if we are now in a new CFD step.
 	- *View problems*: in case of *ERROR* or *WARNING*, it opens a new pop-up window where the user can visualize where the problem was.
 - *Step name*: name assigned to the current step. To edit the name double click this field.

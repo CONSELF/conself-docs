@@ -27,12 +27,12 @@ After the completion of all fields, the user can finalize the step by clicking o
 
 #### BOUNDARY SELECTION
 
-In geometry phase the user is requested to group the input cad file surfaces into boundaries. These boundaries are going to define specific behaviour in later stages: they are reference of a certain refinement level while meshing, they impose inlet/outlet/wall boundaries during cfd simulation or loads/contraints in mech analysis. The following video shows the way to handle with these grouping generation using our user interface.
+In geometry phase the user is requested to group the input cad file surfaces into boundaries. These boundaries are going to define specific behavior in later stages: they are reference of a certain refinement level while meshing, they impose inlet/outlet/wall boundaries during cfd simulation or loads/constraints in MECH analysis. The following video shows the way to handle with these grouping generation using our user interface.
 
 {{< youtube neXBd2zPJbc >}}
 
 {{% notice info %}}
-Once we submit the geometry step it is not possible to edit the boundaries group defined. In case of miskates, it is necessary to start over again with a new case.
+Once we submit the geometry step it is not possible to edit the boundaries group defined. In case of mistakes, it is necessary to start over again with a new case.
 {{% /notice %}}
 
 #### FLUID VOLUME CREATION

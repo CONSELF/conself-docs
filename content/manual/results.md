@@ -38,7 +38,7 @@ When using both the online post-processor or the offline ones, you can use all t
 - **p**: normalized pressure in m²/s² for incompressible flows or pressure in Pa for compressible flows
 - **static(p)**: static pressure in Pa for compressible flows
 - **U**: velocity vector with components *Ux*, *Uy* and *Uz* in m/s
-- **k**: turbulent kinetc energy in m²/s²
+- **k**: turbulent kinetic energy in m²/s²
 - **epsilon**: turbulent dissipation rate in m²/s³
 - **omega**: turbulent dissipation frequency in Hz
 - **nuTilda**: SpalartAllmaras' viscosity in m²/s

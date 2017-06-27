@@ -14,7 +14,7 @@ In order to run a CFD simulation you have to generate the **volume of fluid**. I
 
 ## Simplify your geometry
 
-*Remove all features and edges which are smaller than 0.1% times the maximum size of your 3D model*. Small parts, in fact, have a minimum influence to your simulation results but, on the other hand, they often are very difficult to mesh. The general suggestion is to remove these feature, as also highligted by the following tutorials.
+*Remove all features and edges which are smaller than 0.1% times the maximum size of your 3D model*. Small parts, in fact, have a minimum influence to your simulation results but, on the other hand, they often are very difficult to mesh. The general suggestion is to remove these feature, as also highlighted by the following tutorials.
 
 
 {{< youtube Xqt5kwURJG0 >}}

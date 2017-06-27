@@ -361,27 +361,24 @@
 
 
 
-<p>This step is actually common to a certain number of different applications. The instruction mentioned in this page are completely defining all these applications, even though some limitations may occour in some of them, consisting in a reduced number of possible choices availability.</p>
+<p>This step is actually common to a certain number of different applications. The instruction mentioned in this page are completely defining all these applications, even though some limitations may occur in some of them, consisting in a reduced number of possible choices availability.</p>
 
 <h2 id="mechanical-models">MECHANICAL MODELS</h2>
 
 <p>The first section someone has to define in a static mechanical simulation regards the mechanical model. This is a system of hypothesis that link calculated displacement with stress and shear. The models available are:</p>
 
 <ul>
-<li><em>Mechanical model</em>: dropdown menu with all the choices
+<li><p><em>Mechanical model</em>: dropdown menu with all the choices</p>
 
 <ul>
-<li><em>Isotropic linear elastic</em>: isotropic matherial with linear relation between stress and shear: $ \sigma = E \cdot \varepsilon $</li>
-<li><em>Isotropic linear elastic (large displacement)</em>: isotropic matherial with linear relation between stress and shear. Displacement are not negligigle considering the matherial elasticity.</li>
+<li><em>Isotropic linear elastic</em>: isotropic material with linear relation between stress and shear: $ \sigma = E \cdot \varepsilon $. For each of the choices made in the mechanical model, it is then necessary the definition of the material properties such as:</li>
 </ul></li>
-</ul>
 
-<p>For each of the choices made in the mechanical model, it is then necessary the definition of the matherial properties such as:</p>
+<li><p>$\rho$ density</p></li>
 
-<ul>
-<li>$\rho$ density</li>
-<li>$\nu$ poisson ration</li>
-<li>$E$ Young modulus</li>
+<li><p>$\nu$ Poisson ration</p></li>
+
+<li><p>$E$ Young modulus</p></li>
 </ul>
 
 <h2 id="body-force">BODY FORCE</h2>
@@ -405,7 +402,7 @@
 
 <ul>
 <li><strong>CONSTRAINT - Free</strong>: simple boundary condition where neither constraints nor loads are applied.</li>
-<li><strong>CONSTRAINT - Fixed</strong>: possibility to define a constraint boundary condition. The constraint can be applied through a combinations of constraints along the X, Y and Z axis. It is user responsability the definition of a fully constraint system to avoid liabilities.</li>
+<li><strong>CONSTRAINT - Fixed</strong>: possibility to define a constraint boundary condition. The constraint can be applied through a combinations of constraints along the X, Y and Z axis. It is user resposibility the definition of a fully constraint system to avoid liabilities.</li>
 <li><strong>LOAD - Force</strong>: load application as a distributed force in N/mm². The force direction is specified by the user by the definition of the three components along the X, Y and Z axis.</li>
 <li><strong>LOAD - Pressure</strong>: load application of a pressure in Pa. The pressure generates a force which is always orthogonal to the surface.</li>
 </ul>
@@ -446,7 +443,7 @@
 </figure>
 
 
-<p>The residual plot consists of two different graphs: the top one represents the residuals of the algebric method to solve the linear system of equations whilst the bottom one is the number of inner iterations made to achieve the level of residuals. In a correct analysis the residuals should always be below 10^-6, whilst the inner iterations number can be up to 20.</p>
+<p>The residual plot consists of two different graphs: the top one represents the residuals of the algebraic method to solve the linear system of equations whilst the bottom one is the number of inner iterations made to achieve the level of residuals. In a correct analysis the residuals should always be below 10^-6, whilst the inner iterations number can be up to 20.</p>
 
 
 <figure class="figure-30">

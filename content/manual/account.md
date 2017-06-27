@@ -10,7 +10,7 @@ CONSELF it is a **pay-per-use CFD** application available via browser. In order 
 
 {{< figure src="/images/pricing.jpg" alt="Subscription plans" title="Subscription plans" class="figure-50" >}}
 
-The plans currently abailable are mainly three:
+The plans currently available are mainly three:
 
 - **WELCOME**: free plan, every user can activate. No credit card data required. With a free plan you can access up to 100 credits every month and 10GB of cloud storage. The main limitation regards the lack of commercial features, which are frozen for the current plan.
 
@@ -18,7 +18,7 @@ The plans currently abailable are mainly three:
 
 #### CREDITS
 
-With the subscription the user obtains a certain number of credits. Since each credit represents 1 CPU/hour of usage of CONSELF hardware resources, it is not possible to use the web application without a subscription activated. The credits calculation only starts when the proces is actually submitted and in *RUNNING* status - so the whole settings phase has absolutely no influence on the amount of credits used.
+With the subscription the user obtains a certain number of credits. Since each credit represents 1 CPU/hour of usage of CONSELF hardware resources, it is not possible to use the web application without a subscription activated. The credits calculation only starts when the process is actually submitted and in *RUNNING* status - so the whole settings phase has absolutely no influence on the amount of credits used.
 
 {{% notice info %}}
 In case the process returns an ERROR message, the credits used are not charged to the user balance.

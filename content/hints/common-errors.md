@@ -8,7 +8,7 @@ After each STEPS has been performed, it is possible to check its results by clic
  
 {{< figure src="/images/STEPS_completed.png" alt="STEPS completed" class="figure-30" >}}
 
-All the messagges can be classified into two different ways: *WARNING* and *ERROR*. **WARGNING** are yellow coloured and generally they just advice users about possible problems that may happen in a later stage, in particular when some combinations of options are used. **ERROR** messages, coloured in red, report a problem that forbid and advancement to later steps in the CFD/FEM simulation.
+Any messagge can be classified into two different ways: *WARNING* and *ERROR*. **WARGNING** are yellow coloured and generally they just advice users about possible problems that may happen in a later stage, in particular when some combinations of options are used. **ERROR** messages, coloured in red, report a problem that forbid and advancement to later steps in the CFD/FEM simulation.
 
 ## Common GEOMETRY errors
 
@@ -35,7 +35,7 @@ All the messagges can be classified into two different ways: *WARNING* and *ERRO
 			<td>
 				WARNING
 			</td>
-			<td>When defining an external flow, it is possible to impose a 0 distance betweeb the input geometry file and one of the six external sides of the fluid domain. In this way the input geometry is tangent to the fluid domain. This configuration is currently stable only if used in combination with an <strong>HEXAHEDRAL meshing algorithm</strong>.</td>
+			<td>When defining an external flow, it is possible to impose a 0 distance between the input geometry file and one of the six external sides of the fluid domain. In this way the input geometry is tangent to the fluid domain. This configuration is currently stable only if used in combination with an <strong>HEXAHEDRAL meshing algorithm</strong>.</td>
 		</tr>
 		<tr>
 			<td>
@@ -44,7 +44,7 @@ All the messagges can be classified into two different ways: *WARNING* and *ERRO
 			<td>
 				WARNING
 			</td>
-			<td>Input file has a hole in the point coordinates expressed in the message. This hole can be a phisical hole or, in case of bad quality STEP or STL files, is the result of a failure in file conversion. In both events, double check your input file in order to avoid problems during the meshing phase.</td>
+			<td>Input file has a hole in the point coordinates expressed in the message. This hole can be a physical hole or, in case of bad quality STEP or STL files, is the result of a failure in file conversion. In both events, double check your input file in order to avoid problems during the meshing phase.</td>
 		</tr>
 	</tbody>
 </table>
