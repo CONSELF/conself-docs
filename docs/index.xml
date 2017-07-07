@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>AHMED</title>
+      <link>http://docs.conself.com/validation/ahmed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.conself.com/validation/ahmed/</guid>
+      <description>INTRODUCTION In this page will be presented how to setup a wind tunnel virtual test on a car model. This is a typical application where the user wants to simulate a uniform velocity profile entering the tunnel from the inlet that reaches the vehicle. It is typically used to evaluate vehicle performances as aerodynamics coefficients. In this case, in order to explain how realistic simulations are carried out, wind tunnel floor will be modeled as a moving wall, with a translational velocity equal to the flow one.</description>
+    </item>
+    
+    <item>
       <title>Account</title>
       <link>http://docs.conself.com/manual/account/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
