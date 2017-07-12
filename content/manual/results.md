@@ -28,6 +28,7 @@ The file you download is generally a ZIP file with the following information:
 - *wallShearStress* folder: text files with wall shear stress tabulated values in all wall surfaces 
 - *residuals.png* image: residual plot
 - *frequencies.csv* file: CSV file with all the frequencies calculated
+- *reactions.dat* file: DAT file with nodal reaction forces in all constraints. Moments are calculated from the origin: (0.0, 0.0, 0.0)
 
 All these data are available or not depending on the simulation you are running and on the settings you chose. Once you download these files, it is possible to open them using one among the [post-processors]({{< ref "external-link.md#results-postprocessing" >}}) available on the market.
 
