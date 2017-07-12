@@ -56,6 +56,7 @@ In case of a MECH analysis instead you get access to the following range of vari
 - **strain**: strain tensor
 - **displacement**: displacement in m
 - **sigma von mises**: equivalent stress tension in Pa, calculated using the Von Mises criterion
+- **nodal reaction**: nodal reaction in response to external loads
 
 ## PRACTICE
 
