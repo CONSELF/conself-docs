@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>AHMED</title>
+    <title>Car park ventilation</title>
     <link href="http://docs.conself.com/css/nucleus.css" rel="stylesheet">
     <link href="http://docs.conself.com/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://docs.conself.com/css/hybrid.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     {display:none !important;}</style>
     <link href="/css/conself.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/validation/ahmed/">
+  <body class="" data-url="/validation/car-park-ventilation/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -221,13 +221,13 @@
         
         <ul>
           
-            <li class="dd-item active" data-nav-id="/validation/ahmed/">
+            <li class="dd-item " data-nav-id="/validation/ahmed/">
               <a href="/validation/ahmed/">
                 <span>AHMED     </i></span>
               </a>
             </li>
           
-            <li class="dd-item " data-nav-id="/validation/car-park-ventilation/">
+            <li class="dd-item active" data-nav-id="/validation/car-park-ventilation/">
               <a href="/validation/car-park-ventilation/">
                 <span>Car park ventilation     </i></span>
               </a>
@@ -308,7 +308,7 @@
                 
                 
               <div id="top-github-link">
-                  <a class="github-link" href="https://github.com/CONSELF/conself-docs/tree/master/content/validation/AHMED.md" target="blank">
+                  <a class="github-link" href="https://github.com/CONSELF/conself-docs/tree/master/content/validation/car-park-ventilation.md" target="blank">
                     <i class="fa fa-code-fork"></i>
                     Edit this page
                   </a>
@@ -334,7 +334,7 @@
                     
                   
                 
-                <span itemprop="title"> AHMED</span>
+                <span itemprop="title"> Car park ventilation</span>
               </div>
               
                   <div class="progress">
@@ -353,7 +353,6 @@
 <li><a href="#boundary-creation-1">BOUNDARY CREATION 1</a></li>
 <li><a href="#boundary-creation-2">BOUNDARY CREATION 2</a></li>
 <li><a href="#domain">DOMAIN</a></li>
-<li><a href="#confirmation">CONFIRMATION</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#mesh">MESH</a>
@@ -363,7 +362,6 @@
 <li><a href="#volume-mesh">VOLUME MESH</a></li>
 <li><a href="#surface-refinement">SURFACE REFINEMENT</a></li>
 <li><a href="#boundary-layer">BOUNDARY LAYER</a></li>
-<li><a href="#confirmation-1">CONFIRMATION</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#cfd">CFD</a>
@@ -384,7 +382,7 @@
 <li><a href="#visualization-tools">VISUALIZATION TOOLS</a>
 <ul>
 <li><a href="#slice-creation">SLICE CREATION</a></li>
-<li><a href="#stream-lines">STREAM LINES</a></li>
+<li><a href="#slice-2">SLICE 2</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -402,52 +400,54 @@
             
               <div id="body-inner">
                 
-                <h1>AHMED</h1>
+                <h1>Car park ventilation</h1>
                 
 
 
 
 <h2 id="introduction">INTRODUCTION</h2>
 
-<p>In this page will be presented how to setup a wind tunnel virtual test on a car model. This is a typical application where the user wants to simulate a uniform velocity profile entering the tunnel from the inlet that reaches the vehicle. It is typically used to evaluate vehicle performances as aerodynamics coefficients. In this case, in order to explain how realistic simulations are carried out, wind tunnel floor will be modeled as a moving wall, with a translational velocity equal to the flow one.
-The fluid will be modeled as incompressible and turbulent. An uniform velocity profile will be assigned at inlet. The ground floor will be a no-slip boundary that moves with the same velocity while top and lateral walls will be set as free-slip walls. The car surface will be modeled as a no-slip surface (adherence of the flow to the body) and at the outlet the reference pressure will be prescribed.</p>
-
-<p>Aerodynamics coefficients are strictly related with car performances. They &ldquo;measure&rdquo; forces acting on the car body depending on motion and flow characteristics (speed, density, etc). In context like Formula 1 races, these evaluations are boosted to the limit of the available technology because gaining even few percentage points in aerodynamic efficiency means lower drag, that translates into higher speed, lower consumption, higher performances in general.
-But even the common urban car, during design phase, underwent an important and accurate aerodynamics test session, in order to improve its external shape.
-These measurements can be carried out via wind tunnel experiments or via CFD simulations. In what follows every step towards a CFD simulation of a generic car model inside a wind tunnel will be outlined.</p>
-
-<h2 id="tutorials">TUTORIALS</h2>
-
-<p>In order to run the following tutorial please, download the geometry file from here: <a href="http://docs.conself.com/files/Ahmed_bb.stl">Ahmed_bb.stl</a>.</p>
-
-<p>In this case, we are using the Ahmed which was described originally in “S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Vehicle Wake, SAE-Paper 840300, 1984” and it is use also nowadays as benchmark for test and CFD evaluations.</p>
-
-<p>In order to start this tutorial, you have to go in your dashboard and create a new project, named in this case “Car Simulation”.</p>
+<p>In this page will be presented how to setup a car park smoke ventilation simulation.
+The current case represent a general HVAC (heating ventilation and air conditioning). Closed car parks in fact suffer of at least two major issue every designer has to take into consideration: production of CO by cars smoke exhausts and high fire risk compared to many surrounding areas.
+For these reasons, it is common habit to use a ventilation system with the dual purpose: maintaining low level of CO concentrations in standard conditions and guarantee a smoke free way out in a fire scenario. A modern tool to achieve this goal is represented by Jet Fans: a simple ventilation system located right below the ceiling that convey air, and thus smokes, towards an extractor fan, window or, generally speaking, opening of the car park.
+In order to find out the best locations and positioning of such tools CFD represents a great choice: it allows an estimation of the air flows inside the car park. Furthermore, the capabilities of CFD software to predict heat and smoke production, allows to easily simulate the fire case scenario, otherwise impossible in the physical car park.
+For the car park ventilation, the intention is the verification of the jet fans positioning across the car park. For this reason, it is possible to neglect small geometrical details, such as small pipes all over the car park, geometrical details of the Jet Fan itself (i.e. motor geometry).
+In this case, we have a Windows Open Air (Green) and a Ramp Outlet (Rosa). Furthermore, in order to move the Air, a Jet Fan is located quite in the middle of the Car Park. The Boundary Condition will be the Atmospheric Pressure for the Window and the Ramp, a negative Velocity for the Fans Suction and a Positive one for the Fans Pushing.</p>
 
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage1.png" alt="For each case, you have to prepare 4 Steps: &#39;Geometry&#39;, &#39;Mesh&#39;, &#39;CFD&#39;, &#39;Results&#39;." />
+        <img src="/images/CarParkImage1.png" />
     
-    
-    <figcaption>
-        <h4>For each case, you have to prepare 4 Steps: &#39;Geometry&#39;, &#39;Mesh&#39;, &#39;CFD&#39;, &#39;Results&#39;.</h4>
-        
-    </figcaption>
     
 </figure>
 
+
+<h2 id="tutorials">TUTORIALS</h2>
+
+<p>In order to run the following tutorial please, download the geometry file from here: <a href="http://docs.conself.com/files/CarParkExample.stp">CarParkExample.stp</a>. In order to start this tutorial, you have to go in your dashboard and create a new project, named in this case “Car Park Ventilation”.</p>
+
+
+<figure class="figure-50">
+    
+        <img src="/images/CarParkImage2.png" />
+    
+    
+</figure>
+
+
+<p>For each case, you have to prepare 4 Steps: “Geometry”, “Mesh”, “CFD”, “Results”.</p>
 
 <h2 id="geometry">GEOMETRY</h2>
 
 <h4 id="file-data">FILE DATA</h4>
 
-<p>The Geometry can be “Upload” from your Computer or directly from your Onshape account. In both case you have to select the correct unit of measure, in this case  “Meters”.</p>
+<p>The Geometry can be “Upload” from your Computer or directly from your Onshape account. In both case you have to select the correct unit of measure, in this case  “Centimeters”. In order to create easily the regions for the Boundary Conditions, you have to Select and Hide the Top of the Geometry.</p>
 
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage2.png" />
+        <img src="/images/CarParkImage3.png" />
     
     
 </figure>
@@ -455,26 +455,55 @@ These measurements can be carried out via wind tunnel experiments or via CFD sim
 
 <h4 id="boundary-creation-1">BOUNDARY CREATION 1</h4>
 
-<p>Now, you have to create the boundaries. In this case, there is only one region, the “Car body”, so it is possible to select directly all the surfaces. Otherwise, you have to select the surfaces clicking on it.</p>
+<p>Now, you have to create the boundaries. In this case, there are 5 regions:</p>
+
+<ul>
+<li>Windows Open Air</li>
+<li>Ramp Outlet</li>
+<li>Jet Fan Suction</li>
+<li>Jet Fan Pushing</li>
+<li>the rest</li>
+</ul>
+
+<p>To check the scheme of the boundaries in the current geometry check the following image.</p>
 
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage3.png" />
+        <img src="/images/CarParkImage1.png" />
     
     
 </figure>
 
 
-<h4 id="boundary-creation-2">BOUNDARY CREATION 2</h4>
+<p>For the first four region, you have to:</p>
 
-<p>After the region creation, it is possible to name it, in this case as “Car body”.
-Each time, you have to click on “Next” to proceed.</p>
+<ul>
+<li>Select the surfaces clicking on them</li>
+<li>Create Boundary</li>
+<li>Assign a Name</li>
+<li>Create it</li>
+</ul>
 
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage4.png" />
+        <img src="/images/CarParkImage4.png" />
+    
+    
+</figure>
+
+
+<p>Now, you can Click on Next. For the creation of the the remain region, see the next Step.</p>
+
+<h4 id="boundary-creation-2">BOUNDARY CREATION 2</h4>
+
+<p>Now, if you Click on “Next”, a Warning will appear, because, some surfaces are not been selected. In this case, these surface will be merger together. This is a good trick, when you have some complex wall, like this on. So, you can click on “I am” and create the new region in a Click.</p>
+
+
+<figure class="figure-50">
+    
+        <img src="/images/CarParkImage5.png" />
     
     
 </figure>
@@ -482,68 +511,12 @@ Each time, you have to click on “Next” to proceed.</p>
 
 <h4 id="domain">DOMAIN</h4>
 
-<p>In this case, the fluid is external from the geometry, so, you have to create an external imaginary  rectangular as domain box for the calculus.
-You have to assign a length for the positive and negative side.</p>
-
-<p><strong>ATTENTION</strong>: you have to use positive numbers also for the negative sides!</p>
-
-<table>
-<thead>
-<tr>
-<th>Limits</th>
-<th>DeltaX</th>
-<th>DeltaY</th>
-<th>DeltaZ</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Bounding Box+</td>
-<td>20</td>
-<td>0</td>
-<td>100</td>
-</tr>
-
-<tr>
-<td>Bounding Box-</td>
-<td>20</td>
-<td>40</td>
-<td>100</td>
-</tr>
-</tbody>
-</table>
+<p>In this case, the fluid is internal of the geometry. If you click on Submit, the Geometry will be submitted to the Cloud. If you want, you can also Shutdown the computer and wait until the finish of the simulation or work on other projects.</p>
 
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage5.png" />
-    
-    
-</figure>
-
-
-<h4 id="confirmation">CONFIRMATION</h4>
-
-<p>Now, you have to confirm your decision. And the case is submitted for the preparation.</p>
-
-
-<figure class="figure-50">
-    
-        <img src="/images/AhmedImage6.png" />
-    
-    
-</figure>
-
-
-<p>Now, the geometry is preparing on the Cloud. If you want, you can also Shutdown the computer and wait until the finish of the simulation or work on other projects.</p>
-
-<p>When the case is ready, you have to reopen it to start the mesh preparation.</p>
-
-
-<figure class="figure-50">
-    
-        <img src="/images/AhmedImage7.png" />
+        <img src="/images/CarParkImage6.png" />
     
     
 </figure>
@@ -551,14 +524,25 @@ You have to assign a length for the positive and negative side.</p>
 
 <h2 id="mesh">MESH</h2>
 
-<h4 id="volume-mesh">VOLUME MESH</h4>
-
-<p>Now, you have to select the previous step and assign a level of mesh uniformity. For this case 75% can be correct. The higher value, the better are the results, but the meshing and calculation time increases.</p>
+<p>When the case is ready, you have to reopen it to start the mesh preparation.</p>
 
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage8.png" />
+        <img src="/images/CarParkImage7.png" />
+    
+    
+</figure>
+
+
+<h4 id="volume-mesh">VOLUME MESH</h4>
+
+<p>Now, you have to select the previous step. In this step, you have to assign the level of the uniformity of the volume mesh. For this case 50% can be correct. The higher value, the better are the results, but the meshing and calculation time increases.</p>
+
+
+<figure class="figure-50">
+    
+        <img src="/images/CarParkImage8.png" />
     
     
 </figure>
@@ -566,12 +550,12 @@ You have to assign a length for the positive and negative side.</p>
 
 <h4 id="surface-refinement">SURFACE REFINEMENT</h4>
 
-<p>For each surface you have to assign a Uniformity level and a Max Element Size, in accordance with this table. The Max Mesh Size has to be small in the surfaces more curved and irregular. At the same time, can be bigger if the surface is more regular or flat. As before, The higher value, the better are the results, but the meshing and calculation time increases.</p>
+<p>For each surface you have to assign a Uniformity level and a Max Element Size, in accordance with this table.  The Max Mesh Size has to be smaller for smaller or more curved and irregular surfaces. At the same time, can be bigger if the surface is more regular or flat. As before, the higher value, the better are the results, but the meshing and calculation time increases.</p>
 
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage9.png" />
+        <img src="/images/CarParkImage9.png" />
     
     
 </figure>
@@ -588,45 +572,33 @@ You have to assign a length for the positive and negative side.</p>
 
 <tbody>
 <tr>
-<td>Car_body</td>
+<td>Windows_Open_Air</td>
 <td>70</td>
-<td>0.6</td>
+<td>0.1</td>
 </tr>
 
 <tr>
-<td>Boundingbox_xmin</td>
-<td>30</td>
-<td>1</td>
+<td>Ramp_Outlet</td>
+<td>70</td>
+<td>0.1</td>
 </tr>
 
 <tr>
-<td>Boundingbox_xmax</td>
-<td>30</td>
-<td>1</td>
+<td>Jet_Fan_Pushing</td>
+<td>70</td>
+<td>0.01</td>
 </tr>
 
 <tr>
-<td>Boundingbox_ymin</td>
-<td>30</td>
-<td>1</td>
+<td>Jet_Fan_Sunction</td>
+<td>70</td>
+<td>0.01</td>
 </tr>
 
 <tr>
-<td>Boundingbox_ymax</td>
-<td>30</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>Boundingbox_zmin</td>
-<td>30</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>Boundingbox_zmax</td>
-<td>30</td>
-<td>1</td>
+<td>Unselected_parts</td>
+<td>70</td>
+<td>0.1</td>
 </tr>
 </tbody>
 </table>
@@ -638,7 +610,7 @@ You have to assign a length for the positive and negative side.</p>
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage10.png" />
+        <img src="/images/CarParkImage10.png" />
     
     
 </figure>
@@ -655,71 +627,55 @@ You have to assign a length for the positive and negative side.</p>
 
 <tbody>
 <tr>
-<td>Car_body</td>
-<td>0</td>
-<td>0.25</td>
-</tr>
-
-<tr>
-<td>Boundingbox_xmin</td>
+<td>Windows_Open_Air</td>
 <td>0</td>
 <td>1</td>
 </tr>
 
 <tr>
-<td>Boundingbox_xmax</td>
+<td>Ramp_Outlet</td>
 <td>0</td>
 <td>1</td>
 </tr>
 
 <tr>
-<td>Boundingbox_ymin</td>
+<td>Jet_Fan_Pushing</td>
 <td>0</td>
 <td>1</td>
 </tr>
 
 <tr>
-<td>Boundingbox_ymax</td>
+<td>Jet_Fan_Sunction</td>
 <td>0</td>
 <td>1</td>
 </tr>
 
 <tr>
-<td>Boundingbox_zmin</td>
-<td>0</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>Boundingbox_zmax</td>
+<td>Unselected_parts</td>
 <td>0</td>
 <td>1</td>
 </tr>
 </tbody>
 </table>
 
-<h4 id="confirmation-1">CONFIRMATION</h4>
-
-<p>Once again, you have to Confirm your choices.</p>
-
-
-<figure class="figure-50">
-    
-        <img src="/images/AhmedImage11.png" />
-    
-    
-</figure>
-
-
-<p>As before, the simulation is submitted to the Cloud. Now, you can Shutdown your Computer or prepare other Projects.</p>
+<p>Now, you have to Confirm your Choices and the job is submitted to the Cloud. Now, you can Shutdown your Computer or prepare other Projects.</p>
 
 <h2 id="cfd">CFD</h2>
 
 <h4 id="fluid-model">FLUID MODEL</h4>
 
-<p>Now, you have to set up the condition of the CFD Simulation, the Fluid Model, the Boundary Conditions, and the Simulation Settings. In this case, the Car is moving at 50 [m/s], so 180 [km/h] in the normal Air Condition.</p>
+<p>Now, you have to set up the condition of the CFD Simulation, the Fluid Model, the Boundary Conditions, and the Simulation Settings. In this case the Flow is incompressible and turbulent Air.</p>
 
-<p>The flow (air) has this this properties:</p>
+
+<figure class="figure-50">
+    
+        <img src="/images/CarParkImage11.png" />
+    
+    
+</figure>
+
+
+<p>As Turbulence Model, the Spalart-Allmars can be chosen, and the Air has this properties:</p>
 
 <table>
 <thead>
@@ -751,7 +707,7 @@ You have to assign a length for the positive and negative side.</p>
 </tbody>
 </table>
 
-<p>Furthermore, in this case, the Pressure is like the Atmospheric Pressure and the Car is moving at 50 [m/s], it means 180 [km/h], along the Z-Axis.</p>
+<p>Furthermore, in this case, the Pressure is like the Atmospheric Pressure and the Flow is not moving.</p>
 
 <table>
 <thead>
@@ -789,20 +745,9 @@ You have to assign a length for the positive and negative side.</p>
 </tbody>
 </table>
 
-
-<figure class="figure-50">
-    
-        <img src="/images/AhmedImage12.png" />
-    
-    
-</figure>
-
-
 <h4 id="boundary-conditions">BOUNDARY CONDITIONS</h4>
 
-<p>Now, you have to set the Boundary Conditions. For stable Simulation, it is suggest the use of at least one Velocity and one Pressure. In this case, the Inlet Velocity is fixed to 50 [m/s] and the Outlet Pressure is the Atmospheric Pressure, it means 101,235 [Pa].</p>
-
-<p>Furthermore, you have to assign the Hydraulic Diameter, that for Quadratic Inlet is like the Side Length.</p>
+<p>Now, you have to set the Boundary Conditions.  For stable Simulation, it is suggest the use of at least one Velocity and one Pressure. In this case, the you have two Inlet Velocity (at the Jet Suction and Pushing equal to 10 [m/s]) and two Outlet Pressure (at the Open Windows and at the Ramp) equal to the Atmospheric Pressure, it means 101,235 [Pa]. Furthermore, you have to assign the Hydraulic Diameter, that for the Cylinder is like the normal Diameter, such as 4.22 [cm], 0.0422 [m]</p>
 
 <table>
 <thead>
@@ -815,45 +760,33 @@ You have to assign a length for the positive and negative side.</p>
 
 <tbody>
 <tr>
-<td>Car_body</td>
-<td>WALL</td>
-<td>No Slip</td>
+<td>Windows_Open_Air</td>
+<td>Outlet Pressure</td>
+<td>101,235 [Pa]</td>
 </tr>
 
 <tr>
-<td>Boundingbox_xmin</td>
-<td>WALL</td>
-<td>No Slip</td>
+<td>Ramp_Outlet</td>
+<td>Outlet Pressure</td>
+<td>101,235 [Pa]</td>
 </tr>
 
 <tr>
-<td>Boundingbox_xmax</td>
-<td>WALL</td>
-<td>No Slip</td>
-</tr>
-
-<tr>
-<td>Boundingbox_ymin</td>
-<td>WALL</td>
-<td>No Slip</td>
-</tr>
-
-<tr>
-<td>Boundingbox_ymin</td>
-<td>WALL</td>
-<td>No Slip</td>
-</tr>
-
-<tr>
-<td>Boundingbox_zmax</td>
+<td>Jet_Fan_Pushing</td>
 <td>Inlet - Velocity</td>
-<td>U 50 [m/s], Dh 40 [m]</td>
+<td>U 10 [m/s], Dh 0.0422 [m]</td>
 </tr>
 
 <tr>
-<td>Boundingbox_zmin</td>
-<td>Outlet - Pressure</td>
-<td>101,235</td>
+<td>Jet_Fan_Sunction</td>
+<td>Inlet - Velocity</td>
+<td>U -10 [m/s], Dh 0.0422 [m]</td>
+</tr>
+
+<tr>
+<td>Unselected_parts</td>
+<td>WALL</td>
+<td>No Slip</td>
 </tr>
 </tbody>
 </table>
@@ -861,7 +794,7 @@ You have to assign a length for the positive and negative side.</p>
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage13.png" />
+        <img src="/images/CarParkImage12.png" />
     
     
 </figure>
@@ -869,16 +802,14 @@ You have to assign a length for the positive and negative side.</p>
 
 <h4 id="simulation-settings">SIMULATION SETTINGS</h4>
 
-<p>Now, you have to to select the settings. This calculus is steady, it means the is not influenced by the time. As iteration number, for simplex geometry like this one, 100 Iteration is a good number. When you submit, the job is sent to the Cloud. Another important parameter is the numbre of processors used during the computation. This choice affects the credits used in the current simulation.</p>
-
-<p>The Simulation stops when the maximum number of iteration is reached or the residual after the iteration are small enough.</p>
+<p>Now, you have to to select the settings. This calculus is steady, it means the is not influenced by the time. As iteration number, for simplex geometry like this one, 1000 Iterations is a good number. When you submit, the job is sent to the Cloud. The Simulation stops when the maximum number of iteration is reached or the residual after the iteration are small enough.</p>
 
 <p><strong>The non-commercial licence is limited up to 10</strong>.</p>
 
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage14.png" />
+        <img src="/images/CarParkImage13.png" />
     
     
 </figure>
@@ -895,7 +826,7 @@ You have to assign a length for the positive and negative side.</p>
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage15.png" />
+        <img src="/images/CarParkImage14.png" />
     
     
 </figure>
@@ -908,7 +839,7 @@ You have to assign a length for the positive and negative side.</p>
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage16.png" />
+        <img src="/images/CarParkImage15.png" />
     
     
 </figure>
@@ -916,23 +847,20 @@ You have to assign a length for the positive and negative side.</p>
 
 <h4 id="visualization-tools">VISUALIZATION TOOLS</h4>
 
-<p>If you want, you can see your Results directly on ConSelf or Download them. In order to visualize better your Results and the Flow, you can use some Tools, such as Slices, Clips, Stream Line, and so on.</p>
-
-<h5 id="slice-creation">SLICE CREATION</h5>
-
-<p>One option is the creation of Slice:</p>
+<p>If you want, you can see your Results directly on CONSELF or Download them. In order to visualize better your Results and the Flow, you can use some Tools, such as Slices, Clips, Stream Line, and so on.</p>
 
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage17.png" />
+        <img src="/images/CarParkImage16.png" />
     
     
 </figure>
 
 
-<p>Using Slice, you can cut the Mesh with a Plane and easier visualize the Pressure
-In this case, can be useful the creation of the Slice in the Middle of the Mesh:</p>
+<h5 id="slice-creation">SLICE CREATION</h5>
+
+<p>One option is the creation of Slice. Using Slice, you can cut the Mesh with a Plane and easier visualize the Velocity. In this case, can be useful the creation of a Slice in middle of the Fa. Using Slice, you can cut the Mesh with a Plane and easier visualize the Pressure. In this case, can be useful the creation of the Slice in the Middle of the Mesh:</p>
 
 <table>
 <thead>
@@ -947,16 +875,16 @@ In this case, can be useful the creation of the Slice in the Middle of the Mesh:
 <tbody>
 <tr>
 <td>Origin</td>
-<td>19.45</td>
-<td>17.5</td>
-<td>0</td>
+<td>1144</td>
+<td>45</td>
+<td>-0.45</td>
 </tr>
 
 <tr>
 <td>Normal</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -964,20 +892,32 @@ In this case, can be useful the creation of the Slice in the Middle of the Mesh:
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage18.png" />
+        <img src="/images/CarParkImage17.png" />
     
     
 </figure>
 
 
-<h5 id="stream-lines">STREAM LINES</h5>
+<h5 id="slice-2">SLICE 2</h5>
 
-<p>Another option in the creation of  Stream Tracker. Normally, the StreamTracker are useful for the Velocity, in this case called “U”. Obviously, you can also change the Palette and Visualize it.</p>
+<p>Now, you can change the Z value and see the Velocity at different Quotas.
+(In this case, a Plane Position in a Z=-2 [m])</p>
 
 
 <figure class="figure-50">
     
-        <img src="/images/AhmedImage19.png" />
+        <img src="/images/CarParkImage18.png" />
+    
+    
+</figure>
+
+
+<p>Or with different Normal, in this case Normal =[0,1,0].</p>
+
+
+<figure class="figure-50">
+    
+        <img src="/images/CarParkImage19.png" />
     
     
 </figure>
@@ -1098,18 +1038,18 @@ In this case, can be useful the creation of the Slice in the Middle of the Mesh:
           
         
           
-            
-              
-                <a class="nav nav-prev" href="/validation/"> <i class="fa fa-chevron-left"></i></a>
-              
-            
-            
-              
-                <a class="nav nav-next" href="/validation/car-park-ventilation/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
-              
-            
-          
         
+          
+            
+              
+                <a class="nav nav-prev" href="/validation/ahmed/"> <i class="fa fa-chevron-left"></i></a>
+              
+            
+            
+              
+                <a class="nav nav-next" href="/validation/lid-driven-cavity/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+              
+            
           
         
           

@@ -227,6 +227,12 @@
               </a>
             </li>
           
+            <li class="dd-item " data-nav-id="/validation/car-park-ventilation/">
+              <a href="/validation/car-park-ventilation/">
+                <span>Car park ventilation     </i></span>
+              </a>
+            </li>
+          
             <li class="dd-item " data-nav-id="/validation/lid-driven-cavity/">
               <a href="/validation/lid-driven-cavity/">
                 <span>Lid Driven Cavity     </i></span>
@@ -342,10 +348,10 @@
 <li>
 <ul>
 <li><a href="#case-management">CASE MANAGEMENT</a></li>
+<li><a href="#conself-step-by-step">CONSELF STEP BY STEP</a></li>
 <li><a href="#disk-management">DISK MANAGEMENT</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#conself-step-by-step">CONSELF STEP BY STEP</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -498,43 +504,63 @@
 </ul></li>
 </ul>
 
-<p>The bottom part of this page is actually peculiar because it gives quite a few information about the steps which are submitted to the system to be processed.</p>
+<h4 id="conself-step-by-step">CONSELF STEP BY STEP</h4>
+
+<p>CONSELF guides you through the simulation literally step by step; in fact, in order to complete a simulation, the user has to go through several steps, each of which fulfills a precise task. Given the high flexibility of this method, users, less experienced as well, may take advantage of this philosophy of work: they have the ability to control the process, start over or modify what had previously been done. When a CASE is opened, a STEP interface is accessed, as shown in the picture below.</p>
 
 
-<figure class="figure-80">
+<figure class="figure-50">
     
-        <img src="/images/ProgressBar.png" alt="Progress bar" />
+        <img src="/images/General_STEP_page.png" alt="General STEP page" />
     
-    
-    <figcaption>
-        <h4>Progress bar</h4>
-        
-    </figcaption>
     
 </figure>
 
 
-<ul>
-<li><em>Case name</em>: as inserted by the user during the creation</li>
-<li><em>Step type</em>: the step that is running in that moment</li>
-<li><em>Step name</em>: the name assigned to the running step</li>
-<li><em>State</em>: Status of the current step. It can be one among
+<p>The application is generally divided into two sides:</p>
 
 <ul>
-<li>PREPARED -&gt; Process is waiting for the system to start it</li>
-<li>RUNNING -&gt; Process is running</li>
-</ul></li>
-<li><em>Progress</em>: both progress and percentage bars show the completion status for a given step</li>
-<li><em>ETA</em>: estimated time remaining to the end of the current step</li>
-<li><em>Operations</em>: functionalities to interact with the running process and in particular:
-
-<ul>
-<li>Residuals button -&gt; Check the residuals graph of the running step (only for CFD and MECH steps)</li>
-<li>Stop button -&gt; Stop the execution of the current process</li>
-</ul></li>
+<li><em>Left side</em>: current step options to be defined by the user</li>
+<li><em>Right side</em>: view of the simulation results up to the current step</li>
 </ul>
 
-<p>It is important to note that there is no limit of number of contemporary running steps a user can have, as long as there are sufficient credits.</p>
+<p>A fundamental part of the application is given by the <em>Steps completed</em> button, which gives access to a detailed summary table of the performed steps within the current case. After clicking this button a new windows pops-up with one row for every step submitted in the current case.</p>
+
+<p>Going back to the simulation page, on the bottom part we can get quite a few information about the steps which are submitted to the system to be processed.</p>
+
+
+<figure class="figure-80">
+    
+        <img src="/images/SimulationStep.png" alt="Summary table of all the performed steps within a single case." />
+    
+    
+</figure>
+
+
+<p>The data available for each of these submitted steps are:</p>
+
+<ul>
+<li><em>Step Type</em>: type of the performed step</li>
+<li><em>Operations</em>: a set of functionalities to interact with the current step
+
+<ul>
+<li><em>View settings</em>: opens the settings used</li>
+<li><em>Reload settings</em>: reload the settings defined in the current step in a new one. This option is only available if we are now in a new step with the same type as the one we want to reload.</li>
+<li><em>Initialize CFD</em>: initialize a new CFD step from the results of a previous one. This option is only available if we are now in a new CFD step.</li>
+<li><em>View problems</em>: in case of <em>ERROR</em> or <em>WARNING</em>, it opens a new pop-up window where the user can visualize where the problem was.</li>
+</ul></li>
+<li><em>Step name</em>: name assigned to the current step. To edit the name double click this field.</li>
+<li><em>Result code</em>: result code obtained after the execution is completed. It can be one among
+
+<ul>
+<li><em>SUCCESS</em></li>
+<li><em>ERROR</em></li>
+<li><em>WARNING</em></li>
+</ul></li>
+<li><em>Result message</em>: communication and suggestion of action to take in case of <em>ERROR</em> or <em>WARNING</em>.</li>
+</ul>
+
+<p>To discover the resolution of the most common error experienced when using CONSELF web-application check the <a href="http://docs.conself.com/hints/common-errors/">error page</a>.</p>
 
 <h4 id="disk-management">DISK MANAGEMENT</h4>
 
@@ -560,62 +586,6 @@
     
 </figure>
 
-
-<h2 id="conself-step-by-step">CONSELF STEP BY STEP</h2>
-
-<p>CONSELF guides you through the simulation literally step by step; in fact, in order to complete a simulation, the user has to go through several steps, each of which fulfills a precise task. Given the high flexibility of this method, users, less experienced as well, may take advantage of this philosophy of work: they have the ability to control the process, start over or modify what had previously been done. When a CASE is opened, a STEP interface is accessed, as shown in the picture below.</p>
-
-
-<figure class="figure-50">
-    
-        <img src="/images/General_STEP_page.png" alt="General STEP page" />
-    
-    
-</figure>
-
-
-<p>The application is generally divided into two sides:</p>
-
-<ul>
-<li><em>Left side</em>: current step options to be defined by the user</li>
-<li><em>Right side</em>: view of the simulation results up to the current step</li>
-</ul>
-
-<p>A fundamental part of the application is given by the <em>Steps completed</em> button, which gives access to a detailed summary table of the performed steps within the current case. After clicking this button a new windows pops-up with one row for every step submitted in the current case.</p>
-
-
-<figure class="figure-80">
-    
-        <img src="/images/SimulationStep.png" alt="Summary table of all the performed steps within a single case." />
-    
-    
-</figure>
-
-
-<p>The data available for each step are:</p>
-
-<ul>
-<li><em>Step Type</em>: type of the performed step</li>
-<li><em>Operations</em>: a set of functionalities to interact with the current step
-
-<ul>
-<li><em>View settings</em>: opens the settings used</li>
-<li><em>Reload settings</em>: reload the settings defined in the current step in a new one. This option is only available if we are now in a new step with the same type as the one we want to reload.</li>
-<li><em>Initialize CFD</em>: initialize a new CFD step from the results of a previous one. This option is only available if we are now in a new CFD step.</li>
-<li><em>View problems</em>: in case of <em>ERROR</em> or <em>WARNING</em>, it opens a new pop-up window where the user can visualize where the problem was.</li>
-</ul></li>
-<li><em>Step name</em>: name assigned to the current step. To edit the name double click this field.</li>
-<li><em>Result code</em>: result code obtained after the execution is completed. It can be one among
-
-<ul>
-<li><em>SUCCESS</em></li>
-<li><em>ERROR</em></li>
-<li><em>WARNING</em></li>
-</ul></li>
-<li><em>Result message</em>: communication and suggestion of action to take in case of <em>ERROR</em> or <em>WARNING</em>.</li>
-</ul>
-
-<p>To discover the resolution of the most common error experienced when using CONSELF web-application check the <a href="http://docs.conself.com/hints/common-errors/">error page</a>.</p>
 
 
       
@@ -677,6 +647,8 @@
       
         
       
+        
+      
     
       
         
@@ -708,6 +680,8 @@
                 <a class="nav nav-next" href="/manual/geometry/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
               
             
+          
+        
           
         
           
