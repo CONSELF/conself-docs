@@ -59,37 +59,7 @@ On the right handside, it is possible to access previously created simulation wh
 - *Selection of case*: the user can open a previously created case from the drop-down list.
 	- *Open* button redirects the user to the section/step where they left the last time that particular case was edited.
 
-The bottom part of this page is actually peculiar because it gives quite a few information about the steps which are submitted to the system to be processed.
-
-{{< figure src="/images/ProgressBar.png" alt="Progress bar" title="Progress bar" class="figure-80">}}
-
-- *Case name*: as inserted by the user during the creation
-- *Step type*: the step that is running in that moment
-- *Step name*: the name assigned to the running step
-- *State*: Status of the current step. It can be one among
-	- PREPARED -> Process is waiting for the system to start it
-	- RUNNING -> Process is running
-- *Progress*: both progress and percentage bars show the completion status for a given step
-- *ETA*: estimated time remaining to the end of the current step
-- *Operations*: functionalities to interact with the running process and in particular:
-	- Residuals button -> Check the residuals graph of the running step (only for CFD and MECH steps)
-	- Stop button -> Stop the execution of the current process
-
-It is important to note that there is no limit of number of contemporary running steps a user can have, as long as there are sufficient credits.
-
-#### DISK MANAGEMENT
-
-CFD and FEM simulations are quite expensive in terms of storage resources. According to the subscription you are using, a limit is applied to the storage available to your user. If you filled the amount of storage available it is possible to:
-
-- [Download]({{< ref "results.md#downloads" >}}) the results of completed case in your local machine
-- Erase old cases which are no more in use.
-
-Under the **storage** page, the user can find analytical data about his storage usage. At the same time it is possible to delete old cases by selecting them one by one. In this way you are removing non necessary data and you can free more storage space for future cases.
-
-{{< figure src="/images/Storage_page.png" alt="Disk management interface with reference to the area of the screen and the information displayed" title="Disk management interface with reference to the area of the screen and the information displayed" class="figure-50">}}
-
-
-## CONSELF STEP BY STEP
+#### CONSELF STEP BY STEP
 
 CONSELF guides you through the simulation literally step by step; in fact, in order to complete a simulation, the user has to go through several steps, each of which fulfills a precise task. Given the high flexibility of this method, users, less experienced as well, may take advantage of this philosophy of work: they have the ability to control the process, start over or modify what had previously been done. When a CASE is opened, a STEP interface is accessed, as shown in the picture below.
 
@@ -102,9 +72,11 @@ The application is generally divided into two sides:
 
 A fundamental part of the application is given by the *Steps completed* button, which gives access to a detailed summary table of the performed steps within the current case. After clicking this button a new windows pops-up with one row for every step submitted in the current case.
 
+Going back to the simulation page, on the bottom part we can get quite a few information about the steps which are submitted to the system to be processed.
+
 {{< figure src="/images/SimulationStep.png" alt="Summary table of all the performed steps within a single case." class="figure-80" >}}
 
-The data available for each step are:
+The data available for each of these submitted steps are:
 
 - *Step Type*: type of the performed step
 - *Operations*: a set of functionalities to interact with the current step
@@ -120,3 +92,14 @@ The data available for each step are:
 - *Result message*: communication and suggestion of action to take in case of *ERROR* or *WARNING*.
 
 To discover the resolution of the most common error experienced when using CONSELF web-application check the [error page]({{< ref "common-errors.md" >}}).
+
+#### DISK MANAGEMENT
+
+CFD and FEM simulations are quite expensive in terms of storage resources. According to the subscription you are using, a limit is applied to the storage available to your user. If you filled the amount of storage available it is possible to:
+
+- [Download]({{< ref "results.md#downloads" >}}) the results of completed case in your local machine
+- Erase old cases which are no more in use.
+
+Under the **storage** page, the user can find analytical data about his storage usage. At the same time it is possible to delete old cases by selecting them one by one. In this way you are removing non necessary data and you can free more storage space for future cases.
+
+{{< figure src="/images/Storage_page.png" alt="Disk management interface with reference to the area of the screen and the information displayed" title="Disk management interface with reference to the area of the screen and the information displayed" class="figure-50">}}
