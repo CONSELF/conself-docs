@@ -185,14 +185,14 @@ Any messagge can be classified into two different ways: *WARNING* and *ERROR*. *
 		</tr>
 		<tr>
 			<td>
-				<strong>Maximum number of iterations exceeded after $iter iterations (check your mesh quality and increase its refinement)</strong>
+				<strong>Maximum number of iterations exceeded after XX iterations (check your mesh quality and increase its refinement)</strong>
 				<hr>
 				<strong>Floating point exception after XX iterations (check your mesh quality and increase its refinement)</strong>
 			</td>
 			<td>
 				ERROR
 			</td>
-			<td>Poor mesh quality or wrong boundary condition lead to a diverging simulation. Check the mesh quality and in case use a different level of refinement to get a better mesh quality. More <strong>information about</strong> mesh quality is available in <strong><a rel="nofollow" class="external text" href="https://conself.com/blog/4-mesh-issues-poor-accuracy/">this</a> blog post</strong> and <strong><a rel="nofollow" class="external text" href="https://conself.com/blog/what-is-boundary-layer-and-how-can-you-handle-it/">this</a></strong></td>
+			<td>Poor mesh quality or wrong boundary condition lead to a diverging simulation. The reson of a diverging CFD can be many and they are descibed in <strong><a rel="nofollow" class="external text" href="https://conself.com/blog/investigating-the-reasons-why-your-cfd-analysis-is-not-converging/">this blog post</a></strong>. In general you should check both your input data and the mesh quality and in case use a different level of refinement to get a better mesh quality. More information about mesh quality is available in <a rel="nofollow" class="external text" href="https://conself.com/blog/4-mesh-issues-poor-accuracy/">this</a> blog post and <a rel="nofollow" class="external text" href="https://conself.com/blog/what-is-boundary-layer-and-how-can-you-handle-it/">this</a> one.</td>
 		</tr>
 		<tr>
 			<td>
