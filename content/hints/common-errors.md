@@ -60,7 +60,7 @@ Any messagge can be classified into two different ways: *WARNING* and *ERROR*. *
 		</tr>
 		<tr>
 			<td>
-				<strong>Mesh too coarse (Use smaller mesh sizes to increase refinement)</strong>
+				<strong>Mesh seems to be too coarse (Use smaller mesh sizes and visualize corrupted mesh using the dedicated button)</strong>
 			</td>
 			<td>
 				ERROR
@@ -138,9 +138,7 @@ Any messagge can be classified into two different ways: *WARNING* and *ERROR*. *
 			<td>
 				<strong>Meshing out of memory (reduce wall refinement)</strong>
 				<hr>
-				<strong>Failure in HEXA cut cells creation: out of memory (reduce wall refinement)</strong>
-				<hr>
-				<strong>Failure in preparing HEXA mesh (contact support@conself.com)</strong>
+				<strong>Mesh with too many cells (Increase mesh size parameter in surface refinement settings)</strong>
 			</td>
 			<td>
 				ERROR
