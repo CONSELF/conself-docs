@@ -11,7 +11,10 @@ This step is actually common to a certain number of different applications. The 
 The first section someone has to define in a static mechanical simulation regards the mechanical model. This is a system of hypothesis that link calculated displacement with stress and shear. The models available are:
 
 - *Mechanical model*: dropdown menu with all the choices
-	- *Isotropic linear elastic*: isotropic material with linear relation between stress and shear: $ \sigma = E \cdot \varepsilon $. For each of the choices made in the mechanical model, it is then necessary the definition of the material properties such as:
+	- *Isotropic linear elastic*: isotropic material with linear relation between stress and shear: $ \sigma = E \cdot \varepsilon $.
+	- *Isotropic linear elastic (large displacement)*: isotropic material with linear relation between stress and shear: $ \sigma = E \cdot \varepsilon $ and the hypotesys of large displacements.
+
+For each of the choices made in the mechanical model, it is then necessary the definition of the material properties such as:
 
 - $\rho$ density
 - $\nu$ Poisson ration
