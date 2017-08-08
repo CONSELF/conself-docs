@@ -49,6 +49,26 @@ First wall cell height and y+ are mutually influenced. Remember to decrease the 
 
 After having completed this setup, the user can finalize the step by clicking on the *Submit* button. This will start the **Mesh** step application that will show up in the *Case in progress* section of the main *Simulation* page.
 
+## MESH QUALITY
+
+Once the mesh step is completed, using the graphic interface it is possible to view the obtained grid. Mesh quality is reported with a certain number of variables which highlights problematic cells. The most common variables are:
+
+* skewFaces
+
+{{< figure src="/images/Skewness.png" alt="Skew face representation" class="figure-50" >}}
+
+* nonOrthoFaces
+
+{{< figure src="/images/aspectRatio.png" alt="Non orthogonal cells" class="figure-50" >}}
+
+* highAspectRatioCells
+
+{{< figure src="/images/Orthogonality.png" alt="High aspect ration visualization" class="figure-50" >}}
+
+CONSELF automatically impose some fixed thresholds for all these problems. When this threshold is passed the cell is highlighted as low quality. The highlight mechanism is rather simple: all these variables are assigned a 0 value where no problem is present, 1 where the problem is present. In order to view the mesh zone where quality test fails it is necessary to filter and extract the problematic zone as described in this tutorial.
+
+{{< youtube MnKwiDkBJBU >}}
+
 ## PRACTICE
 
 #### TO KNOW EVEN MORE
