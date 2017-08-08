@@ -346,6 +346,7 @@
 <li><a href="#volume-mesh">VOLUME MESH</a></li>
 <li><a href="#surface-refinement">SURFACE REFINEMENT</a></li>
 <li><a href="#boundary-layer">BOUNDARY LAYER</a></li>
+<li><a href="#mesh-quality">MESH QUALITY</a></li>
 <li><a href="#practice">PRACTICE</a>
 <ul>
 <li>
@@ -455,6 +456,56 @@
 
 
 <p>After having completed this setup, the user can finalize the step by clicking on the <em>Submit</em> button. This will start the <strong>Mesh</strong> step application that will show up in the <em>Case in progress</em> section of the main <em>Simulation</em> page.</p>
+
+<h2 id="mesh-quality">MESH QUALITY</h2>
+
+<p>Once the mesh step is completed, using the graphic interface it is possible to view the obtained grid. Mesh quality is reported with a certain number of variables which highlights problematic cells. The most common variables are:</p>
+
+<ul>
+<li>skewFaces</li>
+</ul>
+
+
+<figure class="figure-50">
+    
+        <img src="/images/Skewness.png" alt="Skew face representation" />
+    
+    
+</figure>
+
+
+<ul>
+<li>nonOrthoFaces</li>
+</ul>
+
+
+<figure class="figure-50">
+    
+        <img src="/images/aspectRatio.png" alt="Non orthogonal cells" />
+    
+    
+</figure>
+
+
+<ul>
+<li>highAspectRatioCells</li>
+</ul>
+
+
+<figure class="figure-50">
+    
+        <img src="/images/Orthogonality.png" alt="High aspect ration visualization" />
+    
+    
+</figure>
+
+
+<p>CONSELF automatically impose some fixed thresholds for all these problems. When this threshold is passed the cell is highlighted as low quality. The highlight mechanism is rather simple: all these variables are assigned a 0 value where no problem is present, 1 where the problem is present. In order to view the mesh zone where quality test fails it is necessary to filter and extract the problematic zone as described in this tutorial.</p>
+
+<div class="video-player">
+	<iframe class="youtube-player" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/MnKwiDkBJBU" allowfullscreen frameborder="0">
+	</iframe>
+</div>
 
 <h2 id="practice">PRACTICE</h2>
 
