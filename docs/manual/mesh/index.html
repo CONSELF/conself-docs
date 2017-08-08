@@ -502,6 +502,15 @@
 
 <p>CONSELF automatically impose some fixed thresholds for all these problems. When this threshold is passed the cell is highlighted as low quality. The highlight mechanism is rather simple: all these variables are assigned a 0 value where no problem is present, 1 where the problem is present. In order to view the mesh zone where quality test fails it is necessary to filter and extract the problematic zone as described in this tutorial.</p>
 
+<ul>
+<li>Open the menu clicking on the <strong>Pipeline</strong> button</li>
+<li>select the solution file <em>system.foam</em></li>
+<li>apply the <strong>Threshold</strong> filter under the menu identified by a <em>+</em> sign</li>
+<li>in the filter properties choose the quality variable (i.e. <em>skewFaces</em>) as parameter</li>
+<li>set the minimum and maximum threshold values as 0.5 and 1 and click on the small tick in the upper part of the filter property</li>
+<li>in the pipeline menu activate the visualization of the entire file <em>system.foam</em> and set <em>Opacity</em> value in its <em>Representation</em> property equal to 0.3</li>
+</ul>
+
 <div class="video-player">
 	<iframe class="youtube-player" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/MnKwiDkBJBU" allowfullscreen frameborder="0">
 	</iframe>

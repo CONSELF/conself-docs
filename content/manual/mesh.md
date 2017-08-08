@@ -67,6 +67,13 @@ Once the mesh step is completed, using the graphic interface it is possible to v
 
 CONSELF automatically impose some fixed thresholds for all these problems. When this threshold is passed the cell is highlighted as low quality. The highlight mechanism is rather simple: all these variables are assigned a 0 value where no problem is present, 1 where the problem is present. In order to view the mesh zone where quality test fails it is necessary to filter and extract the problematic zone as described in this tutorial.
 
+* Open the menu clicking on the **Pipeline** button
+* select the solution file *system.foam*
+* apply the **Threshold** filter under the menu identified by a *+* sign
+* in the filter properties choose the quality variable (i.e. *skewFaces*) as parameter
+* set the minimum and maximum threshold values as 0.5 and 1 and click on the small tick in the upper part of the filter property
+* in the pipeline menu activate the visualization of the entire file *system.foam* and set *Opacity* value in its *Representation* property equal to 0.3
+
 {{< youtube MnKwiDkBJBU >}}
 
 ## PRACTICE
