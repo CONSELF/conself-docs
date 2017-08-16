@@ -439,11 +439,19 @@
         <tr>
             <td>
                 <strong>Stop Tetrahedral meshing since surface mesh is overlapping. (If possible use Hexahedral meshing or contact support@conself.com)</strong>
+                                <hr>
+                                <strong>Surface mesh overlaps (If possible, use Hexahedral meshing, use a smaller mesh size or try STEP/IGES Fix Tool with tolerance X.XXX)</strong>
             </td>
             <td>
                 ERROR
             </td>
-            <td>Overlapping surfaces in input geometry file. Remember to simplify them as explained in <a href="http://docs.conself.com/hints/input-cad-files/">Input CAD Files</a>. For IGES files, try also the <i>STEP / IGES file healing</i> to sew faces into a single solid.</td>
+            <td>Overlapping surfaces in input geometry file. This error is due to a number of causes and can have different solutions such as:
+
+                <ul>
+                    <li>Make sure you followed our guidelines for the <a href="http://docs.conself.com/hints/input-cad-files/">input CAD Files</a></li>
+                    <li>Increase the <a href="http://docs.conself.com/manual/mesh/#surface-refinement">surface refinement</a> level to increase the surface representation</li>
+                    <li>For IGES files, use the <i>STEP / IGES file healing</i> tool, to sew faces into a single solid</li>
+                </ul>
         </tr>
         <tr>
             <td>
@@ -461,15 +469,6 @@
         </tr>
         <tr>
             <td>
-                <strong>Meshing phase failure: high aspect ratio face (check your input geometry file at location: x = xxxxxx y = yyyyyy z = zzzzzz)</strong>
-            </td>
-            <td>
-                ERROR
-            </td>
-            <td>A face with a high aspect ration (very long triangle) has been detected. This type of shapes, beside resulting difficult to mesh, may lead to problematic elements shapes. It is recommended to check with your preferred CAD software the faces near to the location given in the error message.</td>
-        </tr>
-        <tr>
-            <td>
                 <strong>Tetrahedral meshing failed (Use a smaller mesh size or try STEP/IGES Fix Tool with tolerance X.XXX and visualize geometry problems using dedicated button)</strong>
             </td>
             <td>
@@ -477,22 +476,6 @@
             </td>
             <td>Meshing algorithm fails because of troubles with a certain surface. CONSELF provides a STEP/IGES cleaning tool which allows to try and fix the STEP file. It is recommended to use it with the tolerance given in the error message before proceeding any further.<br><br>
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/ux11IKPxYJs" frameborder="0" allowfullscreen></iframe></center></td>
-        </tr>
-        <tr>
-            <td>
-                <strong>BL Extension needs to be reduced too much to avoid surface mesh overlap (Increase surface mesh refinement or deactivate boundary layer)</strong>
-            </td>
-            <td>
-                ERROR
-            </td>
-            <td>
-                Surface mesh triangles are overlapping and this cause a failure. In order to solve this problem you have three possibilities:
-                <ul>
-                    <li>Try a new mesh without boundary layer (CFD only)</li>
-                    <li>Use an HEXA mesh with or without boundary layer (CFD only)</li>
-                    <li>Check your input file for solid compenetration</li>
-                </ul>
-            </td>
         </tr>
         <tr>
             <td>
@@ -516,6 +499,40 @@
         </tr>
         <tr>
             <td>
+                <strong>Tetrahedral volume meshing failed (If possible use Hexahedral meshing or increase surface refinement by reducing <strong>mesh size</strong> parameter)</strong>
+            </td>
+            <td>
+                ERROR
+            </td>
+            <td>If refinement levels are highly different between surfaces (difference &gt; 10^2) this error may occur. Use a more uniform elements dimension in all surfaces.</td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Meshing phase failure: high aspect ratio face (check your input geometry file at location: x = xxxxxx y = yyyyyy z = zzzzzz)</strong>
+            </td>
+            <td>
+                ERROR
+            </td>
+            <td>A face with a high aspect ration (very long triangle) has been detected. This type of shapes, beside resulting difficult to mesh, may lead to problematic elements shapes. It is recommended to check with your preferred CAD software the faces near to the location given in the error message.</td>
+        </tr>
+        <tr>
+            <td>
+                <strong>BL Extension needs to be reduced too much to avoid surface mesh overlap (Increase surface mesh refinement or deactivate boundary layer)</strong>
+            </td>
+            <td>
+                ERROR
+            </td>
+            <td>
+                Surface mesh triangles are overlapping and this cause a failure. In order to solve this problem you have three possibilities:
+                <ul>
+                    <li>Try a new mesh without boundary layer (CFD only)</li>
+                    <li>Use an HEXA mesh with or without boundary layer (CFD only)</li>
+                    <li>Check your input file for solid compenetration</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <strong>Stop Tetrahedral meshing since surface mesh is not consistent. (If possible use Hexahedral meshing)</strong>
             </td>
             <td>
@@ -530,15 +547,6 @@
                     <li>Modify your geometry file</li>
                 </ul>
             </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Tetrahedral volume meshing failed (If possible use Hexahedral meshing or increase surface refinement by reducing <strong>mesh size</strong> parameter)</strong>
-            </td>
-            <td>
-                ERROR
-            </td>
-            <td>If refinement levels are highly different between surfaces (difference &gt; 10^2) this error may occur. Use a more uniform elements dimension in all surfaces.</td>
         </tr>
     </tbody>
 </table>
@@ -561,7 +569,7 @@
             <td>
                 ERROR
             </td>
-            <td>Poor mesh quality or wrong boundary condition lead to a diverging simulation. The reson of a diverging CFD can be many and they are descibed in <strong><a rel="nofollow" class="external text" href="https://conself.com/blog/investigating-the-reasons-why-your-cfd-analysis-is-not-converging/">this blog post</a></strong>. In general you should check both your input data and the mesh quality and in case use a different level of refinement to get a better mesh quality. A special hint for <i>transient</i> simulation is not to initialise velocity to (0,0,0). <br>More information about mesh quality is available in <a rel="nofollow" class="external text" href="https://conself.com/blog/4-mesh-issues-poor-accuracy/">this</a> blog post and <a rel="nofollow" class="external text" href="https://conself.com/blog/what-is-boundary-layer-and-how-can-you-handle-it/">this</a> one.</td>
+            <td>Poor mesh quality or wrong boundary condition lead to a diverging simulation. In general, check your <a rel="nofollow" class="external text" href="http://docs.conself.com/manual/mesh/#mesh-quality">mesh quality</a> and make sure you don't have low quality cells. <br>A simple procedure to fix this problem is also reported in <a rel="nofollow" class="external text" href="https://conself.com/blog/investigating-the-reasons-why-your-cfd-analysis-is-not-converging/">this blog post</a>. A special hint for <i>transient</i> simulation is not to initialise velocity to (0,0,0).
         </tr>
         <tr>
             <td>

@@ -76,6 +76,11 @@ CONSELF automatically impose some fixed thresholds for all these problems. When 
 
 {{< youtube MnKwiDkBJBU >}}
 
+More information about mesh quality are available in our blog:
+
+* Discussion about [bad quality cells detection](https://conself.com/blog/4-mesh-issues-poor-accuracy/)
+* Management of meshing algorithms for [boundary layer](https://conself.com/blog/what-is-boundary-layer-and-how-can-you-handle-it/)
+
 ## PRACTICE
 
 #### TO KNOW EVEN MORE
