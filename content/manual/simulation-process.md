@@ -110,7 +110,7 @@ The data available for each step are:
 - *Operations*: a set of functionalities to interact with the current step
 	- *View settings*: opens the settings used
 	- *Reload settings*: reload the settings defined in the current step in a new one. This option is only available if we are now in a new step with the same type as the one we want to reload.
-	- *Initialize CFD*: initialize a new CFD step from the results of a previous one. This option is only available if we are now in a new CFD step.
+	- *Initialize CFD*: [initialize a new CFD step](https://conself.com/blog/cfd-restart-now-available/) from the results of a previous one. This option is only available if we are now in a new CFD step.
 	- *View problems*: in case of *ERROR* or *WARNING*, it opens a new pop-up window where the user can visualize where the problem was.
 - *Step name*: name assigned to the current step. To edit the name double click this field.
 - *Result code*: result code obtained after the execution is completed. It can be one among

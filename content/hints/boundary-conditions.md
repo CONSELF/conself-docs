@@ -4,10 +4,19 @@ toc: true
 weight: 2
 ---
 
-The table below report an overview of available boundary conditions and specifications. The description specifies the application and the restriction of the boundary conditions.
+For your CFD simulation CONSELF provides a very high number of different settings. In general the boundary available are grouped in few types:
+
+* **INLET** -> flow inlet into the system
+* **OUTLET** -> flow outlet
+* **IN/OUT** -> boundaries that can define both an inlet or outlet (surface normal vectors are positive if inlet, negative when outlet)
+* **WALL** -> solid walls of the system
+
+Starting from this raw classification, each boundary is specialized and gives a number of feature to the user to reproduce reality as accurately as possible. Remember that some of these boundary conditions are available according to the application you are using and also to the [fluid model]({{< ref "cfd.md#fluid-models" >}}) chosen.
+
+Once you select the appropriate boundary for your models, a certain number of inputs are required, such as pressure values, velocities, temperatures, etc. Using this page you can have a complete list of all these options with hints to choose correct values.
  
 {{% notice info %}}
-Boundary availability depends on the application you are currently using.
+WALL boundaries highly affect the quality of your simulation, in combination with wall refinement and the turbulence model. Guidelines about an appropriate selection are given in <a href="https://conself.com/blog/y-what-is-it-and-how-can-i-use-it">this blog post</a>.
 {{% /notice %}}
 
 <table>
