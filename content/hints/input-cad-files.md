@@ -25,6 +25,13 @@ In order to run a CFD simulation you have to generate the **volume of fluid**. I
 
 {{< figure src="/images/NarrowAngles.png" alt="Narrow Angles" class="figure-30" >}}
 
+
+## Extend inlet and outlet
+
+To improve the solution stability, make sure your inlet and outlet boundary condition are applied far away the core of the simulation. Extend inlet pipes or the fluid volume and make sure your distance is 5 times the diameter for the inlet, 10 times for the outlet (as expressed in the following drawing).
+
+{{< figure src="/images/ValveFluid.jpg" alt="Narrow Angles" class="figure-30" >}}
+
 ## Colors are helpful
 
 At the beginning of every GEOMETRY step, regardless we are about to run a CFD or a MECH simulations, we have to define the surface groups which are later used to impose boundary conditions or wall refinement. To speed up this process, CONSELF can read colors used in input files and use these colors to define surface groups.
