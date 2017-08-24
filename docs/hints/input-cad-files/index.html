@@ -346,6 +346,7 @@
 <li><a href="#create-fluid-volumes">Create fluid volumes</a></li>
 <li><a href="#simplify-your-geometry">Simplify your geometry</a></li>
 <li><a href="#avoid-edges">Avoid edges</a></li>
+<li><a href="#extend-inlet-and-outlet">Extend inlet and outlet</a></li>
 <li><a href="#colors-are-helpful">Colors are helpful</a></li>
 <li><a href="#assembly-files">Assembly files?</a></li>
 </ul></li>
@@ -394,6 +395,19 @@
 <figure class="figure-30">
     
         <img src="/images/NarrowAngles.png" alt="Narrow Angles" />
+    
+    
+</figure>
+
+
+<h2 id="extend-inlet-and-outlet">Extend inlet and outlet</h2>
+
+<p>To improve the solution stability, make sure your inlet and outlet boundary condition are applied far away the core of the simulation. Extend inlet pipes or the fluid volume and make sure your distance is 5 times the diameter for the inlet, 10 times for the outlet (as expressed in the following drawing).</p>
+
+
+<figure class="figure-30">
+    
+        <img src="/images/ValveFluid.jpg" alt="Narrow Angles" />
     
     
 </figure>
