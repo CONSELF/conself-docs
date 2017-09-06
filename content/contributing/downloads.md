@@ -18,6 +18,8 @@ weight: 1
 
 [CPU.stp](/files/CPU.stp) (135 KB)
 
+[ImpellerFluid.stp](/files/ImpellerFluid.stp) (80 KB)
+
 [LCA_geometrysimplified.zip](/files/LCA_geometrysimplified.zip) (6.3 MB)
 
 [LidDriven.stp](/files/LidDriven.stp) (14 KB)
