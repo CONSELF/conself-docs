@@ -49,7 +49,7 @@ In simulation settings the user interface requires a set of numerical parameters
 
 - **Iterations number**: definition of the number of iterations required to complete the simulation
 - **Output frequency**: the frequency we are using to save an output visualization file
-- **Cores number**: the number of cores required to run the simulation
+- **Cores number**: the number of cores required to run the simulation and the RAM available
 
 {{% notice info %}}
 The **iterations number**, and consequently, the **output frequency** are useful parameters when dealing with non-linear simulations. A higher number of iterations helps the solver to achieve a complete level of convergence.

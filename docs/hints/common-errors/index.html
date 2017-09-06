@@ -452,6 +452,7 @@
                     <li>Increase the <a href="http://docs.conself.com/manual/mesh/#surface-refinement">surface refinement</a> level to increase the surface representation</li>
                     <li>For IGES files, use the <i>STEP / IGES file healing</i> tool, to sew faces into a single solid</li>
                 </ul>
+         </td>
         </tr>
         <tr>
             <td>
@@ -595,11 +596,13 @@
         <tr>
             <td>
                 <strong>Singular matrix detected (insert one CONSTRAINED boundary condition in a new MECH step)</strong>
+            <hr>
+                <strong>Singular matrix detected (make sure you avoid movement in X, Y and Z directions with constraint boundaries)</strong>
             </td>
             <td>
                 ERROR
             </td>
-            <td>In static analysis we must guarantee our <strong>part to be at least isostatic</strong>. Make sure you are using at least one CONSTRAINT - FIXED boundary.</td>
+            <td>In static analysis we must guarantee our <strong>part to be at least isostatic</strong>. Make sure you are using at least one CONSTRAINT - FIXED boundary and that at lease one CONSTRAINT is imposed in every direction.</td>
         </tr>
         <tr>
             <td>
@@ -612,12 +615,27 @@
         </tr>
         <tr>
             <td>
-                <strong>Singular matrix detected (make sure you avoid movement in X, Y and Z directions with constraint boundaries)</strong>
+                <strong>Non convergence error (increase the number of iterations and check your boundary conditions in a new MECH step)</strong>
             </td>
             <td>
                 ERROR
             </td>
-            <td>One of the degree of freedom (translations in X, Y and Z directions) is not limited with the current configuration.</td>
+            <td>The MECH step did not converged. In general this is due to an incorrect boundary definition, i.e. <i>lack of external loads.</i></td>
+        </tr>
+        <tr>
+        <tr>
+            <td>
+                <strong>Out of RAM (generate a new mesh with fewer amout of elements)</strong>
+            </td>
+            <td>
+                ERROR
+            </td>
+            <td>The RAM available in the current machine is not sufficient to perform your case. To fix this situation you generally have two different options:
+                <ul>
+                    <li>Re-run the same MECH step in a bigger machine by selecting a higher number of cores</li>
+                    <li>Reduce the mesh elements number by creating a new mesh with a lower level of refinement</li>
+                </ul>
+         </tb>
         </tr>
     </tbody>
 </table>

@@ -84,7 +84,7 @@ In case *Steady* scheme is chosen
 - *Number of iterations*: number of iterations performed by the CFD solver. The higher the number, the more accurate the solution.
 - *Output frequency*: specifies how often simulation results are saved for the visualization.
 
-After these options you have the possibility to select the number of cores used to run the simulation. Using the dropdown menu you can pick the number of cores you are using to run the simulation. In general, a higher number of cores allows you to get the results in a shorter amount of time.
+After these options you have the possibility to select the number of cores used to run the simulation. Using the dropdown menu you can pick the number of cores you are using to run the simulation. In general, a higher number of cores allows you to get the results in a shorter amount of time. At the same time, the cores number define the machine size where you run the simulation, modifying the available RAM as well.
 
 After completion of all fields, the user can finalize the step clicking on *Submit* button. This will start the **CFD** step application that will appear in the *Case in progress* section of the main *Simulation* page.
 
