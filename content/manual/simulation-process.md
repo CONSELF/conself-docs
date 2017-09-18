@@ -31,7 +31,7 @@ In the present manual, each of these steps are accurately described and displaye
 
 After having logged in, the CONSELF dashboard appears on screen. On the menu on the left side, the last entry is the **Simulations** tab. Click on it to be redirected to the simulations front page, shown in the following figure. There are three main sections: two in the upper part and one in the bottom part as also highlighted by the following image.
 
-{{< figure src="/images/CarSimulationCaseCreation.png" alt="Definitions of the zones in which the user interface is divided" title="Definitions of the zones in which the user interface is divided" class="figure-50" >}}
+{{< figure src="/images/CarSimulationCaseCreation.png" alt="Definitions of the zones in which the user interface is divided" title="Definitions of the zones in which the user interface is divided" class="figure-80" >}}
 
 When defining a new case, the user is requested a certain number of inputs:
 
@@ -54,10 +54,14 @@ When defining a new case, the user is requested a certain number of inputs:
 Type the first part of the application name to filter the available choices.
 {{% /notice %}}
 
-On the right handside, it is possible to access previously created simulation which have not been erased yet. All the data are in fact stored using the cloud [space available]({{< ref "simulation-process.md#disk-management" >}}) according to your cloud account.
+On the right handside, it is possible to access previously created simulations which have not been erased yet. All the data are in fact stored using the cloud [space available]({{< ref "simulation-process.md#disk-management" >}}) according to your active subscription.
 
 - *Selection of case*: the user can open a previously created case from the drop-down list.
 	- *Open* button redirects the user to the section/step where they left the last time that particular case was edited.
+
+It is possible also to have an overview of recent activities in the platform, i.e. finished steps and cases using the *Activity* button on top of this page. This button opens a further window which shows a list of recently submitted steps, with the information regarding each of them.
+
+{{< figure src="/images/ActivitySummary.png" alt="Recent activities notification" title="Recent activities notification" class="figure-50">}}
 
 The bottom part of this page is actually peculiar because it gives quite a few information about the steps which are submitted to the system to be processed.
 
