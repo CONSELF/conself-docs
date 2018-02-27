@@ -8,7 +8,7 @@ weight: 1
 
 CONSELF it is a **pay-per-use CFD** application available via browser. In order to enjoy this service, you must **activate** one of the [available plans](https://conself.com/product/subscriptions/).
 
-{{< figure src="/images/pricing.jpg" alt="Subscription plans" title="Subscription plans" class="figure-50" >}}
+{{< figure src="/images/pricing.png" alt="Subscription plans" title="Subscription plans" class="figure-50" >}}
 
 The plans currently available are mainly three:
 
