@@ -12,7 +12,7 @@ CONSELF it is a **pay-per-use CFD** application available via browser. In order 
 
 The plans currently available are mainly three:
 
-- **WELCOME**: free plan, every user can activate. No credit card data required. With a free plan you can access up to 100 credits every month and 10GB of cloud storage. The main limitation regards the lack of commercial features, which are frozen for the current plan.
+- **STARTER**: one-time plan to try the platform at a low fee. With this plan, you can access up to 300 credits for 3 months, 10GB of cloud storage and all commercial features available.
 
 - **FREELANCE** and **ENTERPRISE**: these two plans can be activated automatically. They both give access to the complete set of commercial features present in the application and their difference regards the number of credits given every month to the user: 250 for the FREELANCE and 1500 for the ENTERPRISE.
 
@@ -26,7 +26,7 @@ In case the process returns an ERROR message, the credits used are not charged t
 
 #### SUBSCRIPTION ACTIVATION
 
-Before start using the web application for your FEM/CFD simulations, make sure you activated at least the WELCOME plan. The following tutorial guides you through the activation process.
+Before start using the web application for your FEM/CFD simulations, make sure you activated at least the STARTER plan. The following tutorial guides you through the activation process.
 
 {{< youtube XAHheCiJDYA >}}
 
