@@ -2,48 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manual on CONSELF Docs</title>
-    <link>http://docs.conself.com/manual/</link>
+    <link>https://docs.conself.com/manual/</link>
     <description>Recent content in Manual on CONSELF Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.conself.com/manual/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.conself.com/manual/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Account</title>
-      <link>http://docs.conself.com/manual/account/</link>
+      <link>https://docs.conself.com/manual/account/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/account/</guid>
-      <description>SUBSCRIPTION CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans.</description>
+      <guid>https://docs.conself.com/manual/account/</guid>
+      <description>SUBSCRIPTION CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans.
+ Subscription plans   The plans currently available are mainly two:
+ FREELANCE and ENTERPRISE: these two plans can be activated automatically. They both give access to the complete set of commercial features present in the application and their difference regards the number of credits given every month to the user: 250 for the FREELANCE and 1500 for the ENTERPRISE.</description>
     </item>
     
     <item>
       <title>Simulation Process</title>
-      <link>http://docs.conself.com/manual/simulation-process/</link>
+      <link>https://docs.conself.com/manual/simulation-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/simulation-process/</guid>
+      <guid>https://docs.conself.com/manual/simulation-process/</guid>
       <description>INTRODUCTION Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:
 Simulation: a mathematical procedure that allows to reproduce in a virtual environment - software - a physical behavior. Compared to laboratory tests, it is a quicker and cheaper process. Ultimately, simulations help engineers validate the hypothesis behind every design phase.</description>
     </item>
     
     <item>
       <title>Geometry</title>
-      <link>http://docs.conself.com/manual/geometry/</link>
+      <link>https://docs.conself.com/manual/geometry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/geometry/</guid>
+      <guid>https://docs.conself.com/manual/geometry/</guid>
       <description>The geometry step represents the phase in which the user defines the main geometrical characteristics of the case. The user is required to draw a complete geometry using a CAD software. The geometry file must be loaded in terms of fluid volume in case of a CFD analysis and solid volume in case of MECH analysis. Some geometry files are available to be freely downloaded and used in our web application in this page.</description>
     </item>
     
     <item>
       <title>Mesh</title>
-      <link>http://docs.conself.com/manual/mesh/</link>
+      <link>https://docs.conself.com/manual/mesh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/mesh/</guid>
+      <guid>https://docs.conself.com/manual/mesh/</guid>
       <description>Mesh is the STEP required in order to define the mesh.
 VOLUME MESH In this section the user is asked to define the mesh algorithm and the basic mesh feature.
  Meshing algorithm: drop down list from which the user has to select the meshing algorithm (see pictures below).
@@ -52,10 +54,10 @@ VOLUME MESH In this section the user is asked to define the mesh algorithm and t
     
     <item>
       <title>CFD</title>
-      <link>http://docs.conself.com/manual/cfd/</link>
+      <link>https://docs.conself.com/manual/cfd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/cfd/</guid>
+      <guid>https://docs.conself.com/manual/cfd/</guid>
       <description>This step is actually common to a certain number of different applications. The instruction mentioned in this page are completely defining all these applications, even though some limitations may occur in some of them, consisting in a reduced number of possible choices availability.
 FLUID MODELS The first section is about defining the fluid models, turbulence and density in particular.
  Flow type: drop down list from which the user has to select the flow type</description>
@@ -63,20 +65,20 @@ FLUID MODELS The first section is about defining the fluid models, turbulence an
     
     <item>
       <title>MECH</title>
-      <link>http://docs.conself.com/manual/mech/</link>
+      <link>https://docs.conself.com/manual/mech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/mech/</guid>
+      <guid>https://docs.conself.com/manual/mech/</guid>
       <description>This step is actually common to a certain number of different applications. The instruction mentioned in this page are completely defining all these applications, even though some limitations may occur in some of them, consisting in a reduced number of possible choices availability.
 MECHANICAL MODELS The first section someone has to define in a static mechanical simulation regards the mechanical model. This is a system of hypothesis that link calculated displacement with stress and shear.</description>
     </item>
     
     <item>
       <title>Results</title>
-      <link>http://docs.conself.com/manual/results/</link>
+      <link>https://docs.conself.com/manual/results/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/results/</guid>
+      <guid>https://docs.conself.com/manual/results/</guid>
       <description>RESULTS POST-PROCESSING Once the CFD/FEA simulation is completed, we are forwarded to the result analysis part of the application. In here it is possible to:
  Check the simulation convergence Check the output frequency for the modal/frequency analysis Download the results file locally to your computer.  Furthermore, it is possible to post-process the results directly from your browser using the functionalities provided. Check out the following tutorial to see a simple postprocessing of a common case.</description>
     </item>

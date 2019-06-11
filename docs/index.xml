@@ -2,47 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CONSELF Docs</title>
-    <link>http://docs.conself.com/</link>
+    <link>https://docs.conself.com/</link>
     <description>Recent content on CONSELF Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.conself.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.conself.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AHMED</title>
-      <link>http://docs.conself.com/validation/ahmed/</link>
+      <link>https://docs.conself.com/validation/ahmed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/validation/ahmed/</guid>
+      <guid>https://docs.conself.com/validation/ahmed/</guid>
       <description>INTRODUCTION In this page will be presented how to setup a wind tunnel virtual test on a car model. This is a typical application where the user wants to simulate a uniform velocity profile entering the tunnel from the inlet that reaches the vehicle. It is typically used to evaluate vehicle performances as aerodynamics coefficients. In this case, in order to explain how realistic simulations are carried out, wind tunnel floor will be modeled as a moving wall, with a translational velocity equal to the flow one.</description>
     </item>
     
     <item>
       <title>Account</title>
-      <link>http://docs.conself.com/manual/account/</link>
+      <link>https://docs.conself.com/manual/account/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/account/</guid>
-      <description>SUBSCRIPTION CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans.</description>
+      <guid>https://docs.conself.com/manual/account/</guid>
+      <description>SUBSCRIPTION CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans.
+ Subscription plans   The plans currently available are mainly two:
+ FREELANCE and ENTERPRISE: these two plans can be activated automatically. They both give access to the complete set of commercial features present in the application and their difference regards the number of credits given every month to the user: 250 for the FREELANCE and 1500 for the ENTERPRISE.</description>
     </item>
     
     <item>
       <title>Car park ventilation</title>
-      <link>http://docs.conself.com/validation/car-park-ventilation/</link>
+      <link>https://docs.conself.com/validation/car-park-ventilation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/validation/car-park-ventilation/</guid>
+      <guid>https://docs.conself.com/validation/car-park-ventilation/</guid>
       <description>INTRODUCTION In this page will be presented how to setup a car park smoke ventilation simulation. The current case represent a general HVAC (heating ventilation and air conditioning). Closed car parks in fact suffer of at least two major issue every designer has to take into consideration: production of CO by cars smoke exhausts and high fire risk compared to many surrounding areas. For these reasons, it is common habit to use a ventilation system with the dual purpose: maintaining low level of CO concentrations in standard conditions and guarantee a smoke free way out in a fire scenario.</description>
     </item>
     
     <item>
       <title>Downloads</title>
-      <link>http://docs.conself.com/contributing/downloads/</link>
+      <link>https://docs.conself.com/contributing/downloads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/contributing/downloads/</guid>
+      <guid>https://docs.conself.com/contributing/downloads/</guid>
       <description>CAD Files Ahmed_bb.stl (31 KB)
 Airfoil.stp (74 KB)
 Airplane.stl (6.3 MB)
@@ -59,30 +61,30 @@ UrbanMicroclimateSTLFile.stl (34 KB)</description>
     
     <item>
       <title>Input CAD Files</title>
-      <link>http://docs.conself.com/hints/input-cad-files/</link>
+      <link>https://docs.conself.com/hints/input-cad-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/hints/input-cad-files/</guid>
+      <guid>https://docs.conself.com/hints/input-cad-files/</guid>
       <description>The generation of a CAD file is one of the most important parts of any CFD simulation. CONSELF can handle multiple geometry types in order to help the user during his task. At the same time, it is recommendable to follow some basics tricks in order to be confident about the final result of the simulation and avoid geometry errors and mesh inconsistencies.
 Create fluid volumes In order to run a CFD simulation you have to generate the volume of fluid.</description>
     </item>
     
     <item>
       <title>CFD boundary Conditions</title>
-      <link>http://docs.conself.com/hints/boundary-conditions/</link>
+      <link>https://docs.conself.com/hints/boundary-conditions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/hints/boundary-conditions/</guid>
+      <guid>https://docs.conself.com/hints/boundary-conditions/</guid>
       <description>For your CFD simulation CONSELF provides a very high number of different settings. In general the boundary available are grouped in few types:
  INLET -&amp;gt; flow inlet into the system OUTLET -&amp;gt; flow outlet IN/OUT -&amp;gt; boundaries that can define both an inlet or outlet (surface normal vectors are positive if inlet, negative when outlet) WALL -&amp;gt; solid walls of the system  Starting from this raw classification, each boundary is specialized and gives a number of feature to the user to reproduce reality as accurately as possible.</description>
     </item>
     
     <item>
       <title>External Link</title>
-      <link>http://docs.conself.com/contributing/external-link/</link>
+      <link>https://docs.conself.com/contributing/external-link/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/contributing/external-link/</guid>
+      <guid>https://docs.conself.com/contributing/external-link/</guid>
       <description>Software CAD and 3D modelling Onshape - Fully cloud solution for 3D modelling
 Blender - 3D modelling software popular in FabLabs and 3D printing
 DraftSight - Free 2D CAD software by Dassauld Systemes
@@ -95,10 +97,10 @@ TecPlot - Commercial post-processor for CFD and FEA data</description>
     
     <item>
       <title>Lid Driven Cavity</title>
-      <link>http://docs.conself.com/validation/lid-driven-cavity/</link>
+      <link>https://docs.conself.com/validation/lid-driven-cavity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/validation/lid-driven-cavity/</guid>
+      <guid>https://docs.conself.com/validation/lid-driven-cavity/</guid>
       <description>GEOMETRY Input file from LidDriven.stp (14 KB)
 File data  In File units select Millimeters In Grouping Criteria STEP select By Curve Entity  Domain  In Flow Type select Internal  MESH2D Surface mesh Complete this section by filling the input data according to the following table
    Boundary name Uniformity level [%] Max element size [m]     BC-Parte1FACE1 70 0.04   BC-Parte1FACE2 70 0.</description>
@@ -106,38 +108,38 @@ File data  In File units select Millimeters In Grouping Criteria STEP select By 
     
     <item>
       <title>Simulation Process</title>
-      <link>http://docs.conself.com/manual/simulation-process/</link>
+      <link>https://docs.conself.com/manual/simulation-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/simulation-process/</guid>
+      <guid>https://docs.conself.com/manual/simulation-process/</guid>
       <description>INTRODUCTION Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:
 Simulation: a mathematical procedure that allows to reproduce in a virtual environment - software - a physical behavior. Compared to laboratory tests, it is a quicker and cheaper process. Ultimately, simulations help engineers validate the hypothesis behind every design phase.</description>
     </item>
     
     <item>
       <title>Common Errors</title>
-      <link>http://docs.conself.com/hints/common-errors/</link>
+      <link>https://docs.conself.com/hints/common-errors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/hints/common-errors/</guid>
+      <guid>https://docs.conself.com/hints/common-errors/</guid>
       <description>After each STEPS has been performed, it is possible to check its results by clicking on the steps summary button. This will report a summary table where RED items are problematic steps. For each problem an error message, with a brief description and suggested action is reported. For the sake of clarity, we report a more detailed description of the problem and the suggested solution to make even easier to our customers the web-application.</description>
     </item>
     
     <item>
       <title>Geometry</title>
-      <link>http://docs.conself.com/manual/geometry/</link>
+      <link>https://docs.conself.com/manual/geometry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/geometry/</guid>
+      <guid>https://docs.conself.com/manual/geometry/</guid>
       <description>The geometry step represents the phase in which the user defines the main geometrical characteristics of the case. The user is required to draw a complete geometry using a CAD software. The geometry file must be loaded in terms of fluid volume in case of a CFD analysis and solid volume in case of MECH analysis. Some geometry files are available to be freely downloaded and used in our web application in this page.</description>
     </item>
     
     <item>
       <title>Mesh</title>
-      <link>http://docs.conself.com/manual/mesh/</link>
+      <link>https://docs.conself.com/manual/mesh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/mesh/</guid>
+      <guid>https://docs.conself.com/manual/mesh/</guid>
       <description>Mesh is the STEP required in order to define the mesh.
 VOLUME MESH In this section the user is asked to define the mesh algorithm and the basic mesh feature.
  Meshing algorithm: drop down list from which the user has to select the meshing algorithm (see pictures below).
@@ -146,10 +148,10 @@ VOLUME MESH In this section the user is asked to define the mesh algorithm and t
     
     <item>
       <title>CFD</title>
-      <link>http://docs.conself.com/manual/cfd/</link>
+      <link>https://docs.conself.com/manual/cfd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/cfd/</guid>
+      <guid>https://docs.conself.com/manual/cfd/</guid>
       <description>This step is actually common to a certain number of different applications. The instruction mentioned in this page are completely defining all these applications, even though some limitations may occur in some of them, consisting in a reduced number of possible choices availability.
 FLUID MODELS The first section is about defining the fluid models, turbulence and density in particular.
  Flow type: drop down list from which the user has to select the flow type</description>
@@ -157,20 +159,20 @@ FLUID MODELS The first section is about defining the fluid models, turbulence an
     
     <item>
       <title>MECH</title>
-      <link>http://docs.conself.com/manual/mech/</link>
+      <link>https://docs.conself.com/manual/mech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/mech/</guid>
+      <guid>https://docs.conself.com/manual/mech/</guid>
       <description>This step is actually common to a certain number of different applications. The instruction mentioned in this page are completely defining all these applications, even though some limitations may occur in some of them, consisting in a reduced number of possible choices availability.
 MECHANICAL MODELS The first section someone has to define in a static mechanical simulation regards the mechanical model. This is a system of hypothesis that link calculated displacement with stress and shear.</description>
     </item>
     
     <item>
       <title>Results</title>
-      <link>http://docs.conself.com/manual/results/</link>
+      <link>https://docs.conself.com/manual/results/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/manual/results/</guid>
+      <guid>https://docs.conself.com/manual/results/</guid>
       <description>RESULTS POST-PROCESSING Once the CFD/FEA simulation is completed, we are forwarded to the result analysis part of the application. In here it is possible to:
  Check the simulation convergence Check the output frequency for the modal/frequency analysis Download the results file locally to your computer.  Furthermore, it is possible to post-process the results directly from your browser using the functionalities provided. Check out the following tutorial to see a simple postprocessing of a common case.</description>
     </item>

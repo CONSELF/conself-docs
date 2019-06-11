@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hints on CONSELF Docs</title>
-    <link>http://docs.conself.com/hints/</link>
+    <link>https://docs.conself.com/hints/</link>
     <description>Recent content in Hints on CONSELF Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.conself.com/hints/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.conself.com/hints/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Input CAD Files</title>
-      <link>http://docs.conself.com/hints/input-cad-files/</link>
+      <link>https://docs.conself.com/hints/input-cad-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/hints/input-cad-files/</guid>
+      <guid>https://docs.conself.com/hints/input-cad-files/</guid>
       <description>The generation of a CAD file is one of the most important parts of any CFD simulation. CONSELF can handle multiple geometry types in order to help the user during his task. At the same time, it is recommendable to follow some basics tricks in order to be confident about the final result of the simulation and avoid geometry errors and mesh inconsistencies.
 Create fluid volumes In order to run a CFD simulation you have to generate the volume of fluid.</description>
     </item>
     
     <item>
       <title>CFD boundary Conditions</title>
-      <link>http://docs.conself.com/hints/boundary-conditions/</link>
+      <link>https://docs.conself.com/hints/boundary-conditions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/hints/boundary-conditions/</guid>
+      <guid>https://docs.conself.com/hints/boundary-conditions/</guid>
       <description>For your CFD simulation CONSELF provides a very high number of different settings. In general the boundary available are grouped in few types:
  INLET -&amp;gt; flow inlet into the system OUTLET -&amp;gt; flow outlet IN/OUT -&amp;gt; boundaries that can define both an inlet or outlet (surface normal vectors are positive if inlet, negative when outlet) WALL -&amp;gt; solid walls of the system  Starting from this raw classification, each boundary is specialized and gives a number of feature to the user to reproduce reality as accurately as possible.</description>
     </item>
     
     <item>
       <title>Common Errors</title>
-      <link>http://docs.conself.com/hints/common-errors/</link>
+      <link>https://docs.conself.com/hints/common-errors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.conself.com/hints/common-errors/</guid>
+      <guid>https://docs.conself.com/hints/common-errors/</guid>
       <description>After each STEPS has been performed, it is possible to check its results by clicking on the steps summary button. This will report a summary table where RED items are problematic steps. For each problem an error message, with a brief description and suggested action is reported. For the sake of clarity, we report a more detailed description of the problem and the suggested solution to make even easier to our customers the web-application.</description>
     </item>
     

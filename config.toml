@@ -1,4 +1,4 @@
-baseurl = "http://docs.conself.com"
+baseurl = "https://docs.conself.com"
 languageCode = "en-us"
 title = "CONSELF Docs"
 theme = "hugo-theme-learn"
