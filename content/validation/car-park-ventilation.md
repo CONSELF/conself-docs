@@ -1,7 +1,7 @@
 ---
 title: Car park ventilation
 toc: true
-weight: 1
+weight: 11
 ---
 
 ## INTRODUCTION
@@ -17,7 +17,7 @@ In this case, we have a Windows Open Air (Green) and a Ramp Outlet (Rosa). Furth
 
 ## TUTORIALS
 
-In order to run the following tutorial please, download the geometry file from here: [CarParkExample.stp](http://docs.conself.com/files/CarParkExample.stp). In order to start this tutorial, you have to go in your dashboard and create a new project, named in this case “Car Park Ventilation”.
+In order to run the following tutorial please, download the geometry file from here: [CarParkExample.stp](https://docs.conself.com/files/CarParkExample.stp). In order to start this tutorial, you have to go in your dashboard and create a new project, named in this case “Car Park Ventilation”.
 
 {{< figure src="/images/CarParkImage2.png" alt="" title="" class="figure-50" >}}
 

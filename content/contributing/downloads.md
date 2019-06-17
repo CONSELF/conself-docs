@@ -20,6 +20,8 @@ weight: 1
 
 [Flange.stp](/files/Flange.STEP) (80 KB)
 
+[Hip Stem Design - ASTM F2996-13.stp](/files/Hip Stem Design - ASTM F2996-13.stp) (597 KB)
+
 [ImpellerFluid.stp](/files/ImpellerFluid.stp) (80 KB)
 
 [LCA_geometrysimplified.zip](/files/LCA_geometrysimplified.zip) (6.3 MB)

@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Standard ASTM F2996-13 - Hip Stem Design</title>
+      <link>https://docs.conself.com/validation/std-astm-f2996-13-hip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.conself.com/validation/std-astm-f2996-13-hip/</guid>
+      <description>INTRODUCTION In this page we will show you how to set up a static structural analysis of non-modular metallic orthopedic hip femoral stems.
+The CONSELF application STANDARD » ASTM F2996-13 – Hip allows the user to simulate the hip stem designs for the prediction of the static implant stresses and strains. This application follows the requirements and considerations of the ASTM F2996-13 standard practice for the calculation of stresses and strains seen on a femoral hip stem when loaded in a manner described in the ISO 7206-4 (2010) standard.</description>
+    </item>
+    
+    <item>
       <title>AHMED</title>
       <link>https://docs.conself.com/validation/ahmed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>AHMED</title>
-      <link>https://docs.conself.com/validation/ahmed/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.conself.com/validation/ahmed/</guid>
-      <description>INTRODUCTION In this page will be presented how to setup a wind tunnel virtual test on a car model. This is a typical application where the user wants to simulate a uniform velocity profile entering the tunnel from the inlet that reaches the vehicle. It is typically used to evaluate vehicle performances as aerodynamics coefficients. In this case, in order to explain how realistic simulations are carried out, wind tunnel floor will be modeled as a moving wall, with a translational velocity equal to the flow one.</description>
-    </item>
-    
-    <item>
       <title>Account</title>
       <link>https://docs.conself.com/manual/account/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -28,15 +19,6 @@
       <description>SUBSCRIPTION CONSELF it is a pay-per-use CFD application available via browser. In order to enjoy this service, you must activate one of the available plans.
  Subscription plans   The plans currently available are mainly two:
  FREELANCE and ENTERPRISE: these two plans can be activated automatically. They both give access to the complete set of commercial features present in the application and their difference regards the number of credits given every month to the user: 250 for the FREELANCE and 1500 for the ENTERPRISE.</description>
-    </item>
-    
-    <item>
-      <title>Car park ventilation</title>
-      <link>https://docs.conself.com/validation/car-park-ventilation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.conself.com/validation/car-park-ventilation/</guid>
-      <description>INTRODUCTION In this page will be presented how to setup a car park smoke ventilation simulation. The current case represent a general HVAC (heating ventilation and air conditioning). Closed car parks in fact suffer of at least two major issue every designer has to take into consideration: production of CO by cars smoke exhausts and high fire risk compared to many surrounding areas. For these reasons, it is common habit to use a ventilation system with the dual purpose: maintaining low level of CO concentrations in standard conditions and guarantee a smoke free way out in a fire scenario.</description>
     </item>
     
     <item>
@@ -52,6 +34,7 @@ ButterflyValve.stp (84 KB)
 CarParkExample.stp (199 KB)
 CPU.stp (135 KB)
 Flange.stp (80 KB)
+Hip Stem Design - ASTM F2996-13.stp (597 KB)
 ImpellerFluid.stp (80 KB)
 LCA_geometrysimplified.zip (6.3 MB)
 LidDriven.stp (14 KB)
@@ -67,6 +50,16 @@ UrbanMicroclimateSTLFile.stl (34 KB)</description>
       <guid>https://docs.conself.com/hints/input-cad-files/</guid>
       <description>The generation of a CAD file is one of the most important parts of any CFD simulation. CONSELF can handle multiple geometry types in order to help the user during his task. At the same time, it is recommendable to follow some basics tricks in order to be confident about the final result of the simulation and avoid geometry errors and mesh inconsistencies.
 Create fluid volumes In order to run a CFD simulation you have to generate the volume of fluid.</description>
+    </item>
+    
+    <item>
+      <title>Standard ASTM F2996-13 - Hip Stem Design</title>
+      <link>https://docs.conself.com/validation/std-astm-f2996-13-hip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.conself.com/validation/std-astm-f2996-13-hip/</guid>
+      <description>INTRODUCTION In this page we will show you how to set up a static structural analysis of non-modular metallic orthopedic hip femoral stems.
+The CONSELF application STANDARD » ASTM F2996-13 – Hip allows the user to simulate the hip stem designs for the prediction of the static implant stresses and strains. This application follows the requirements and considerations of the ASTM F2996-13 standard practice for the calculation of stresses and strains seen on a femoral hip stem when loaded in a manner described in the ISO 7206-4 (2010) standard.</description>
     </item>
     
     <item>
@@ -93,17 +86,6 @@ SketchUp - Another free 3D modelling software
 Results PostProcessing ParaView - OpenSource and free post-processor
 EnSight - Commercial post-processor for CFD and FEA data
 TecPlot - Commercial post-processor for CFD and FEA data</description>
-    </item>
-    
-    <item>
-      <title>Lid Driven Cavity</title>
-      <link>https://docs.conself.com/validation/lid-driven-cavity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.conself.com/validation/lid-driven-cavity/</guid>
-      <description>GEOMETRY Input file from LidDriven.stp (14 KB)
-File data  In File units select Millimeters In Grouping Criteria STEP select By Curve Entity  Domain  In Flow Type select Internal  MESH2D Surface mesh Complete this section by filling the input data according to the following table
-   Boundary name Uniformity level [%] Max element size [m]     BC-Parte1FACE1 70 0.04   BC-Parte1FACE2 70 0.</description>
     </item>
     
     <item>
@@ -175,6 +157,35 @@ MECHANICAL MODELS The first section someone has to define in a static mechanical
       <guid>https://docs.conself.com/manual/results/</guid>
       <description>RESULTS POST-PROCESSING Once the CFD/FEA simulation is completed, we are forwarded to the result analysis part of the application. In here it is possible to:
  Check the simulation convergence Check the output frequency for the modal/frequency analysis Download the results file locally to your computer.  Furthermore, it is possible to post-process the results directly from your browser using the functionalities provided. Check out the following tutorial to see a simple postprocessing of a common case.</description>
+    </item>
+    
+    <item>
+      <title>AHMED</title>
+      <link>https://docs.conself.com/validation/ahmed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.conself.com/validation/ahmed/</guid>
+      <description>INTRODUCTION In this page will be presented how to setup a wind tunnel virtual test on a car model. This is a typical application where the user wants to simulate a uniform velocity profile entering the tunnel from the inlet that reaches the vehicle. It is typically used to evaluate vehicle performances as aerodynamics coefficients. In this case, in order to explain how realistic simulations are carried out, wind tunnel floor will be modeled as a moving wall, with a translational velocity equal to the flow one.</description>
+    </item>
+    
+    <item>
+      <title>Car park ventilation</title>
+      <link>https://docs.conself.com/validation/car-park-ventilation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.conself.com/validation/car-park-ventilation/</guid>
+      <description>INTRODUCTION In this page will be presented how to setup a car park smoke ventilation simulation. The current case represent a general HVAC (heating ventilation and air conditioning). Closed car parks in fact suffer of at least two major issue every designer has to take into consideration: production of CO by cars smoke exhausts and high fire risk compared to many surrounding areas. For these reasons, it is common habit to use a ventilation system with the dual purpose: maintaining low level of CO concentrations in standard conditions and guarantee a smoke free way out in a fire scenario.</description>
+    </item>
+    
+    <item>
+      <title>Lid Driven Cavity</title>
+      <link>https://docs.conself.com/validation/lid-driven-cavity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.conself.com/validation/lid-driven-cavity/</guid>
+      <description>GEOMETRY Input file from LidDriven.stp (14 KB)
+File data  In File units select Millimeters In Grouping Criteria STEP select By Curve Entity  Domain  In Flow Type select Internal  MESH2D Surface mesh Complete this section by filling the input data according to the following table
+   Boundary name Uniformity level [%] Max element size [m]     BC-Parte1FACE1 70 0.04   BC-Parte1FACE2 70 0.</description>
     </item>
     
   </channel>

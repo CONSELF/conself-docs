@@ -1,7 +1,7 @@
 ---
 title: AHMED
 toc: true
-weight: 1
+weight: 10
 ---
 
 ## INTRODUCTION
@@ -15,7 +15,7 @@ These measurements can be carried out via wind tunnel experiments or via CFD sim
 
 
 ## TUTORIALS
-In order to run the following tutorial please, download the geometry file from here: [Ahmed_bb.stl](http://docs.conself.com/files/Ahmed_bb.stl).
+In order to run the following tutorial please, download the geometry file from here: [Ahmed_bb.stl](https://docs.conself.com/files/Ahmed_bb.stl).
 
 In this case, we are using the Ahmed which was described originally in “S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Vehicle Wake, SAE-Paper 840300, 1984” and it is use also nowadays as benchmark for test and CFD evaluations.
 
