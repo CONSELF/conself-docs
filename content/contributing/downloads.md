@@ -24,6 +24,8 @@ weight: 1
 
 [ImpellerFluid.stp](/files/ImpellerFluid.stp) (80 KB)
 
+[Knee Femoral Component - ASTM F3161-16.stp](/files/Knee Femoral Component - ASTM F3161-16.stp) (1.3 MB)
+
 [LCA_geometrysimplified.zip](/files/LCA_geometrysimplified.zip) (6.3 MB)
 
 [LidDriven.stp](/files/LidDriven.stp) (14 KB)

@@ -36,6 +36,7 @@ CPU.stp (135 KB)
 Flange.stp (80 KB)
 Hip Stem Design - ASTM F2996-13.stp (597 KB)
 ImpellerFluid.stp (80 KB)
+Knee Femoral Component - ASTM F3161-16.stp (1.3 MB)
 LCA_geometrysimplified.zip (6.3 MB)
 LidDriven.stp (14 KB)
 Sphere.stl (48 KB)
@@ -96,6 +97,16 @@ TecPlot - Commercial post-processor for CFD and FEA data</description>
       <guid>https://docs.conself.com/manual/simulation-process/</guid>
       <description>INTRODUCTION Using CONSELF means entering a new mindset, a new philosophy of simulating. Therefore, in order to be able to read and understand the following tutorials, bear in mind the following key definitions:
 Simulation: a mathematical procedure that allows to reproduce in a virtual environment - software - a physical behavior. Compared to laboratory tests, it is a quicker and cheaper process. Ultimately, simulations help engineers validate the hypothesis behind every design phase.</description>
+    </item>
+    
+    <item>
+      <title>Standard ASTM F3161-16 - Knee Femoral Component</title>
+      <link>https://docs.conself.com/validation/std-astm-f3161-16-knee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.conself.com/validation/std-astm-f3161-16-knee/</guid>
+      <description>INTRODUCTION In this page we will show you how to set up a static structural analysis of metallic orthopaedic total knee femoral components.
+The CONSELF application STANDARD » ASTM F3161-16 – Knee allows the user to simulate the knee femoral component designs for the prediction of the static implant stresses and strains. This application follows the requirements and considerations of the ASTM F3161-16 standard test method for the calculation of stresses and strains seen on a cemented and cementless total knee femoral component under closing conditions.</description>
     </item>
     
     <item>
