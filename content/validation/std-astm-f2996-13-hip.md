@@ -1,5 +1,5 @@
 ---
-title: Standard ASTM F2996-13 - Hip Stem Design
+title: Standard ASTM F2996-13 - Hip Femoral Stem
 toc: true
 weight: 1
 ---
